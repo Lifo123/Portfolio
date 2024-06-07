@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background-color: #151515;
+    color: #FFF;
+}
+
+.template {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin-inline: auto;
+    align-items: center;
+    padding: 0rem 5rem;
+
+}
+
+
+h1 {
+    font-size: 62px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 75px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #8F8F8F;
+}
+h2 span{
+    color: #2585DD;
+}
+.template>div{
+    display: flex;
+    gap: 100px;
+}
+.template>div>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 5s infinite linear;
+    fill: #61dafb;
+    stroke: #61dafb;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.template>div>a>svg:hover{
+    filter: drop-shadow(0px 0px 15px #2fcefa6e);
+}
+.template>div>a>img:hover{
+    filter: drop-shadow(0px 0px 30px #d747ff8b);
+}
+
+.button{
+    margin-top: 75px;
+    background-color: #DEC800;
+    border-radius: 8px;
+}
+
+.button>button{
+    border: solid 2px #4D4D4D;
+    background-color: #212223;
+    border-radius: 8px;
+    color: #C2C2C2;
+    padding: 16px 50px;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 10;
+}
+
+.button>button:hover{
+    transform: translate(3px, -3px);
+    border: solid 2px #DEC800;
+}
+button > span{
+    color: #DEC800;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer>span {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.footer p{
+    font-size: 13px;
+    font-weight: 300;
+    color: #D8D8D8;
+}
+.footer a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 300;
+    color: #D8D8D8;
+    cursor: pointer;
+
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
