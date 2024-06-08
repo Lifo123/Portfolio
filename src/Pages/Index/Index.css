@@ -1,3 +1,9 @@
+.bg-custom {
+    animation: parallax 1s linear;
+    animation-timeline: scroll(y);
+    --p-parallax-speed: -30;
+}
+
 .land-main {
     z-index: 100;
     position: relative;
@@ -29,7 +35,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
-    background-position-y: -230px;
+    background-position-y: 0px;
     height: 100%;
     width: 100%;
     position: fixed;

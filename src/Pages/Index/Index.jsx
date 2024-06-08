@@ -103,7 +103,7 @@ export default function Index() {
                 </div>
             </section>
 
-            <section className="view-anim" id="Projects">
+            <section className="view-anim mt-100" id="Projects">
                 <div className='f-col w-75 mx-auto f-align-start'>
                     <h2>Latest Projects</h2>
                     <section className='f-row g-50 mt-70 f-justify-center w-100'>
