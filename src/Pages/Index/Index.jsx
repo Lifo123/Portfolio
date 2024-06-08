@@ -6,6 +6,7 @@ import Header from "../../Components/Header/Header";
 import SocialMediaIcon from '../../Components/icons/SocialMediaIcons';
 import PButton from '../../Components/Buttons/PButton';
 import PButtonSecondary from '../../Components/Buttons/pButtonSecondary';
+import ProjectCard from './Comps/ProjectCard/ProjectCard';
 
 
 export default function Index() {
@@ -59,7 +60,7 @@ export default function Index() {
                             </label>
                         </a>
                     </div>
-                    <ul className='f-row g-30 mx-auto mt-35'>
+                    <ul className='f-row g-30 mx-auto mt-35 f-justify-center'>
                         <li><SocialMediaIcon id={'youtube'} box={32} /></li>
                         <li><SocialMediaIcon id={'discord'} box={32} /></li>
                         <li><SocialMediaIcon id={'whatsapp'} box={32} /></li>
@@ -91,23 +92,41 @@ export default function Index() {
                 <div className='f-col f-align-start w-65 mx-auto g-20 mt-90'>
                     <h2>¿Do you need a Web Developer?</h2>
                     <p className='mb-15'>Let's start innovative Projects together.</p>
-                    <div className='f-row g-20'>
+                    <div className='f-row g-30'>
                         <a href="">
-                            <PButton text='Contact me' borderRadius={8} padding={[20, 58]} fontSize={17} className={'active'} />
+                            <PButton text='Contact me' borderRadius={8} padding={[16, 46]} fontSize={17} className={'active'} />
                         </a>
                         <a href="#Projects">
-                            <PButtonSecondary text='View Projects' borderRadius={8} padding={[20, 58]} />
+                            <PButtonSecondary text='View Projects' borderRadius={8} padding={[16, 46]} />
                         </a>
                     </div>
                 </div>
             </section>
 
             <section className="view-anim" id="Projects">
-                <h2>Projects</h2>
+                <div className='f-col w-75 mx-auto f-align-start'>
+                    <h2>Latest Projects</h2>
+                    <section className='f-row g-50 mt-70 f-justify-center w-100'>
+                        <ProjectCard />
+                        <ProjectCard />
+                        <ProjectCard />
+                    </section>
+                    <a className='br-max pointer mt-45 w-100'>View All</a>
+                </div>
             </section>
 
             <section className="view-anim" id="Skills">
-                <h2>Skills</h2>
+                <div className='f-col w-60 mx-auto f-align-start'>
+                    <h2>Skills</h2>
+                    <div className="ski-logo-wrapper d-flex f-align-center">
+                        <div className="logo "></div>
+                        <div className="logo "></div>
+                        <div className="logo "></div>
+                        <div className="logo"></div>
+                        <div className="logo "></div>
+                        <div className="logo "></div>
+                    </div>
+                </div>
             </section>
             <Footer />
             <div className='bg-custom d-flex'></div>

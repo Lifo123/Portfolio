@@ -28,6 +28,7 @@
     opacity: 0.7;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position-x: center;
     background-position-y: -230px;
     height: 100%;
     width: 100%;
@@ -49,7 +50,7 @@ body.DarkMode .bg-custom {
 }
 
 
-.land-top{
+.land-top {
     height: calc(100vh + 30vh);
     z-index: 10;
 }
@@ -60,29 +61,29 @@ body.DarkMode .bg-custom {
     animation-timeline: scroll(y);
     --p-parallax-speed: 13;
 }
-#Home label a{
+
+#Home label a {
     text-decoration: none;
 }
-#Home ul{
+
+#Home ul {
     list-style: none;
 }
-.arrow-land{
+
+.arrow-land {
     display: flex;
     fill: var(--p-icon-high);
     margin-top: 100px;
 }
 
-.land-main > section[id]{
+.land-main>section[id] {
     scroll-margin-top: 0px;
 }
-.land-top > section[id]{
+
+.land-top>section[id] {
     scroll-margin-top: 5000px;
 }
 
-#Skills {
-    scroll-margin-top: -200px;
-    height: calc(100vh - 20px) !important;
-}
 
 @keyframes parallax {
     to {
@@ -92,45 +93,132 @@ body.DarkMode .bg-custom {
 }
 
 
-.view-anim>h2{
+.view-anim>h2 {
     font-weight: bold;
     font-size: 36px;
     margin-top: -100px;
     margin-bottom: 60px;
 }
 
-#About{
+#About {
     height: 100vh;
 }
-#About>div>div{
+
+#About>div>div {
     height: 250px;
     width: 380px;
 }
-#About>div>label{
+
+#About>div>label {
     width: 50%;
 }
-#About>div>label>p{
+
+#About>div>label>p {
     text-align: start;
     font-size: 17.5px;
     font-weight: 300;
 }
 
-#Contact{
+#Contact {
     height: 70vh;
 }
 
-#Contact h2{
+#Contact h2 {
     font-size: 46px;
     font-weight: bold;
 }
-#Contact p{
+
+#Contact p {
     font-size: 24px;
     font-weight: 500;
     color: var(--p-p-low);
 }
 
+#Projects h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
 
-.view-anim{
+#Projects>div>a {
+    background-color: var(--p-br-low);
+    padding: 13px 58px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#Skills {
+    scroll-margin-top: -200px;
+    height: calc(80vh - 20px) !important;
+    align-items: start;
+}
+
+#Skills h2 {
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+.ski-logo-wrapper {
+    width: 84%;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 6px;
+    position: absolute;
+    left: 100%;
+    animation-name: scrollLeft;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -80px;
+    }
+}
+
+.ski-logo-wrapper>.logo:nth-child(1) {
+    animation-delay: calc(16s / 6 * (6 - 1) * -1);
+}
+
+.ski-logo-wrapper>.logo:nth-child(2) {
+    animation-delay: calc(16s / 6 * (6 - 2) * -1);
+}
+
+.ski-logo-wrapper>.logo:nth-child(3) {
+    animation-delay: calc(16s / 6 * (6 - 3) * -1);
+}
+
+.ski-logo-wrapper>.logo:nth-child(4) {
+    animation-delay: calc(16s / 6 * (6 - 4) * -1);
+}
+
+.ski-logo-wrapper>.logo:nth-child(5) {
+    animation-delay: calc(16s / 6 * (6 - 5) * -1);
+}
+
+.ski-logo-wrapper>.logo:nth-child(6) {
+    animation-delay: calc(16s / 6 * (6 - 6) * -1);
+}
+
+
+
+.view-anim {
     animation: view-show linear 500ms;
     animation-timeline: view();
     display: flex;
@@ -139,19 +227,22 @@ body.DarkMode .bg-custom {
 }
 
 @keyframes view-show {
-    0%{
+    0% {
         opacity: 0;
         scale: 96%;
     }
-    40%{
+
+    30% {
         opacity: 1;
         scale: 100%;
     }
-    60%{
+
+    70% {
         opacity: 1;
         scale: 100%;
     }
-    to{ 
+
+    to {
         opacity: 0;
         scale: 90%;
     }

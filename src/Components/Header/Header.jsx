@@ -2,9 +2,11 @@ import './Styles/Header.css'
 
 import Icon from '../icons/Icon'
 import SocialMediaIcons from '../icons/SocialMediaIcons'
+import userDarkMode from '../../hooks/useDarkMode/useDarkMode'
 
 
 export default function Header({ type = 'normal' }) {
+    const { ToggleDM } = userDarkMode();
 
     const HandleActive = (e) => {
         e.target.classList.add('active');
@@ -12,10 +14,6 @@ export default function Header({ type = 'normal' }) {
         parent.querySelectorAll('li > a').forEach(item => {
             item.classList.remove('active');
         });
-    }
-
-    const HandleToggleDM = () => {
-        document.body.classList.toggle('DarkMode');
     }
 
     return (
@@ -32,8 +30,8 @@ export default function Header({ type = 'normal' }) {
                                 <li><a href='#Skills' onClick={HandleActive}>Skills</a></li>
                             </ul>
                             <div className='f-row g-20 f-align-center'>
-                                <Icon id='toggleDarkMode' color={`var(--p-icon-high)`} funct={HandleToggleDM} />
-                                <a className='f-row g-20 f-align-center' href='https://github.com/Lifo123' target='_blank'>Lifo123 <SocialMediaIcons id='github' color={`var(--p-icon-high)`}/></a>
+                                <Icon id='toggleDarkMode' color={`var(--p-icon-high)`} funct={ToggleDM} />
+                                <a className='f-row g-20 f-align-center' href='https://github.com/Lifo123' target='_blank'>Lifo123 <SocialMediaIcons id='github' color={`var(--p-icon-high)`} /></a>
                             </div>
                         </>
                     ) : null

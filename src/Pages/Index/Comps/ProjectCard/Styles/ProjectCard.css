@@ -1,0 +1,54 @@
+.project-card {
+    border: solid 2px #66696b4d;
+    height: max-content;
+    width: 370px;
+}
+
+.project-card>span {
+    background-color: var(--p-bg-in);
+    height: 190px;
+    width: 100%;
+}
+
+.p-c-info {
+    height: calc(100% - 190px);
+    width: 100%;
+    padding: 20px;
+    text-align: start;
+}
+
+.project-card div>a {
+    padding: 10px 30px !important;
+    font-size: 13.5px;
+    background-color: var(--p-bg-in);
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.project-card div>a svg {
+    height: 22px;
+    width: 22px;
+    pointer-events: none;
+}
+
+.project-card div>a:hover {
+    transform: scale(1.02, 1.04);
+    background-color: var(--p-btn-active);
+}
+
+.p-c-info h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--p-font-h1);
+}
+
+.p-c-info>p {
+    font-size: 16px;
+    color: var(--p-font-h1);
+    font-weight: 300;
+}
+
+.p-c-info>div>a p {
+    color: var(--p-font-h1);
+}
