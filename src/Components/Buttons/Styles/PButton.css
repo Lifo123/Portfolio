@@ -1,0 +1,68 @@
+.p-btn {
+    border: none;
+    outline: none;
+    background-color: #0CBBF2;
+    text-decoration: none;
+}
+
+.p-btn>label {
+    border: solid 2px var(--p-br-low);
+    background-color: var(--p-bg-in);
+    color: #C2C2C2;
+    padding: 13px 44px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    transition: transform 0.2s;
+}
+
+.p-btn>label:hover {
+    transform: translate(2px, -2px);
+    border: solid 2px #0CBBF2;
+    color: #0CBBF2;
+    font-size: 15px;
+}
+
+.p-btn>label:hover p {
+    color: #0CBBF2;
+}
+
+.p-btn>label:hover svg {
+    stroke: #0CBBF2;
+    fill: #0CBBF2;
+}
+
+.p-btn.active {
+    transform: translate(2px, -2px);
+    border: solid 2px #0CBBF2;
+    color: #0CBBF2;
+    font-size: 15px;
+}
+
+.p-btn.active label {
+    color: #0CBBF2;
+}
+
+.p-btn-secondary{
+    border: none;
+    outline: none;
+    background-color: var(--p-br-low);
+}
+.p-btn-secondary>label{
+    border: solid 2px var(--p-br-low);
+    background-color: var(--p-bg-in);
+    color: #C2C2C2;
+    padding: 13px 44px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    transition: transform 0.2s;
+}
+.p-btn-secondary>label:hover {
+    transform: translate(2px, -2px);
+    font-size: 15px;
+}

@@ -3,128 +3,93 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Inter, sans-serif;
+    color: var(--p-font-h1);
+}
+
+:root {
+
+    --p-bg: #151515;
+    --p-bg-in: #212223;
+    --p-br-low: #4D4D4D;
+    --p-bg-link: #2388EE;
+
+    --p-font-h1: #FFF;
+    --p-font-h2: #8F8F8F;
+    --p-font-subtitle: #C1C1C1;
+    --p-font-link: #27a3ff;
+    --p-font-p-low: #D8D8D8;
+
+    --p-icon: #8B8B8B;
+    --p-icon-high: #dbdbdb;
+    --p-icon-a: #BFBFBF;
+
+
+    --p-color-yellow: #DEC800;
+    --p-color-gren: #13FA46;
+    --p-color-br-gren: #237021;
+
+}
+
+.DarkMode{
+
+    --p-bg: #ececec;
+    --p-bg-in: #e6e6e6;
+    --p-br-low: #a2a2a2;
+    --p-bg-link: #2388EE;
+
+    --p-font-h1: #161616;
+    --p-font-h2: #343434;
+    --p-font-subtitle: #363636;
+    --p-font-link: #27a3ff;
+    --p-font-p-low: #4e4e4e;
+
+    --p-icon: #3b3b3b;
+    --p-icon-high: #2a2b2f;
+    --p-icon-a: #BFBFBF;
+
+
+    --p-color-yellow: #DEC800;
+    --p-color-gren: #07a529;
+    --p-color-br-gren: #15cf4c;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #151515;
-    color: #FFF;
+    background-color: var(--p-bg);
 }
 
-.template {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    margin-inline: auto;
-    align-items: center;
-    padding: 0rem 5rem;
-
+body::-webkit-scrollbar {
+    background-color: transparent;
+    display: block;
+    width: 6px;
+    margin-right: 10px;
 }
 
-
-h1 {
-    font-size: 62px;
-    font-weight: bold;
-    margin-top: 50px;
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: var(--p-br-low);
+    width: 6px;
 }
-h2{
-    margin-top: 20px;
-    margin-bottom: 75px;
-    font-size: 28px;
-    font-weight: 400;
-    color: #8F8F8F;
-}
-h2 span{
-    color: #2585DD;
-}
-.template>div{
-    display: flex;
-    gap: 100px;
-}
-.template>div>a{
+.peru-flag{
+    background-color: #D91023;
+    border-radius: 2px;
+    height: 14px;
+    width: 21px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    animation: rotate 5s infinite linear;
-    fill: #61dafb;
-    stroke: #61dafb;
-    transition: all 0.2s;
-    cursor: pointer;
-}
-.template>div>a>svg:hover{
-    filter: drop-shadow(0px 0px 15px #2fcefa6e);
-}
-.template>div>a>img:hover{
-    filter: drop-shadow(0px 0px 30px #d747ff8b);
-}
-
-.button{
-    margin-top: 75px;
-    background-color: #DEC800;
-    border-radius: 8px;
-}
-
-.button>button{
-    border: solid 2px #4D4D4D;
-    background-color: #212223;
-    border-radius: 8px;
-    color: #C2C2C2;
-    padding: 16px 50px;
-    font-size: 17px;
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 0.2s;
     position: relative;
-    z-index: 10;
-}
-
-.button>button:hover{
-    transform: translate(3px, -3px);
-    border: solid 2px #DEC800;
-}
-button > span{
-    color: #DEC800;
-    font-weight: 500;
+    bottom: -5px;
     pointer-events: none;
 }
-
-.footer {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    padding-inline: 2rem;
+.peru-flag::after{
+    content: ' ';
+    background-color: #FFF;
     display: flex;
-    justify-content: space-between;
-}
-
-.footer>span {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-.footer p{
-    font-size: 13px;
-    font-weight: 300;
-    color: #D8D8D8;
-}
-.footer a {
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 300;
-    color: #D8D8D8;
-    cursor: pointer;
-
-}
-.footer a:hover{
-    text-decoration: underline;
-}
-
-@keyframes rotate {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(-360deg);
-    }
+    height: 100%;
+    width: 6px;
+    margin-right: 1px;
 }

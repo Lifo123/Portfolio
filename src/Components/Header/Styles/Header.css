@@ -1,0 +1,37 @@
+.header {
+    height: 70px;
+    width: 100%;
+    padding-inline: 70px;
+    background: linear-gradient(180deg, var(--p-bg) 15%, rgba(255, 0, 0, 0) 105%);
+    top: 0;
+    z-index: 9999;
+}
+
+header>nav>ul {
+    left: 51%;
+    transform: translateX(-50%);
+    list-style: none;
+}
+
+.h-log>a {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header>nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 8px 6px;
+    color: var(--p-font-h1);
+}
+
+header>nav a.active {
+    color: var(--p-font-link);
+    border-bottom: solid 2px var(--p-font-link);
+}
+
+.header>nav>ul a:hover {
+    color: var(--p-font-link);
+    border-bottom: solid 2px var(--p-font-link);
+}

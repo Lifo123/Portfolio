@@ -1,0 +1,16 @@
+.icon {
+    stroke: var(--p-icon);
+    fill: var(--p-icon);
+    z-index: 1000;
+    pointer-events: visible;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+.icon:hover{
+    stroke: var(--p-icon-a);
+    fill: var(--p-icon-a);
+}
+
+.icon svg {
+    pointer-events: none;
+}

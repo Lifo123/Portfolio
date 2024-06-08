@@ -1,0 +1,18 @@
+.err-main {
+    height: calc(100vh - 100px);
+}
+
+.err-main>h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.err-main>h3 {
+    color: var(--p-font-h2);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.err-main>h3>span {
+    color: var(--p-bg-link);
+}

@@ -1,0 +1,158 @@
+.land-main {
+    z-index: 100;
+    position: relative;
+
+}
+
+.land-main h2 {
+    font-weight: bold;
+    font-size: 72px;
+}
+
+.land-subtitle {
+    color: var(--p-font-subtitle);
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.lnd-avalible {
+    border: solid 2px var(--p-color-br-gren);
+    color: var(--p-color-gren);
+    font-size: 14px;
+    padding: 11px 35px;
+    width: max-content;
+}
+
+.bg-custom {
+    background-image: url(../../../public/background.jpg);
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: -230px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+body.DarkMode .bg-custom {
+    opacity: 0;
+}
+
+.land-main>section {
+    height: 100vh;
+    text-align: center;
+    z-index: 1000;
+}
+
+
+.land-top{
+    height: calc(100vh + 30vh);
+    z-index: 10;
+}
+
+#Home {
+    height: calc(100vh - 70px) !important;
+    animation: parallax 1s linear;
+    animation-timeline: scroll(y);
+    --p-parallax-speed: 13;
+}
+#Home label a{
+    text-decoration: none;
+}
+#Home ul{
+    list-style: none;
+}
+.arrow-land{
+    display: flex;
+    fill: var(--p-icon-high);
+    margin-top: 100px;
+}
+
+.land-main > section[id]{
+    scroll-margin-top: 0px;
+}
+.land-top > section[id]{
+    scroll-margin-top: 5000px;
+}
+
+#Skills {
+    scroll-margin-top: -200px;
+    height: calc(100vh - 20px) !important;
+}
+
+@keyframes parallax {
+    to {
+        transform: translateY(calc(var(--p-parallax-speed) * 100px));
+    }
+
+}
+
+
+.view-anim>h2{
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: -100px;
+    margin-bottom: 60px;
+}
+
+#About{
+    height: 100vh;
+}
+#About>div>div{
+    height: 250px;
+    width: 380px;
+}
+#About>div>label{
+    width: 50%;
+}
+#About>div>label>p{
+    text-align: start;
+    font-size: 17.5px;
+    font-weight: 300;
+}
+
+#Contact{
+    height: 70vh;
+}
+
+#Contact h2{
+    font-size: 46px;
+    font-weight: bold;
+}
+#Contact p{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--p-p-low);
+}
+
+
+.view-anim{
+    animation: view-show linear 500ms;
+    animation-timeline: view();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes view-show {
+    0%{
+        opacity: 0;
+        scale: 96%;
+    }
+    40%{
+        opacity: 1;
+        scale: 100%;
+    }
+    60%{
+        opacity: 1;
+        scale: 100%;
+    }
+    to{ 
+        opacity: 0;
+        scale: 90%;
+    }
+}

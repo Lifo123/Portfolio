@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Lifo123.github.io/Portfolio/#/",
+  "homepage": "https://Lifo123.github.io/Portfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +7,7 @@
   "scripts": {
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
-    "sass": "",
+    "sass": "sass --style=compressed src/css/scss/Main.scss src/css/Flifo.css",
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite --host preview",
@@ -15,7 +15,11 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^6.23.1",
+    "react-top-loading-bar": "^2.3.1",
+    "sass": "^1.77.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

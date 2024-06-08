@@ -1,0 +1,29 @@
+.footer {
+    width: 100%;
+    padding-inline: 40px;
+    bottom: 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.footer p {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--p-font-p-low);
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--p-font-p-low);
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer li {
+    list-style: none;
+}
