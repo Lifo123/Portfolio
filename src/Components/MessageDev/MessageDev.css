@@ -1,0 +1,9 @@
+.msg-dev{
+    background-color: #0c0c0c;
+    color: var(--p-btn-font);
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 0px;
+    z-index: 999;
+}
