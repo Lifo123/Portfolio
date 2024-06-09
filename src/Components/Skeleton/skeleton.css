@@ -1,0 +1,32 @@
+.skeleton {
+    background-color: #151515;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.skeleton span {
+    border-radius: 150px;
+    display: flex;
+    background-color: #363739;
+    height: 26px;
+    min-width: 60px;
+}
+
+.skeleton header {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skeleton>main {
+    margin-inline: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skeleton div {
+    gap: 40px;
+    display: flex;
+}

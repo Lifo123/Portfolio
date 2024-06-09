@@ -5,7 +5,7 @@ import { BrowserRouter, HashRouter } from "react-router-dom"
 //Lazy imports
 import LoadingBar from "react-top-loading-bar"
 import userDarkMode from "./hooks/useDarkMode/useDarkMode";
-import MessageDev from "./Components/MessageDev/MessageDev";
+import Skeleton from "./Components/Skeleton/Skeleton";
 const AppRoutes = lazy(() => import("./Routes/AppRoutes"))
 
 function App() {
@@ -14,9 +14,8 @@ function App() {
 
   return (
     <BrowserRouter basename="/Portfolio/">
-      <Suspense fallback={<p>Loading...</p>}>
+      <Suspense fallback={<Skeleton />}>
         <LoadingBar color="#2388EE" progress={progress} onLoaderFinished={() => setProgress(0)} height={5} />
-        <MessageDev />
         <AppRoutes />
       </Suspense>
     </BrowserRouter>
