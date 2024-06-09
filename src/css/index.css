@@ -28,7 +28,6 @@
 
     --p-color-yellow: #DEC800;
     --p-color-gren: #13FA46;
-    --p-color-br-gren: #237021;
 
 }
 
@@ -45,15 +44,14 @@
     --p-font-link: #27a3ff;
     --p-font-p-low: #4e4e4e;
 
-    --p-icon: #808080;
+    --p-icon: #1a1a1a;
     --p-icon-high: #2a2b2f;
     --p-icon-a: #5b5b5b;
     --p-btn-font: #FFF;
 
 
     --p-color-yellow: #DEC800;
-    --p-color-gren: #07a529;
-    --p-color-br-gren: #15cf4c;
+    --p-color-gren: #069d16;
 
 }
 
@@ -94,5 +92,5 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     height: 100%;
     width: 7px;
-    margin-right: 1px;
+    margin-right: -1px;
 }

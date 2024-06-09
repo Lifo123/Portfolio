@@ -19,7 +19,10 @@ export default function Header({ type = 'normal' }) {
     return (
         <header className="header d-flex sticky">
             <nav className='f-row f-justify-between f-align-center w-100 relative'>
-                <h3 className='h-log'><a href="/">LIFO.COM</a></h3>
+                <h3 className='h-log relative f-row f-align-center g-15'>
+                    <a href="/">LIFO.COM</a>
+                    <span className='br-max'>Available</span>
+                </h3>
                 {
                     type !== 'error' ? (
                         <>
@@ -29,9 +32,9 @@ export default function Header({ type = 'normal' }) {
                                 <li><a href='#Projects' onClick={HandleActive}>Projects</a></li>
                                 <li><a href='#Skills' onClick={HandleActive}>Skills</a></li>
                             </ul>
-                            <div className='f-row g-20 f-align-center'>
+                            <div className='f-row g-30 f-align-center'>
                                 <Icon id='toggleDarkMode' color={`var(--p-icon-high)`} funct={ToggleDM} />
-                                <a className='f-row g-20 f-align-center' href='https://github.com/Lifo123' target='_blank'>Lifo123 <SocialMediaIcons id='github' color={`var(--p-icon-high)`} /></a>
+                                <a className='h-talk br-max' href='https://github.com/Lifo123' target='_blank'>Let's Talk</a>
                             </div>
                         </>
                     ) : null

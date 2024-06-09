@@ -2,34 +2,6 @@
     animation: parallax 1s linear;
     animation-timeline: scroll(y);
     --p-parallax-speed: -30;
-}
-
-.land-main {
-    z-index: 100;
-    position: relative;
-
-}
-
-.land-main h2 {
-    font-weight: bold;
-    font-size: 72px;
-}
-
-.land-subtitle {
-    color: var(--p-font-subtitle);
-    font-weight: 500;
-    font-size: 28px;
-}
-
-.lnd-avalible {
-    border: solid 2px var(--p-color-br-gren);
-    color: var(--p-color-gren);
-    font-size: 14px;
-    padding: 11px 35px;
-    width: max-content;
-}
-
-.bg-custom {
     background-image: url(../../../public/background.jpg);
     opacity: 0.7;
     background-repeat: no-repeat;
@@ -49,6 +21,24 @@ body.DarkMode .bg-custom {
     opacity: 0;
 }
 
+
+.land-main {
+    position: relative;
+    z-index: 100;
+
+}
+
+.l-title {
+    font-weight: bold;
+    font-size: 72px;
+    text-align: center;
+}
+
+.l-subtitle {
+    font-weight: bold;
+    font-size: 38px;
+}
+
 .land-main>section {
     height: 100vh;
     text-align: center;
@@ -57,7 +47,7 @@ body.DarkMode .bg-custom {
 
 
 .land-top {
-    height: calc(100vh + 30vh);
+    height: calc(100vh + 24vh);
     z-index: 10;
 }
 
@@ -68,7 +58,7 @@ body.DarkMode .bg-custom {
     --p-parallax-speed: 13;
 }
 
-#Home label a {
+.a-none{
     text-decoration: none;
 }
 
@@ -126,7 +116,7 @@ body.DarkMode .bg-custom {
 }
 
 #Contact {
-    height: 70vh;
+    height: 80vh;
 }
 
 #Contact h2 {

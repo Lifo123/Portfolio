@@ -41,11 +41,10 @@ export default function Index() {
     return (
         <main className='land-main relative f-col'>
             <Header />
-            <div className='land-top' >
-                <section className="f-col f-align-center mt-110" id="Home">
+            <div className='land-top d-flex f-center' >
+                <section className="f-col f-align-center" id="Home">
                     <h1 className='land-subtitle f-row f-align-center g-10 '>Edgar Sanchez <span className='peru-flag'></span></h1>
-                    <h2>Frontend Developer</h2>
-                    <span className='lnd-avalible br-6 mx-auto mt-30'>Open for work</span>
+                    <h2 className='l-title'>Frontend Developer</h2>
                     <div className='f-row g-30 mx-auto mt-40'>
                         <a className='p-btn br-max' href='https://github.com/Lifo123' target='_blank'>
                             <label className='f-row f-align-center g-15 br-max'>
@@ -74,7 +73,7 @@ export default function Index() {
             </div>
 
             <section className="view-anim f-col" id="About">
-                <h2 className='d-flex w-70 mx-auto' >About me</h2>
+                <h2 className='d-flex w-70 mx-auto l-subtitle' >About me</h2>
                 <div className='f-row w-70 g-70 f-wrap mx-auto f-justify-center'>
                     <div className='p-btn br-10'>
                         <label className='d-flex f-center h-100 w-100 br-10'>
@@ -82,15 +81,16 @@ export default function Index() {
                         </label>
                     </div>
                     <label className='f-col g-15 f-justify-center'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis iure iste cum ipsa sed. Cumque odit, doloribus temporibus animi quod molestiae vel consequuntur quis adipisci esse pariatur modi fuga.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis iure iste cum ipsa sed. Cumque odit, doloribus temporibus animi quod molestiae vel consequuntur quis adipisci esse pariatur modi fuga.</p>
+                        <p>Hello! I'm a 20-year-old passionate about technology and programming. My journey in the tech world began with a curiosity for how things work, and it has grown into a deep passion for creating impactful projects.</p>
+                        <p>I specialize in using React and Sass to build dynamic and responsive web applications. I enjoy leveraging these technologies to solve problems and bring innovative ideas to life.</p>
+                        <p>My goal is to continuously improve my skills and stay updated with the latest trends in the industry. I'm excited about the endless possibilities that technology offers and am always eager to take on new challenges.</p>
                     </label>
                 </div>
             </section>
 
             <section className="view-anim f-col f-align-start" id="Contact">
                 <div className='f-col f-align-start w-65 mx-auto g-20 mt-90'>
-                    <h2>¿Do you need a Web Developer?</h2>
+                    <h2 className=''>¿Do you need a Web Developer?</h2>
                     <p className='mb-15'>Let's start innovative Projects together.</p>
                     <div className='f-row g-30'>
                         <a href="">
@@ -105,7 +105,7 @@ export default function Index() {
 
             <section className="view-anim mt-100" id="Projects">
                 <div className='f-col w-75 mx-auto f-align-start'>
-                    <h2>Latest Projects</h2>
+                    <h2 className='l-subtitle'>Latest Projects</h2>
                     <section className='f-row g-50 mt-70 f-justify-center w-100'>
                         <ProjectCard />
                         <ProjectCard />
@@ -117,7 +117,7 @@ export default function Index() {
 
             <section className="view-anim" id="Skills">
                 <div className='f-col w-60 mx-auto f-align-start'>
-                    <h2>Skills</h2>
+                    <h2 className='l-subtitle'>Skills</h2>
                     <div className="ski-logo-wrapper d-flex f-align-center">
                         <div className="logo "></div>
                         <div className="logo "></div>

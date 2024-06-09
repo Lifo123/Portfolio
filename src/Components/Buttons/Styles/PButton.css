@@ -17,7 +17,8 @@
     z-index: 10;
     transition: transform 0.2s;
 }
-.p-btn p{
+
+.p-btn p {
     color: var(--p-btn-font) !important;
 }
 
@@ -30,6 +31,11 @@
 
 .p-btn>label:hover p {
     color: #0CBBF2;
+}
+
+.p-btn>label svg {
+    stroke: var(--p-btn-font);
+    fill: var(--p-btn-font);
 }
 
 .p-btn>label:hover svg {
@@ -48,12 +54,13 @@
     color: #0CBBF2;
 }
 
-.p-btn-secondary{
+.p-btn-secondary {
     border: none;
     outline: none;
     background-color: var(--p-br-low);
 }
-.p-btn-secondary>label{
+
+.p-btn-secondary>label {
     border: solid 2px var(--p-br-low);
     background-color: var(--p-bg-in);
     color: var(--p-btn-font);
@@ -65,6 +72,7 @@
     z-index: 10;
     transition: transform 0.2s;
 }
+
 .p-btn-secondary>label:hover {
     transform: translate(2px, -2px);
     font-size: 15px;
