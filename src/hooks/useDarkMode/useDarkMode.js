@@ -1,28 +1,18 @@
 import { useEffect } from "react";
 
-export default function userDarkMode() {
+export default function userLightMode() {
     const ToggleDM = () => {
-        const DMstate = localStorage.getItem('DarkMode') === 'true';
-        if (DMstate) {
-            document.body.classList.add('DarkMode');
-            localStorage.setItem('DarkMode', !DMstate);
+        let LMstate = localStorage.getItem('LightMode') === 'true';
+        LMstate = !LMstate
+        if (LMstate) {
+            document.body.classList.add('LightMode');
+            localStorage.setItem('LightMode', LMstate);
         } else {
-            document.body.classList.remove('DarkMode');
-            localStorage.setItem('DarkMode', !DMstate);
+            document.body.classList.remove('LightMode');
+            localStorage.setItem('LightMode', LMstate);
         }
 
     }
-
-    useEffect(() => {
-        const DMstate = localStorage.getItem('DarkMode') === 'true';
-        if (DMstate) {
-            document.body.classList.remove('DarkMode');
-            localStorage.setItem('DarkMode', DMstate);
-        } else {
-            document.body.classList.add('DarkMode');
-            localStorage.setItem('DarkMode', DMstate);
-        }
-    }, [])
 
     return { ToggleDM }
 }

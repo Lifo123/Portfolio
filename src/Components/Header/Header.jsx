@@ -1,12 +1,12 @@
 import './Styles/Header.css'
 
 import Icon from '../icons/Icon'
-import SocialMediaIcons from '../icons/SocialMediaIcons'
-import userDarkMode from '../../hooks/useDarkMode/useDarkMode'
+import { useContext } from 'react';
+import { GlobalContext } from '../../Context/AppContext';
 
 
 export default function Header({ type = 'normal' }) {
-    const { ToggleDM } = userDarkMode();
+    const GContext = useContext(GlobalContext);
 
     const HandleActive = (e) => {
         e.target.classList.add('active');
@@ -33,7 +33,7 @@ export default function Header({ type = 'normal' }) {
                                 <li><a href='#Skills' onClick={HandleActive}>Skills</a></li>
                             </ul>
                             <div className='f-row g-30 f-align-center'>
-                                <Icon id='toggleDarkMode' color={`var(--p-icon-high)`} funct={ToggleDM} />
+                                <Icon id='toggleDarkMode' color={`var(--p-icon-high)`} funct={() => GContext.toggleLightMode()} />
                                 <a className='h-talk br-max' href='https://github.com/Lifo123' target='_blank'>Let's Talk</a>
                             </div>
                         </>

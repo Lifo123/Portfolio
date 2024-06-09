@@ -8,6 +8,30 @@
 
 :root {
 
+    --p-bg: #e7e7e7;
+    --p-bg-in: #141416;
+    --p-br-low: #a2a2a2;
+    --p-bg-link: #2388EE;
+
+    --p-font-h1: #10141c;
+    --p-font-h2: #171717;
+    --p-font-subtitle: #171717;
+    --p-font-link: #27a3ff;
+    --p-font-p-low: #4e4e4e;
+
+    --p-icon: #1a1a1a;
+    --p-icon-high: #2a2b2f;
+    --p-icon-a: #5b5b5b;
+    --p-btn-font: #FFF;
+
+
+    --p-color-yellow: #DEC800;
+    --p-color-gren: #069d16;
+
+}
+
+.LightMode {
+
     --p-bg: #151515;
     --p-bg-in: #212223;
     --p-br-low: #4D4D4D;
@@ -31,30 +55,6 @@
 
 }
 
-.DarkMode{
-
-    --p-bg: #e7e7e7;
-    --p-bg-in: #141416;
-    --p-br-low: #a2a2a2;
-    --p-bg-link: #2388EE;
-
-    --p-font-h1: #10141c;
-    --p-font-h2: #171717;
-    --p-font-subtitle: #171717;
-    --p-font-link: #27a3ff;
-    --p-font-p-low: #4e4e4e;
-
-    --p-icon: #1a1a1a;
-    --p-icon-high: #2a2b2f;
-    --p-icon-a: #5b5b5b;
-    --p-btn-font: #FFF;
-
-
-    --p-color-yellow: #DEC800;
-    --p-color-gren: #069d16;
-
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -75,7 +75,8 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--p-br-low);
     width: 6px;
 }
-.peru-flag{
+
+.peru-flag {
     background-color: #D91023;
     border-radius: 2px;
     height: 14px;
@@ -86,7 +87,8 @@ body::-webkit-scrollbar-thumb {
     bottom: -5px;
     pointer-events: none;
 }
-.peru-flag::after{
+
+.peru-flag::after {
     content: ' ';
     background-color: #FFF;
     display: flex;
@@ -96,49 +98,58 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-@media (max-width: 1000px){
-    .h-log>span{
+@media (max-width: 1000px) {
+    .h-log>span {
         display: none !important;
     }
-    #Contact>div>h2{
+
+    #Contact>div>h2 {
         text-align: start;
     }
+
     #About>div>label {
         width: 100% !important;
-     }
+    }
 }
 
-@media (max-width: 890px){
-    .header>nav>ul{
+@media (max-width: 890px) {
+    .header>nav>ul {
         display: none !important;
     }
-    #About>div{
+
+    #About>div {
         gap: 30px !important;
     }
 }
 
-@media (max-width: 500px){
-    #Home>div{
+@media (max-width: 500px) {
+    #Home>div {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .p-btn>label{
+
+    .p-btn>label {
         padding: 13px 110px !important;
     }
-    .l-subtitle{
+
+    .l-subtitle {
         text-align: center;
     }
-    #About>div>label{
+
+    #About>div>label {
         width: 100% !important;
     }
-    #Contact>div>h2{
+
+    #Contact>div>h2 {
         text-align: center !important;
     }
-    #Contact>div>div{
+
+    #Contact>div>div {
         flex-wrap: wrap;
         justify-content: center;
     }
-    #Contact>div>div>a>button label{
+
+    #Contact>div>div>a>button label {
         width: 100% !important;
     }
 }

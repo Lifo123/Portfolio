@@ -60,7 +60,7 @@ export default function Index() {
                         </a>
                     </div>
                     <ul className='f-row g-30 mx-auto mt-35 f-justify-center'>
-                        <li><SocialMediaIcon id={'youtube'} box={32} /></li>
+                        <li><a href="https://www.youtube.com/channel/UCCgNa5xgsjI_DBZwFkD34Bw"><SocialMediaIcon id={'youtube'} box={32} /></a></li>
                         <li><SocialMediaIcon id={'discord'} box={32} /></li>
                         <li><SocialMediaIcon id={'whatsapp'} box={32} /></li>
                     </ul>

@@ -3,7 +3,7 @@
     animation-timeline: scroll(y);
     --p-parallax-speed: -30;
     background-image: url(../../../public/background.jpg);
-    opacity: 0.7;
+    opacity: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -21,8 +21,8 @@
     text-decoration: none;
 }
 
-body.DarkMode .bg-custom {
-    opacity: 0;
+body.LightMode .bg-custom {
+    opacity: 0.7;
 }
 
 
