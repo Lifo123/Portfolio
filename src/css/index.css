@@ -8,6 +8,31 @@
 
 :root {
 
+    --p-bg: #151515;
+    --p-bg-in: #1b1c1c;
+    --p-br-low: #5c5e5f;
+    --p-bg-link: #2388EE;
+
+    --p-font-h1: #FFF;
+    --p-font-h2: #8F8F8F;
+    --p-font-subtitle: #C1C1C1;
+    --p-font-link: #27a3ff;
+    --p-font-p-low: #D8D8D8;
+
+    --p-icon: #b7b7b7;
+    --p-icon-high: #dbdbdb;
+    --p-icon-a: #BFBFBF;
+    --p-btn-font: #dfdfdf;
+    --p-btn-active: #313334;
+
+
+    --p-color-yellow: #DEC800;
+    --p-color-gren: #13FA46;
+
+}
+
+.LightMode {
+
     --p-bg: #e7e7e7;
     --p-bg-in: #141416;
     --p-br-low: #a2a2a2;
@@ -27,31 +52,6 @@
 
     --p-color-yellow: #DEC800;
     --p-color-gren: #069d16;
-
-}
-
-.LightMode {
-
-    --p-bg: #151515;
-    --p-bg-in: #212223;
-    --p-br-low: #4D4D4D;
-    --p-bg-link: #2388EE;
-
-    --p-font-h1: #FFF;
-    --p-font-h2: #8F8F8F;
-    --p-font-subtitle: #C1C1C1;
-    --p-font-link: #27a3ff;
-    --p-font-p-low: #D8D8D8;
-
-    --p-icon: #b7b7b7;
-    --p-icon-high: #dbdbdb;
-    --p-icon-a: #BFBFBF;
-    --p-btn-font: #dfdfdf;
-    --p-btn-active: #313334;
-
-
-    --p-color-yellow: #DEC800;
-    --p-color-gren: #13FA46;
 
 }
 

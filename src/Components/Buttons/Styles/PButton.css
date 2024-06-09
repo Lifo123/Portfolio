@@ -44,12 +44,12 @@
 
 .p-btn.active {
     transform: translate(2px, -2px);
-    border: solid 2px #0CBBF2;
     color: #0CBBF2;
     font-size: 15px;
 }
 
 .p-btn.active label {
+    border: solid 2px #0CBBF2;
     color: #0CBBF2;
 }
 

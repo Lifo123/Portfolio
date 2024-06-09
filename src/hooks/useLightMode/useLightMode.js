@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export default function useLightMode() {
     const [LightMode, setLightMode] = useState(() => {
         const savedMode = localStorage.getItem('LightMode');
-        return savedMode ? JSON.parse(savedMode) : false;
+        return savedMode ? JSON.parse(savedMode) : true;
     });
 
     const ToggleLM = () => {

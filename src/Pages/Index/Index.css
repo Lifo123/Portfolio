@@ -3,7 +3,7 @@
     animation-timeline: scroll(y);
     --p-parallax-speed: -30;
     background-image: url(../../../public/background.jpg);
-    opacity: 0;
+    opacity: 0.7;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -16,13 +16,19 @@
     pointer-events: none;
     z-index: 0;
 }
+@keyframes parallax {
+    to {
+        transform: translateY(calc(var(--p-parallax-speed) * 100px));
+    }
+
+}
 
 .a-none{
     text-decoration: none;
 }
 
 body.LightMode .bg-custom {
-    opacity: 0.7;
+    opacity: 0;
 }
 
 
@@ -65,26 +71,11 @@ body.LightMode .bg-custom {
     animation: parallax 1s linear;
     animation-timeline: scroll(y);
     --p-parallax-speed: 13;
-}
-
-#Home ul {
-    list-style: none;
+    scroll-margin-top: 5000px;
 }
 
 .arrow-land {
     fill: var(--p-icon-high);
-}
-
-.land-top>section[id] {
-    scroll-margin-top: 5000px;
-}
-
-
-@keyframes parallax {
-    to {
-        transform: translateY(calc(var(--p-parallax-speed) * 100px));
-    }
-
 }
 
 .about-img {
@@ -93,49 +84,42 @@ body.LightMode .bg-custom {
 }
 
 #About>div>label {
-   width: calc(100% - 450px);
+   width: calc(100% - 600px);
 }
 
 #Contact {
     height: 80vh;
 }
-
-#Contact h2 {
-    font-size: 46px;
-    font-weight: bold;
+#Contact h2{
+    font-size: 44px;
+    font-weight: 700;
+    text-align: start;
+    color: var(--p-font-h1);
 }
-
 #Contact p {
     font-size: 24px;
     font-weight: 500;
     color: var(--p-p-low);
 }
-
-#Projects h2 {
-    font-size: 36px;
-    font-weight: bold;
+#Projects{
+    scroll-margin-top: -80px !important;
 }
-
-#Projects>div>a {
-    background-color: var(--p-br-low);
-    padding: 13px 58px;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
+.project-grid{
+    grid-template-columns: repeat(auto-fill, minmax( 100px, 370px));
+    place-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+.project-btn{
+    padding: 12px;
+    background-color: #202020;
 }
 
 #Skills {
     scroll-margin-top: -200px;
-    height: calc(80vh - 20px) !important;
+    height: calc(90vh - 20px) !important;
     align-items: start;
 }
-
-#Skills h2 {
-    margin-top: 20px;
-    font-size: 36px;
-    font-weight: bold;
-}
-
 
 .ski-logo-wrapper {
     width: 84%;
@@ -209,12 +193,12 @@ body.LightMode .bg-custom {
         scale: 96%;
     }
 
-    30% {
+    20% {
         opacity: 1;
         scale: 100%;
     }
 
-    70% {
+    80% {
         opacity: 1;
         scale: 100%;
     }

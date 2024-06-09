@@ -38,6 +38,33 @@ export default function Index() {
         };
     }, []);
 
+    const ProjectsData = [
+        {
+            img: '',
+            tittle: 'Meta Tag Editor',
+            description: 'Simple editor of metatag for testing the result in engines Searchs',
+            websiteURL: 'https://lifo123.github.io/MetaTag-Editor/',
+            repoURL: 'https://github.com/Lifo123/MetaTag-Editer'
+
+        },
+        {
+            img: '',
+            tittle: 'Manage Tournaments',
+            description: 'Website for develop and manage custom Tournaments in seconds.',
+            websiteURL: 'https://lifo123.github.io/MetaTag-Editor/',
+            repoURL: 'https://github.com/Lifo123/MetaTag-Editer'
+
+        },
+        {
+            img: '',
+            tittle: 'Meta Tag Editor',
+            description: 'Simple editor of metatag for testing the result in engines Searchs',
+            websiteURL: 'https://lifo123.github.io/MetaTag-Editor/',
+            repoURL: 'https://github.com/Lifo123/MetaTag-Editer'
+
+        }
+    ]
+
     return (
         <main className='land-main relative f-col'>
             <Header />
@@ -59,10 +86,10 @@ export default function Index() {
                             </label>
                         </a>
                     </div>
-                    <ul className='f-row g-30 mx-auto mt-35 f-justify-center'>
+                    <ul className='f-row g-35 mx-auto mt-35 f-center txt-stl-none'>
                         <li><a href="https://www.youtube.com/channel/UCCgNa5xgsjI_DBZwFkD34Bw"><SocialMediaIcon id={'youtube'} box={32} /></a></li>
-                        <li><SocialMediaIcon id={'discord'} box={32} /></li>
-                        <li><SocialMediaIcon id={'whatsapp'} box={32} /></li>
+                        <li><a href="https://www.instagram.com/li.fos/"><SocialMediaIcon id={'instagram'} box={30} /></a></li>
+                        <li><a href="https://wa.me/51900081894/"><SocialMediaIcon id={'whatsapp'} box={32} /></a></li>
                     </ul>
                     <a className='arrow-land d-flex mt-110' href='#About'>
                         <svg height={40} viewBox="0 0 24 24" >
@@ -73,17 +100,17 @@ export default function Index() {
             </div>
 
             <section className="view-anim f-col" id="About">
-                <h2 className='d-flex w-70 mx-auto l-subtitle' >About me</h2>
-                <div className='f-row w-70 g-70 f-wrap mx-auto f-justify-center mt-70'>
+                <h2 className='d-flex w-65 mx-auto l-subtitle' >About me</h2>
+                <div className='f-row w-65 g-70 f-wrap mx-auto f-center mt-70'>
                     <div className='about-img p-btn br-10'>
                         <label className='d-flex f-center h-100 w-100 br-10'>
                             <img src="#" alt="pfp Lifo" />
                         </label>
                     </div>
                     <label className='f-col g-15 f-justify-center'>
-                        <p className='l-text-p'>Hello! I'm a 20-year-old passionate about technology and programming. My journey in the tech world began with a curiosity for how things work, and it has grown into a deep passion for creating impactful projects.</p>
-                        <p className='l-text-p'>I specialize in using React and Sass to build dynamic and responsive web applications. I enjoy leveraging these technologies to solve problems and bring innovative ideas to life.</p>
-                        <p className='l-text-p'>My goal is to continuously improve my skills and stay updated with the latest trends in the industry. I'm excited about the endless possibilities that technology offers and am always eager to take on new challenges.</p>
+                        <p className='l-text-p'>Hello! I'm a 20-year-old developer from Peru.</p>
+                        <p className='l-text-p'>I specialize in building modern websites using ReactJS, with knowledge of Git, Sass, NodeJS, Express, and MySQL.</p>
+                        <p className='l-text-p'>Always improving my skills and staying updated with the latest industry trends.</p>
                     </label>
                 </div>
             </section>
@@ -93,7 +120,7 @@ export default function Index() {
                     <h2 className=''>¿Do you need a Web Developer?</h2>
                     <p className='mb-15'>Let's start innovative Projects together.</p>
                     <div className='f-row g-30'>
-                        <a href="">
+                        <a className='land-btn-contact' href="">
                             <PButton text='Contact me' borderRadius={8} padding={[16, 46]} fontSize={17} className={'active'} />
                         </a>
                         <a href="#Projects">
@@ -106,18 +133,18 @@ export default function Index() {
             <section className="view-anim mt-100" id="Projects">
                 <div className='f-col w-75 mx-auto f-align-start'>
                     <h2 className='l-subtitle'>Latest Projects</h2>
-                    <section className='f-row g-50 mt-70 f-justify-center w-100'>
+                    <section className='project-grid d-grid mt-70 w-100'>
                         <ProjectCard />
                         <ProjectCard />
                         <ProjectCard />
                     </section>
-                    <a className='br-max pointer mt-45 w-100'>View All</a>
+                    <a className='project-btn br-max pointer mt-45 w-100'>View All</a>
                 </div>
             </section>
 
-            <section className="view-anim" id="Skills">
+            <section className="view-anim mt-50" id="Skills">
                 <div className='f-col w-60 mx-auto f-align-start'>
-                    <h2 className='l-subtitle'>Skills</h2>
+                    <h2 className='l-subtitle mt-40'>Skills</h2>
                     <div className="ski-logo-wrapper d-flex f-align-center">
                         <div className="logo "></div>
                         <div className="logo "></div>
