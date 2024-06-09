@@ -42,6 +42,11 @@ body.DarkMode .bg-custom {
     font-weight: bold;
     font-size: 38px;
 }
+.l-text-p{
+    text-align: start;
+    font-weight: 500;
+    font-size: 18px;
+}
 
 .land-main>section {
     height: 100vh;
@@ -67,13 +72,7 @@ body.DarkMode .bg-custom {
 }
 
 .arrow-land {
-    display: flex;
     fill: var(--p-icon-high);
-    margin-top: 100px;
-}
-
-.land-main>section[id] {
-    scroll-margin-top: 0px;
 }
 
 .land-top>section[id] {
@@ -88,31 +87,13 @@ body.DarkMode .bg-custom {
 
 }
 
-
-.view-anim>h2 {
-    font-weight: bold;
-    font-size: 36px;
-    margin-top: -100px;
-    margin-bottom: 60px;
-}
-
-#About {
-    height: 100vh;
-}
-
-#About>div>div {
+.about-img {
     height: 250px;
     width: 380px;
 }
 
 #About>div>label {
-    width: 50%;
-}
-
-#About>div>label>p {
-    text-align: start;
-    font-size: 17.5px;
-    font-weight: 300;
+   width: calc(100% - 450px);
 }
 
 #Contact {

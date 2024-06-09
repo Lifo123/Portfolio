@@ -64,7 +64,7 @@ export default function Index() {
                         <li><SocialMediaIcon id={'discord'} box={32} /></li>
                         <li><SocialMediaIcon id={'whatsapp'} box={32} /></li>
                     </ul>
-                    <a className='arrow-land' href='#About'>
+                    <a className='arrow-land d-flex mt-110' href='#About'>
                         <svg height={40} viewBox="0 0 24 24" >
                             <path d="M7.33199 16.3154C6.94146 15.9248 6.3083 15.9248 5.91777 16.3154C5.52725 16.7059 5.52725 17.339 5.91777 17.7296L10.5834 22.3952C11.3644 23.1762 12.6308 23.1762 13.4118 22.3952L18.0802 17.7267C18.4707 17.3362 18.4707 16.703 18.0802 16.3125C17.6897 15.922 17.0565 15.922 16.666 16.3125L13 19.9786V2.0001C13 1.44781 12.5523 1.0001 12 1.0001C11.4477 1.0001 11 1.44781 11 2.0001V19.9833L7.33199 16.3154Z" />
                         </svg>
@@ -74,16 +74,16 @@ export default function Index() {
 
             <section className="view-anim f-col" id="About">
                 <h2 className='d-flex w-70 mx-auto l-subtitle' >About me</h2>
-                <div className='f-row w-70 g-70 f-wrap mx-auto f-justify-center'>
-                    <div className='p-btn br-10'>
+                <div className='f-row w-70 g-70 f-wrap mx-auto f-justify-center mt-70'>
+                    <div className='about-img p-btn br-10'>
                         <label className='d-flex f-center h-100 w-100 br-10'>
                             <img src="#" alt="pfp Lifo" />
                         </label>
                     </div>
                     <label className='f-col g-15 f-justify-center'>
-                        <p>Hello! I'm a 20-year-old passionate about technology and programming. My journey in the tech world began with a curiosity for how things work, and it has grown into a deep passion for creating impactful projects.</p>
-                        <p>I specialize in using React and Sass to build dynamic and responsive web applications. I enjoy leveraging these technologies to solve problems and bring innovative ideas to life.</p>
-                        <p>My goal is to continuously improve my skills and stay updated with the latest trends in the industry. I'm excited about the endless possibilities that technology offers and am always eager to take on new challenges.</p>
+                        <p className='l-text-p'>Hello! I'm a 20-year-old passionate about technology and programming. My journey in the tech world began with a curiosity for how things work, and it has grown into a deep passion for creating impactful projects.</p>
+                        <p className='l-text-p'>I specialize in using React and Sass to build dynamic and responsive web applications. I enjoy leveraging these technologies to solve problems and bring innovative ideas to life.</p>
+                        <p className='l-text-p'>My goal is to continuously improve my skills and stay updated with the latest trends in the industry. I'm excited about the endless possibilities that technology offers and am always eager to take on new challenges.</p>
                     </label>
                 </div>
             </section>
