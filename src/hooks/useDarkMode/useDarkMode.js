@@ -14,7 +14,7 @@ export default function userDarkMode() {
     }
 
     useEffect(() => {
-        const DMstate = localStorage.getItem('DarkMode') === 'true' || true;
+        const DMstate = localStorage.getItem('DarkMode') === 'true';
         if (DMstate) {
             document.body.classList.remove('DarkMode');
             localStorage.setItem('DarkMode', DMstate);

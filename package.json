@@ -10,7 +10,7 @@
     "sass": "sass --style=compressed src/css/scss/Main.scss src/css/Flifo.css",
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite --host preview",
+    "preview": "vite preview --host",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
