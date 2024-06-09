@@ -9,10 +9,10 @@ export default function ProjectCard({ }) {
                 <span className='p-c-ic-e absolute'>
                     <Icon id={'redirect'} box={26} />
                 </span>
-                <img src="" alt="img Project" />
+                <img src="" height={140} width={340} alt="img Project" />
             </span>
             <div className='p-c-info f-col f-align-start g-5'>
-                <h4>Meta Tag Editor</h4>
+                <h3>Meta Tag Editor</h3>
                 <p className=''>Simple editor of metatag for testing the result in engines Searchs</p>
                 <div className='f-row g-25 f-justify-between mt-10 w-100'>
                     <a className='br-max f-row g-15 f-align-center' href='https://github.com/Lifo123' target='_blank'>

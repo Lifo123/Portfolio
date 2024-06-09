@@ -56,7 +56,7 @@
     pointer-events: none;
 }
 
-.p-c-info h4 {
+.p-c-info h3 {
     font-size: 17px;
     font-weight: bold;
     color: var(--p-font-h1);

@@ -82,7 +82,7 @@ export default function Index() {
                         <a className='p-btn br-max' href='https://www.linkedin.com/in/lifo3/' target='_blank'>
                             <label className='f-row f-align-center g-15 br-max'>
                                 <SocialMediaIcon id={'linkedin'} box={28} />
-                                <p className='d-flex f-align-center' style={{ height: '30px' }}>Linkedin</p>
+                                <p className='d-flex f-align-center' style={{ height: '30px' }}>LinkedIn</p>
                             </label>
                         </a>
                     </div>
@@ -104,7 +104,7 @@ export default function Index() {
                 <div className='f-row w-65 g-70 f-wrap mx-auto f-center mt-70'>
                     <div className='about-img p-btn br-10'>
                         <label className='d-flex f-center h-100 w-100 br-10'>
-                            <img src="#" alt="pfp Lifo" />
+                            <img src="#" height={250} width={380} alt="pfp Lifo" />
                         </label>
                     </div>
                     <label className='f-col g-15 f-justify-center'>
