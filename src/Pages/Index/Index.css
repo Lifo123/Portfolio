@@ -17,6 +17,10 @@
     z-index: 0;
 }
 
+.a-none{
+    text-decoration: none;
+}
+
 body.DarkMode .bg-custom {
     opacity: 0;
 }
@@ -56,10 +60,6 @@ body.DarkMode .bg-custom {
     animation: parallax 1s linear;
     animation-timeline: scroll(y);
     --p-parallax-speed: 13;
-}
-
-.a-none{
-    text-decoration: none;
 }
 
 #Home ul {

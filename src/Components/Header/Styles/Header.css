@@ -29,7 +29,7 @@ header>nav>ul {
 header>nav a {
     text-decoration: none;
     font-weight: 600;
-    font-size: 15px;
+
     padding: 8px 6px;
     color: var(--p-font-h1);
 }
@@ -46,8 +46,9 @@ header>nav a.active {
 
 .h-talk{
     font-size: 18px;
-    background-color: var(--p-bg-in);
+    background-color: #0c0c0c;
     font-weight: 500;
     padding: 12px 28px;
-    color: var(--p-btn-font);
+    min-width: max-content;
+    color: #FFF;
 }

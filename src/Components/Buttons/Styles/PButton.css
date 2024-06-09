@@ -10,12 +10,12 @@
     background-color: var(--p-bg-in);
     color: var(--p-btn-font);
     padding: 13px 44px;
-    font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     cursor: pointer;
     position: relative;
     z-index: 10;
     transition: transform 0.2s;
+    min-width: max-content;
 }
 
 .p-btn p {
@@ -26,7 +26,6 @@
     transform: translate(2px, -2px);
     border: solid 2px #0CBBF2;
     color: #0CBBF2;
-    font-size: 15px;
 }
 
 .p-btn>label:hover p {
@@ -71,6 +70,7 @@
     position: relative;
     z-index: 10;
     transition: transform 0.2s;
+    min-width: max-content;
 }
 
 .p-btn-secondary>label:hover {

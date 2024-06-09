@@ -33,7 +33,7 @@
 
 .DarkMode{
 
-    --p-bg: #ececec;
+    --p-bg: #e7e7e7;
     --p-bg-in: #141416;
     --p-br-low: #a2a2a2;
     --p-bg-link: #2388EE;
@@ -93,4 +93,44 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     width: 7px;
     margin-right: -1px;
+}
+
+
+@media (max-width: 1000px){
+    .h-log>span{
+        display: none !important;
+    }
+    #Contact>div>h2{
+        text-align: start;
+    }
+}
+
+@media (max-width: 890px){
+    .header>nav>ul{
+        display: none !important;
+    }
+   
+}
+
+@media (max-width: 500px){
+    #Home>div{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .p-btn>label{
+        padding: 13px 110px !important;
+    }
+    .l-subtitle{
+        text-align: center;
+    }
+    #About>div>label{
+        width: 100% !important;
+    }
+    #Contact>div>div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #Contact>div>div>a>button label{
+        width: 100% !important;
+    }
 }
