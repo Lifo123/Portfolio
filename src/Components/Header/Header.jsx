@@ -33,7 +33,7 @@ export default function Header({ type = 'normal' }) {
                                 <li><a href='#Skills' onClick={HandleActive}>Skills</a></li>
                             </ul>
                             <div className='f-row g-30 f-align-center'>
-                                <Icon id='toggleDarkMode' color={`var(--p-icon-high)`} funct={() => GContext.toggleLightMode()} />
+                                <Icon id='toggleDarkMode' color={`var(--p-icon-high)`} funct={() => GContext.ToggleLM()} />
                                 <a className='h-talk br-max' href='https://github.com/Lifo123' target='_blank'>Let's Talk</a>
                             </div>
                         </>
