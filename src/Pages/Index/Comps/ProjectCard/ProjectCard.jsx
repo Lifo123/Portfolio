@@ -5,7 +5,7 @@ import SocialMediaIcon from '../../../../Components/icons/SocialMediaIcons'
 export default function ProjectCard({ data }) {
     return (
         <div className='project-card br-10 o-hidden'>
-            <a className='d-flex f-center relative' href={data.websiteURL}>
+            <a className='d-flex f-center relative' href={data.websiteURL} target='_blank'>
                 <span className='p-c-ic-e h-100 w-100 f-center absolute'>
                     <Icon id={'redirect'} box={26} />
                 </span>
