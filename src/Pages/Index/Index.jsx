@@ -87,15 +87,14 @@ export default function Index() {
                         </a>
                     </div>
                     <ul className='f-row g-35 mx-auto mt-35 f-center txt-stl-none'>
-                        <li><a href="https://www.youtube.com/channel/UCCgNa5xgsjI_DBZwFkD34Bw"><SocialMediaIcon id={'youtube'} box={32} title='youtube' hover={true} /><span className='d-none'>Youtube btn</span></a></li>
-                        <li><a href="https://www.instagram.com/li.fos/"><SocialMediaIcon id={'instagram'} box={30} title='Instagram' hover={true} /><span className='d-none'>Instagram btn</span></a></li>
-                        <li><a href="https://wa.me/51900081894/"><SocialMediaIcon id={'whatsapp'} box={32} title='Whatsapp' hover={true} /><span className='d-none'>Whatsapp btn</span></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCCgNa5xgsjI_DBZwFkD34Bw" aria-label="Boton link youtube"><SocialMediaIcon id={'youtube'} box={32} title='youtube' hover={true}/></a></li>
+                        <li><a href="https://www.instagram.com/li.fos/" aria-label="Boton link Instagram"><SocialMediaIcon id={'instagram'} box={30} title='Instagram' hover={true} /></a></li>
+                        <li><a href="https://wa.me/51900081894/" aria-label="Boton link Whatsapp"><SocialMediaIcon id={'whatsapp'} box={32} hover={true}/></a></li>
                     </ul>
-                    <a className='arrow-land d-flex mt-110' href='#About'>
+                    <a className='arrow-land d-flex mt-110' href='#About' aria-label='Boton navigate bottom'>
                         <svg height={40} viewBox="0 0 24 24" >
                             <path d="M7.33199 16.3154C6.94146 15.9248 6.3083 15.9248 5.91777 16.3154C5.52725 16.7059 5.52725 17.339 5.91777 17.7296L10.5834 22.3952C11.3644 23.1762 12.6308 23.1762 13.4118 22.3952L18.0802 17.7267C18.4707 17.3362 18.4707 16.703 18.0802 16.3125C17.6897 15.922 17.0565 15.922 16.666 16.3125L13 19.9786V2.0001C13 1.44781 12.5523 1.0001 12 1.0001C11.4477 1.0001 11 1.44781 11 2.0001V19.9833L7.33199 16.3154Z" />
                         </svg>
-                        <span className='d-none'>Navigate arrow</span>
                     </a>
                 </section>
             </div>
