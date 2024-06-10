@@ -12,8 +12,8 @@ import ProjectCard from './Comps/ProjectCard/ProjectCard';
 export default function Index() {
 
     useEffect(() => {
-        const sections = document.querySelectorAll(".land-main > section");
-        const headerLinks = document.querySelectorAll('.header > nav > ul > li > a');
+        const sections = document.querySelectorAll(".land-main  section");
+        const headerLinks = document.querySelectorAll('.header > nav > ul > li  a');
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -40,7 +40,7 @@ export default function Index() {
 
     const ProjectsData = [
         {
-            img: '',
+            img: 'https://media.discordapp.net/attachments/1249730382148927499/1249731063836839997/MetaTagEditor.webp?ex=66685e40&is=66670cc0&hm=0a3532c9f26e847ceb23ccb0e300ae8ced01e3bf7b6c970fcb28a18a9efadd3d&=&format=webp',
             tittle: 'Meta Tag Editor',
             description: 'Simple editor of metatag for testing the result in engines Searchs',
             websiteURL: 'https://lifo123.github.io/MetaTag-Editor/',
@@ -48,7 +48,7 @@ export default function Index() {
 
         },
         {
-            img: '',
+            img: 'https://media.discordapp.net/attachments/1249730382148927499/1249732031399858197/ManageTournaments.webp?ex=66685f27&is=66670da7&hm=5e5225b259073ca99057b7e6a034f22c7eab4c2c5abff4a41f97640af8c09149&=&format=webp',
             tittle: 'Manage Tournaments',
             description: 'Website for develop and manage custom Tournaments in seconds.',
             websiteURL: 'https://lifo123.github.io/ManageTournaments',
@@ -56,7 +56,7 @@ export default function Index() {
 
         },
         {
-            img: '',
+            img: 'https://media.discordapp.net/attachments/1249730382148927499/1249731063836839997/MetaTagEditor.webp?ex=66685e40&is=66670cc0&hm=0a3532c9f26e847ceb23ccb0e300ae8ced01e3bf7b6c970fcb28a18a9efadd3d&=&format=webp',
             tittle: 'Meta Tag Editor',
             description: 'Simple editor of metatag for testing the result in engines Searchs',
             websiteURL: 'https://lifo123.github.io/MetaTag-Editor/',
@@ -115,15 +115,15 @@ export default function Index() {
                 </div>
             </section>
 
-            <section className="view-anim f-col f-align-start" id="Contact">
+            <section className="view-anim f-col f-align-start" id='call-ac'>
                 <div className='f-col f-align-start w-65 mx-auto g-20 mt-90'>
                     <h2 className=''>¿Do you need a Web Developer?</h2>
                     <p className='mb-15'>Let's start innovative Projects together.</p>
-                    <div className='f-row g-30'>
+                    <div className='f-row g-30 f-wrap'>
                         <a className='land-btn-contact' href="https://wa.me/51900081894/">
                             <PButton text='Contact me' borderRadius={8} padding={[16, 46]} fontSize={17} className={'active'} />
                         </a>
-                        <a href="#Projects">
+                        <a className='' href="#Projects">
                             <PButtonSecondary text='View Projects' borderRadius={8} padding={[16, 46]} />
                         </a>
                     </div>
@@ -213,6 +213,9 @@ export default function Index() {
                         </span>
                     </div>
                 </div>
+            </section>
+            <section className="view-anim" id="Contact">
+               
             </section>
             <Footer />
             <div className='bg-custom d-flex'></div>

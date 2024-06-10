@@ -1,8 +1,5 @@
 .bg-custom {
-    animation: parallax 1s linear;
-    animation-timeline: scroll(y);
-    --p-parallax-speed: -30;
-    background-image: url(../../../public/background.jpg);
+    background-image: url('https://media.discordapp.net/attachments/1249730382148927499/1249734403693740042/PortfolioBG.webp?ex=6668615c&is=66670fdc&hm=36706601a8aab044b7fc2d69fc6dd43444c961497776a77619f4a912514945ab&=&format=webp');
     opacity: 0.7;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -54,6 +51,8 @@ body.LightMode .bg-custom {
     text-align: start;
     font-weight: 500;
     font-size: 18px;
+    line-height: 1.65rem;
+    cursor: auto;
 }
 
 .land-main>section {
@@ -64,20 +63,27 @@ body.LightMode .bg-custom {
 
 
 .land-top {
-    height: calc(100vh + 24vh);
+    height: calc(110vh);
     z-index: 10;
+    mask-image: linear-gradient(
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 1) 60%,
+            rgba(0, 0, 0, 0));
 }
 
 #Home {
     height: calc(100vh - 70px) !important;
     animation: parallax 1s linear;
     animation-timeline: scroll(y);
-    --p-parallax-speed: 13;
+    --p-parallax-speed: 18;
     scroll-margin-top: 5000px;
+    margin-top: 110px;
 }
 
 .arrow-land {
     fill: var(--p-icon-high);
+    animation: arrow-land 1.6s ease infinite;
 }
 
 .about-img>span {
@@ -99,18 +105,17 @@ body.LightMode .bg-custom {
     width: calc(100% - 600px);
 }
 
-#Contact {
+#call-ac {
     height: 80vh;
 }
 
-#Contact h2 {
+#call-ac h2 {
     font-size: 44px;
     font-weight: 700;
-    text-align: start;
     color: var(--p-font-h1);
 }
 
-#Contact p {
+#call-ac p {
     font-size: 24px;
     font-weight: 500;
     color: var(--p-font-p-low);
@@ -137,9 +142,13 @@ body.LightMode .bg-custom {
 
 #Skills {
     scroll-margin-top: -200px;
-    height: calc(90vh - 20px);
+    height: calc(60vh);
     align-items: start;
 }
+
+#Contact{ 
+    height: 80vh;
+  }
 
 .ski-logo-wrapper {
     width: 84%;
@@ -233,5 +242,11 @@ body.LightMode .bg-custom {
     to {
         opacity: 0;
         scale: 90%;
+    }
+}
+
+@keyframes arrow-land {
+    50%{
+        transform: translateY(10px);
     }
 }

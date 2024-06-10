@@ -9,24 +9,23 @@
     height: 140px;
     width: 100%;
     cursor: pointer;
+    position: relative;
     text-decoration: none;
 }
-
-.project-card>a:hover {
-    mask-image: linear-gradient(rgba(0, 0, 0, 0),
-            #000000 0%,
-            #00000067 70%,
-            rgba(0, 0, 0, 0));
+.project-card>a img {
+    object-fit: cover;
 }
 
 .p-c-ic-e {
     display: none;
 }
 
-.project-card>span:hover .p-c-ic-e {
+.project-card>a:hover .p-c-ic-e {
+    background: linear-gradient(0deg, var(--p-bg-in-i) -20%, rgba(234, 255, 0, 0) 90%);
     display: flex;
 }
-.project-card>span:hover .p-c-ic-e svg{
+
+.project-card>a:hover .p-c-ic-e svg {
     stroke: #FFF;
     fill: #FFF;
 }

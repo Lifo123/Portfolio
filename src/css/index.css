@@ -10,6 +10,7 @@
 
     --p-bg: #151515;
     --p-bg-in: #1b1c1c;
+    --p-bg-in-i: #1b1c1c;
     --p-br-low: #5c5e5f;
     --p-bg-link: #2388EE;
 
@@ -35,6 +36,7 @@
 
     --p-bg: #e7e7e7;
     --p-bg-in: #141416;
+    --p-bg-in-i: #e7e7e7;
     --p-br-low: #a2a2a2;
     --p-bg-link: #2388EE;
 
@@ -66,7 +68,7 @@ body {
 body::-webkit-scrollbar {
     background-color: transparent;
     display: block;
-    width: 6px;
+    width: 7px;
     margin-right: 10px;
 }
 
@@ -102,18 +104,24 @@ body::-webkit-scrollbar-thumb {
     .h-log>span {
         display: none !important;
     }
-    .l-subtitle{
+
+    .l-subtitle {
         text-align: center;
         display: flex;
         justify-content: center;
         margin-inline: auto;
     }
-    #Contact>div>h2 {
+
+    #call-ac {
         text-align: start;
     }
 
     #About>div>label {
         width: 100% !important;
+    }
+
+    #Projects {
+        height: 100%;
     }
 }
 
@@ -125,11 +133,25 @@ body::-webkit-scrollbar-thumb {
     #About>div {
         gap: 30px !important;
     }
-    #Contact>div{
-        align-items: center;
+
+}
+
+@media (max-width: 650px) {
+    #call-ac > div{
+        text-align: center !important;
     }
-    #Projects{
-        height: 100%;
+    #call-ac a {
+        width: 100%;
+        min-width: fit-content;
+    }
+
+    #call-ac a button {
+        width: 100%;
+        min-width: fit-content;
+    }
+    #call-ac a button label {
+        text-align: center;
+        justify-content: center;
     }
 }
 
@@ -151,27 +173,20 @@ body::-webkit-scrollbar-thumb {
         width: 100% !important;
     }
 
-    #Contact>div>h2 {
-        text-align: center !important;
-    }
-
-    #Contact>div>div {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     #Contact>div>div>a>button label {
         width: 100% !important;
     }
-    #Skills{
-        height: 60vh!important;
+
+    #Skills {
+        height: 60vh !important;
     }
 }
 
 
-.p-blue{
+.p-blue {
     color: #27a3ff;
 }
-.p-pink{
+
+.p-pink {
     color: #f12d98;
 }

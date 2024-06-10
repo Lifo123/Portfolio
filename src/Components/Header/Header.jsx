@@ -20,17 +20,18 @@ export default function Header({ type = 'normal' }) {
         <header className="header d-flex sticky">
             <nav className='f-row f-justify-between f-align-center w-100 relative'>
                 <h3 className='h-log relative f-row f-align-center g-15'>
-                    <a href="/">LIFO.COM</a>
+                    <a href="#Home">LIFO.COM</a>
                     <span className='br-max'>Available</span>
                 </h3>
                 {
                     type !== 'error' ? (
                         <>
                             <ul className='f-row g-50 absolute'>
+                                <li><a href='#Home' onClick={HandleActive}>Home</a></li>
                                 <li><a href='#About' onClick={HandleActive}>About</a></li>
-                                <li><a href='#Contact' onClick={HandleActive}>Contact</a></li>
                                 <li><a href='#Projects' onClick={HandleActive}>Projects</a></li>
                                 <li><a href='#Skills' onClick={HandleActive}>Skills</a></li>
+                                <li><a href='#Contact' onClick={HandleActive}>Contact</a></li>
                             </ul>
                             <div className='f-row g-30 f-align-center'>
                                 <Icon id='toggleDarkMode' color={`var(--p-icon-high)`} funct={() => GContext.ToggleLM()} />

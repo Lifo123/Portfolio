@@ -6,10 +6,10 @@ export default function ProjectCard({ data }) {
     return (
         <div className='project-card br-10 o-hidden'>
             <a className='d-flex f-center relative' href={data.websiteURL}>
-                <span className='p-c-ic-e absolute'>
+                <span className='p-c-ic-e h-100 w-100 f-center absolute'>
                     <Icon id={'redirect'} box={26} />
                 </span>
-                <img src="" height={140} width={340} alt="img Project" />
+                <img src={data.img || 'hola'} height={140} width={340} alt="img Project" />
             </a>
             <div className='p-c-info f-col f-align-start g-5'>
                 <h3>{data.tittle || 'Tittle'}</h3>
