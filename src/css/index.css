@@ -98,11 +98,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .h-log>span {
         display: none !important;
     }
-
+    .l-subtitle{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-inline: auto;
+    }
     #Contact>div>h2 {
         text-align: start;
     }
@@ -112,13 +117,19 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 920px) {
     .header>nav>ul {
         display: none !important;
     }
 
     #About>div {
         gap: 30px !important;
+    }
+    #Contact>div{
+        align-items: center;
+    }
+    #Projects{
+        height: 100%;
     }
 }
 
@@ -152,4 +163,15 @@ body::-webkit-scrollbar-thumb {
     #Contact>div>div>a>button label {
         width: 100% !important;
     }
+    #Skills{
+        height: 60vh!important;
+    }
+}
+
+
+.p-blue{
+    color: #27a3ff;
+}
+.p-pink{
+    color: #f12d98;
 }

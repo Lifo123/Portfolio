@@ -6,9 +6,11 @@
     cursor: pointer;
     transition: transform 0.15s;
 }
-.icon:hover{
+
+.icon[data-hover=true]:hover {
     stroke: var(--p-icon-a);
     fill: var(--p-icon-a);
+    transform: scale(1.2);
 }
 
 .icon svg {
