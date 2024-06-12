@@ -14,13 +14,6 @@
     z-index: 0;
 }
 
-@keyframes parallax {
-    to {
-        transform: translateY(calc(var(--p-parallax-speed) * 100px));
-    }
-
-}
-
 .a-none {
     text-decoration: none;
 }
@@ -38,7 +31,7 @@ body.LightMode .bg-custom {
 
 .l-title {
     font-weight: bold;
-    font-size: 72px;
+    font-size: clamp(3.5rem, 7vw, 5.25rem);
     text-align: center;
 }
 
@@ -65,8 +58,7 @@ body.LightMode .bg-custom {
 .land-top {
     height: calc(110vh);
     z-index: 10;
-    mask-image: linear-gradient(
-            rgba(0, 0, 0, 0),
+    mask-image: linear-gradient(rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 1) 0%,
             rgba(0, 0, 0, 1) 60%,
             rgba(0, 0, 0, 0));
@@ -80,7 +72,8 @@ body.LightMode .bg-custom {
     scroll-margin-top: 5000px;
     margin-top: 110px;
 }
-#Home a >span.d-none{
+
+#Home a>span.d-none {
     opacity: 0;
     display: none !important;
 }
@@ -94,6 +87,7 @@ body.LightMode .bg-custom {
     height: 250px;
     width: 380px;
 }
+
 .about-img>span {
     border: solid 2px var(--p-br-low);
     background-color: var(--p-bg-in);
@@ -126,7 +120,7 @@ body.LightMode .bg-custom {
 }
 
 #Projects {
-    scroll-margin-top: -50px !important;
+    scroll-margin-top: -50px;
 }
 
 .project-grid {
@@ -140,7 +134,8 @@ body.LightMode .bg-custom {
     padding: 12px;
     background-color: #202020;
 }
-.project-btn:hover{
+
+.project-btn:hover {
     background-color: #2e2e2e;
 }
 
@@ -150,107 +145,12 @@ body.LightMode .bg-custom {
     align-items: start;
 }
 
-#Contact{ 
+#Contact {
     height: 80vh;
-  }
-
-.ski-logo-wrapper {
-    width: 84%;
-    margin-inline: auto;
-    position: relative;
-    height: 100px;
-    margin-top: 5rem;
-    mask-image: linear-gradient(to right,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 1) 20%,
-            rgba(0, 0, 0, 1) 80%,
-            rgba(0, 0, 0, 0));
-}
-
-.logo {
-    overflow: hidden;
-    border-radius: 16px;
-    width: 80px;
-    height: 80px;
-    border-radius: 6px;
-    position: absolute;
-    left: 100%;
-    animation-name: scrollLeft;
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    fill: var(--p-font-p-low);
-    transition: transform 0.2s;
-}
-.logo:hover{
-    transform: scale(1.04);
-    fill: var(--p-font-h1);
-}
-
-@keyframes scrollLeft {
-    to {
-        left: -80px;
-    }
-}
-
-.ski-logo-wrapper>.logo:nth-child(1) {
-    animation-delay: calc(15s / 6 * (6 - 1) * -1);
-}
-
-.ski-logo-wrapper>.logo:nth-child(2) {
-    animation-delay: calc(15s / 6 * (6 - 2) * -1);
-}
-
-.ski-logo-wrapper>.logo:nth-child(3) {
-    animation-delay: calc(15s / 6 * (6 - 3) * -1);
-}
-
-.ski-logo-wrapper>.logo:nth-child(4) {
-    animation-delay: calc(15s / 6 * (6 - 4) * -1);
-}
-
-.ski-logo-wrapper>.logo:nth-child(5) {
-    animation-delay: calc(15s / 6 * (6 - 5) * -1);
-}
-
-.ski-logo-wrapper>.logo:nth-child(6) {
-    animation-delay: calc(15s / 6 * (6 - 6) * -1);
-}
-
-
-
-.view-anim {
-    animation: view-show linear 500ms;
-    animation-timeline: view();
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@keyframes view-show {
-    0% {
-        opacity: 0;
-        scale: 96%;
-    }
-
-    20% {
-        opacity: 1;
-        scale: 100%;
-    }
-
-    80% {
-        opacity: 1;
-        scale: 100%;
-    }
-
-    to {
-        opacity: 0;
-        scale: 90%;
-    }
 }
 
 @keyframes arrow-land {
-    50%{
+    50% {
         transform: translateY(10px);
     }
 }

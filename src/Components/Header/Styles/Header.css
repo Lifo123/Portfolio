@@ -1,54 +1,86 @@
 .header {
     height: 70px;
     width: 100%;
-    padding-inline: 70px;
+    max-width: 1600px;
+    padding-inline: 50px;
     background: linear-gradient(180deg, var(--p-bg) 15%, rgba(255, 0, 0, 0) 105%);
     top: 0;
     z-index: 9999;
 }
 
-header>nav>ul {
-    left: 51%;
+.header a {
+    text-decoration: none;
+}
+
+.h-navigation {
+    left: 50%;
     transform: translateX(-50%);
     list-style: none;
 }
 
+.h-log {
+    gap: var(--p-spacing-2);
+}
+
 .h-log>a {
-    font-size: 28px;
+    font-size: 1.25rem;
     font-weight: 800;
 }
-.h-log>span{
+
+.h-log>span {
     border: solid 2px var(--p-color-gren);
     color: var(--p-color-gren);
     font-weight: 600;
-    font-size: 13px;
-    padding: 4px 12px;
+    font-size: 12px;
+    padding: 5px 17px;
     user-select: none;
 }
 
-header>nav a {
-    text-decoration: none;
+.h-navigation {
+    gap: var(--p-spacing-4);
+}
+
+.h-navigation a {
     font-weight: 600;
 
     padding: 8px 6px;
     color: var(--p-font-h1);
 }
 
-header>nav a.active {
+.h-navigation a.active {
     color: var(--p-font-link);
     border-bottom: solid 2px var(--p-font-link);
 }
 
-.header>nav>ul a:hover {
+.h-navigation a:hover {
     color: var(--p-font-link);
     border-bottom: solid 2px var(--p-font-link);
 }
 
-.h-talk{
-    font-size: 18px;
+.h-cta {
+    gap: var(--p-spacing-2);
+}
+
+.h-talk {
+    font-size: 1.15rem;
     background-color: #0c0c0c;
-    font-weight: 500;
-    padding: 12px 28px;
+    font-weight: 700;
+    padding: 12px 36px;
     min-width: max-content;
     color: #FFF;
+}
+
+@media (1000px> width) {
+    .h-navigation {
+        display: none;
+    }
+}
+
+@media (520px> width) {
+    .header {
+        padding-inline: 26px;
+    }
+    .h-log>span {
+        display: none;
+    }
 }

@@ -28,13 +28,18 @@
 
 
     --p-color-yellow: #DEC800;
-    --p-color-gren: #13FA46;
+    --p-color-gren: #07EC39;
 
+    --p-spacing-1: 0.5rem;
+    --p-spacing-2: 1.25rem;
+    --p-spacing-3: 1.85rem;
+    --p-spacing-4: 2.5rem;
+    --p-spacing-5: 3rem;
 }
 
 .LightMode {
 
-    --p-bg: #e7e7e7;
+    --p-bg: #ededed;
     --p-bg-in: #141416;
     --p-bg-in-i: #e7e7e7;
     --p-br-low: #a2a2a2;
@@ -97,96 +102,4 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     width: 7px;
     margin-right: 0px;
-}
-
-
-@media (max-width: 1100px) {
-    .h-log>span {
-        display: none !important;
-    }
-
-    .l-subtitle {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        margin-inline: auto;
-    }
-
-    #call-ac {
-        text-align: start;
-    }
-
-    #About>div>label {
-        width: 100% !important;
-    }
-
-    #Projects {
-        height: 100%;
-    }
-}
-
-@media (max-width: 920px) {
-    .header>nav>ul {
-        display: none !important;
-    }
-
-    #About>div {
-        gap: 30px !important;
-    }
-
-}
-
-@media (max-width: 650px) {
-    #call-ac > div{
-        text-align: center !important;
-    }
-    #call-ac a {
-        width: 100%;
-        min-width: fit-content;
-    }
-
-    #call-ac a button {
-        width: 100%;
-        min-width: fit-content;
-    }
-    #call-ac a button label {
-        text-align: center;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 500px) {
-    #Home>div {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .p-btn>label {
-        padding: 13px 110px !important;
-    }
-
-    .l-subtitle {
-        text-align: center;
-    }
-
-    #About>div>label {
-        width: 100% !important;
-    }
-
-    #Contact>div>div>a>button label {
-        width: 100% !important;
-    }
-
-    #Skills {
-        height: 60vh !important;
-    }
-}
-
-
-.p-blue {
-    color: #27a3ff;
-}
-
-.p-pink {
-    color: #f12d98;
 }

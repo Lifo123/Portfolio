@@ -4,78 +4,34 @@
     background-color: var(--p-bg-in);
     text-decoration: none;
 }
-.p-btn:hover{
+
+.p-btn:hover {
     background-color: #0CBBF2;
 }
+
+.p-btn[data-state='active'] {
+    background-color: #0CBBF2;
+}
+
 .p-btn>label {
-    border: solid 2px var(--p-br-low);
     background-color: var(--p-bg-in);
-    color: var(--p-btn-font);
-    padding: 13px 44px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
+    padding: 12px 24px;
     transition: transform 0.2s;
-    min-width: max-content;
 }
 
-.p-btn p {
-    color: var(--p-btn-font) !important;
+.p-btn:hover>label {
+    transform: translate(1px, -2px);
 }
 
-.p-btn>label:hover {
-    transform: translate(2px, -2px);
+.p-btn[data-state='active'] label {
     border: solid 2px #0CBBF2;
-    color: #0CBBF2;
 }
 
-.p-btn>label:hover p {
-    color: #0CBBF2;
-}
-
-.p-btn>label svg {
-    stroke: var(--p-btn-font);
-    fill: var(--p-btn-font);
-}
-
-.p-btn>label:hover svg {
+.p-btn[data-state='active']>label>span>svg {
     stroke: #0CBBF2;
     fill: #0CBBF2;
 }
 
-.p-btn.active {
-    transform: translate(2px, -2px);
+.p-btn[data-state='active']>label>p {
     color: #0CBBF2;
-    font-size: 15px;
-}
-
-.p-btn.active label {
-    border: solid 2px #0CBBF2;
-    color: #0CBBF2;
-}
-
-.p-btn-secondary {
-    border: none;
-    outline: none;
-    background-color: var(--p-br-low);
-}
-
-.p-btn-secondary>label {
-    border: solid 2px var(--p-br-low);
-    background-color: var(--p-bg-in);
-    color: var(--p-btn-font);
-    padding: 13px 44px;
-    font-size: 15px;
-    font-weight: 400;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
-    transition: transform 0.2s;
-    min-width: max-content;
-}
-
-.p-btn-secondary>label:hover {
-    transform: translate(2px, -2px);
-    font-size: 15px;
 }
