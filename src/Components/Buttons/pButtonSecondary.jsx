@@ -11,7 +11,7 @@ export default function PButtonSecondary({
 
     return (
         <button className={`p-btn-secondary ${className} pointer`} onClick={funct !== null ? () => funct() : null} style={{ borderRadius: `${borderRadius}px` }}>
-            <label className='d-flex' style={{ borderRadius: `${borderRadius}px`, padding: `${padding[0]}px ${padding[1]}px`, fontSize: `${fontSize}px` }}>{text}</label>
+            <p className='d-flex' style={{ borderRadius: `${borderRadius}px`, padding: `${padding[0]}px ${padding[1]}px`, fontSize: `${fontSize}px` }}>{text}</p>
         </button>
     )
 }

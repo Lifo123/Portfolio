@@ -40,7 +40,7 @@ export default function Index() {
 
     const ProjectsData = [
         {
-            img: 'https://media.discordapp.net/attachments/1249730382148927499/1249731063836839997/MetaTagEditor.webp?ex=66685e40&is=66670cc0&hm=0a3532c9f26e847ceb23ccb0e300ae8ced01e3bf7b6c970fcb28a18a9efadd3d&=&format=webp&width=340&height=140',
+            img: 'https://cdn.discordapp.com/attachments/1249730382148927499/1249731063836839997/MetaTagEditor.webp?ex=667198c0&is=66704740&hm=b58b92ac540393487a8339ce678583dbbc77d08c019812d86ba3eaf440b02de0&=&format=webp&width=340&height=140',
             tittle: 'Meta Tag Editor',
             description: 'Simple editor of metatag for testing the result in engines Searchs',
             websiteURL: 'https://lifo123.github.io/MetaTag-Editor/',
@@ -48,7 +48,7 @@ export default function Index() {
 
         },
         {
-            img: 'https://media.discordapp.net/attachments/1249730382148927499/1249732031399858197/ManageTournaments.webp?ex=66685f27&is=66670da7&hm=5e5225b259073ca99057b7e6a034f22c7eab4c2c5abff4a41f97640af8c09149&=&format=webp&width=340&height=140',
+            img: 'https://cdn.discordapp.com/attachments/1249730382148927499/1249732031399858197/ManageTournaments.webp?ex=667199a7&is=66704827&hm=da6f7085498d0ddd00f06531b1eb96ac354dbc2d8c6fb4c9e5b6e83325eee164&=&format=webp&width=340&height=140',
             tittle: 'Manage Tournaments',
             description: 'Website for develop and manage custom Tournaments in seconds.',
             websiteURL: 'https://lifo123.github.io/ManageTournaments',
@@ -56,7 +56,7 @@ export default function Index() {
 
         },
         {
-            img: 'https://media.discordapp.net/attachments/1249730382148927499/1249731063836839997/MetaTagEditor.webp?ex=66685e40&is=66670cc0&hm=0a3532c9f26e847ceb23ccb0e300ae8ced01e3bf7b6c970fcb28a18a9efadd3d&=&format=webp&width=340&height=140',
+            img: 'https://cdn.discordapp.com/attachments/1249730382148927499/1249731063836839997/MetaTagEditor.webp?ex=667198c0&is=66704740&hm=b58b92ac540393487a8339ce678583dbbc77d08c019812d86ba3eaf440b02de0&=&format=webp&width=340&height=140',
             tittle: 'Meta Tag Editor',
             description: 'Simple editor of metatag for testing the result in engines Searchs',
             websiteURL: 'https://lifo123.github.io/MetaTag-Editor/',
@@ -74,16 +74,16 @@ export default function Index() {
                     <h2 className='l-title'>Frontend Developer</h2>
                     <div className='f-row g-30 mx-auto mt-40'>
                         <a className='p-btn br-max' href='https://github.com/Lifo123' target='_blank' data-state='active'>
-                            <label className='f-row f-align-center g-15 br-max no-select'>
+                            <span className='br-max h-100 w-100 f-row g-15 f-center'>
                                 <SocialMediaIcon id={'github'} />
                                 <p>Download CV</p>
-                            </label>
+                            </span>
                         </a>
                     </div>
                     <ul className='f-row g-35 mx-auto mt-35 f-center txt-stl-none'>
-                        <li><a href="https://www.youtube.com/channel/UCCgNa5xgsjI_DBZwFkD34Bw" aria-label="Boton link youtube"><SocialMediaIcon id={'linkedin'} box={30} title='youtube' hover={true}/></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCCgNa5xgsjI_DBZwFkD34Bw" aria-label="Boton link youtube"><SocialMediaIcon id={'linkedin'} box={30} title='youtube' hover={true} /></a></li>
                         <li><a href="https://www.instagram.com/li.fos/" aria-label="Boton link Instagram"><SocialMediaIcon id={'github'} box={32} title='Instagram' hover={true} /></a></li>
-                        <li><a href="https://wa.me/51900081894/" aria-label="Boton link Whatsapp"><SocialMediaIcon id={'email'} box={32} hover={true}/></a></li>
+                        <li><a href="https://wa.me/51900081894/" aria-label="Boton link Whatsapp"><SocialMediaIcon id={'email'} box={32} hover={true} /></a></li>
                     </ul>
                     <a className='arrow-land d-flex mt-110' href='#About' aria-label='Boton navigate bottom'>
                         <svg height={40} viewBox="0 0 24 24" >
@@ -94,8 +94,8 @@ export default function Index() {
             </div>
 
             <section className="view-anim f-col" id="About">
-                <h2 className='d-flex w-65 mx-auto l-subtitle' >About me</h2>
-                <div className='about-cont f-row w-65 g-70 f-wrap mx-auto f-center mt-70'>
+                <h2 className='d-flex w-70 mx-auto l-subtitle' >About me</h2>
+                <div className='about-cont f-row w-70 g-70 f-wrap mx-auto f-center mt-50'>
                     <div className='about-img p-btn br-10'>
                         <span className='d-flex f-center br-10'>
                             <img src="#" height={250} width={380} alt="pfp Lifo" />
@@ -114,8 +114,8 @@ export default function Index() {
                     <h2 className=''>¿Do you need a Web Developer?</h2>
                     <p className='mb-15'>Let's start innovative new projects together.</p>
                     <div className='f-row g-30 f-wrap'>
-                        <a className='land-btn-contact' href="https://wa.me/51900081894/">
-                            <PButton text='Contact me' borderRadius={8} padding={[16, 46]} fontSize={17} className={'active'} />
+                        <a className='' href="https://wa.me/51900081894/">
+                            <PButton text='Contact me' borderRadius={8} padding={[16, 46]} fontSize={17} boolean={1} />
                         </a>
                         <a className='' href="#Projects">
                             <PButtonSecondary text='View Projects' borderRadius={8} padding={[16, 46]} />
@@ -125,14 +125,23 @@ export default function Index() {
             </section>
 
             <section className="view-anim mt-100" id="Projects">
-               
+                <h2 className='l-subtitle'>Latest Projects</h2>
+                <p>My lasts projects and destacable content</p>
+                <div className='w-70 mx-auto f-row f-justify-around'>
+                    {
+                        ProjectsData.map((item, index) => (
+                            <ProjectCard key={index} data={item} />
+                        ))
+                    }
+                </div>
+                <span>View All</span>
             </section>
 
             <section className="view-anim mt-50" id="Skills">
-               
+
             </section>
             <section className="view-anim" id="Contact">
-               
+
             </section>
             <Footer />
             <div className='bg-custom d-flex'></div>

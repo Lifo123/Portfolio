@@ -1,5 +1,5 @@
 .bg-custom {
-    background-image: url('https://media.discordapp.net/attachments/1249730382148927499/1249734403693740042/PortfolioBG.webp?ex=6668615c&is=66670fdc&hm=36706601a8aab044b7fc2d69fc6dd43444c961497776a77619f4a912514945ab&=&format=webp');
+    background-image: url('https://cdn.discordapp.com/attachments/1249730382148927499/1249734403693740042/PortfolioBG.webp?ex=6670f31c&is=666fa19c&hm=72d985ae062af0543fccd5596b5b85ccc27fc4e1303443773b369026a37595d8');
     opacity: 0.7;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,16 +28,21 @@ body.LightMode .bg-custom {
     z-index: 100;
 
 }
+.land-subtitle{
+    color: #C1C1C1;
+    font-weight: 400;
+    font-size: 1.65rem ;
+}
 
 .l-title {
     font-weight: bold;
-    font-size: clamp(3.5rem, 7vw, 5.25rem);
+    font-size: 4.85rem;
     text-align: center;
 }
 
 .l-subtitle {
     font-weight: bold;
-    font-size: 38px;
+    font-size: 2rem;
 }
 
 .l-text-p {
@@ -52,6 +57,7 @@ body.LightMode .bg-custom {
     height: 100vh;
     text-align: center;
     z-index: 1000;
+    scroll-margin-top: 140px;
 }
 
 
@@ -66,9 +72,6 @@ body.LightMode .bg-custom {
 
 #Home {
     height: calc(100vh - 70px) !important;
-    animation: parallax 1s linear;
-    animation-timeline: scroll(y);
-    --p-parallax-speed: 18;
     scroll-margin-top: 5000px;
     margin-top: 110px;
 }
@@ -100,53 +103,27 @@ body.LightMode .bg-custom {
 }
 
 .about-cont>label {
-    width: calc(100% - 600px);
+    width: calc(100% - 450px);
 }
+
+
 
 #call-ac {
     height: 80vh;
 }
 
 #call-ac h2 {
-    font-size: 44px;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--p-font-h1);
+    text-align: start;
 }
 
 #call-ac p {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: var(--p-font-p-low);
-}
-
-#Projects {
-    scroll-margin-top: -50px;
-}
-
-.project-grid {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 370px));
-    place-items: center;
-    justify-content: center;
-    row-gap: 30px;
-}
-
-.project-btn {
-    padding: 12px;
-    background-color: #202020;
-}
-
-.project-btn:hover {
-    background-color: #2e2e2e;
-}
-
-#Skills {
-    scroll-margin-top: 100px !important;
-    height: calc(60vh);
-    align-items: start;
-}
-
-#Contact {
-    height: 80vh;
+    text-align: start;
 }
 
 @keyframes arrow-land {

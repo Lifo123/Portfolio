@@ -4,34 +4,28 @@
     background-color: var(--p-bg-in);
     text-decoration: none;
 }
-
-.p-btn:hover {
-    background-color: #0CBBF2;
-}
-
-.p-btn[data-state='active'] {
-    background-color: #0CBBF2;
-}
-
-.p-btn>label {
-    background-color: var(--p-bg-in);
-    padding: 12px 24px;
-    transition: transform 0.2s;
-}
-
-.p-btn:hover>label {
-    transform: translate(1px, -2px);
-}
-
-.p-btn[data-state='active'] label {
+.p-btn[data-state='active']>span {
     border: solid 2px #0CBBF2;
+    color: #0CBBF2;
 }
-
-.p-btn[data-state='active']>label>span>svg {
+.p-btn[data-state='active']>span p {
+    color: #0CBBF2;
+}
+.p-btn[data-state='active']> span svg {
     stroke: #0CBBF2;
     fill: #0CBBF2;
 }
 
-.p-btn[data-state='active']>label>p {
-    color: #0CBBF2;
+.p-btn>span {
+    background-color: var(--p-bg-in);
+    transition: transform 0.18s;
+    padding: 12px 24px;
+}
+
+.p-btn:hover {
+    background-color: #0CBBF2;
+}
+.p-btn:hover>span {
+    transform: translate(2px, -3px);
+    border: solid 2px #0CBBF2;
 }

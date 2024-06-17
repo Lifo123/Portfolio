@@ -103,3 +103,20 @@ body::-webkit-scrollbar-thumb {
     width: 7px;
     margin-right: 0px;
 }
+
+
+@media (1000px> width) {
+    .about-cont>label {
+        width: 100% !important;
+    }
+}
+
+
+@media (430px> width) {
+    .l-title {
+        font-size: 3.75rem !important;
+    }
+    .land-subtitle{
+        font-size: 1.25rem !important;
+    }
+}
