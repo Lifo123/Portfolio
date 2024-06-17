@@ -1,4 +1,4 @@
-import './Styles/Header.css'
+import './Header.css'
 
 import Icon from '../icons/Icon'
 import { useContext } from 'react';

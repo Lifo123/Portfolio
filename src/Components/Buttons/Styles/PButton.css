@@ -4,9 +4,13 @@
     background-color: var(--p-bg-in);
     text-decoration: none;
 }
+.p-btn>span>p{
+    color: var(--p-icon);
+}
+
 .p-btn[data-state='active']>span {
     border: solid 2px #0CBBF2;
-    color: #0CBBF2;
+    color: #0CBBF2 !important;
 }
 .p-btn[data-state='active']>span p {
     color: #0CBBF2;
@@ -17,6 +21,7 @@
 }
 
 .p-btn>span {
+    border: solid 2px var(--p-bg-in);
     background-color: var(--p-bg-in);
     transition: transform 0.18s;
     padding: 12px 24px;
@@ -28,4 +33,15 @@
 .p-btn:hover>span {
     transform: translate(2px, -3px);
     border: solid 2px #0CBBF2;
+}
+.p-btn:hover>span > p{
+    color: #0CBBF2;
+}
+.p-btn:hover>span  svg{
+    fill: #0CBBF2;
+}
+
+.vi-btn-all{
+    background-color: #2B2B2B;
+    padding: 13px 40px;
 }

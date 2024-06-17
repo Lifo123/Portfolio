@@ -54,7 +54,7 @@ body.LightMode .bg-custom {
 }
 
 .land-main>section {
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     z-index: 1000;
     scroll-margin-top: 140px;
@@ -109,7 +109,7 @@ body.LightMode .bg-custom {
 
 
 #call-ac {
-    height: 80vh;
+    height: 40vh;
 }
 
 #call-ac h2 {

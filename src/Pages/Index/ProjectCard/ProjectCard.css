@@ -1,19 +1,26 @@
 .project-card {
-    border: solid 2px #36373918;
-    height: max-content;
+    background-color: var(--p-bg);
+    border: solid 1px #36373918;
+    height: 350px;
     width: 340px;
+}
+.project-card:hover{
+    border: solid 1px #53555735;
 }
 
 .project-card>a {
     background-color: var(--p-bg-in);
-    height: 140px;
+    height: 160px;
     width: 100%;
     cursor: pointer;
     position: relative;
     text-decoration: none;
 }
+
 .project-card>a img {
     object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .p-c-ic-e {
@@ -29,6 +36,7 @@
     stroke: #FFF;
     fill: #FFF;
 }
+
 
 .p-c-info {
     height: calc(100% - 190px);
@@ -52,14 +60,21 @@
     pointer-events: none;
 }
 
-.p-c-info h3 {
-    font-size: 17px;
+.p-c-info>label>h3 {
+    font-size: 20px;
     font-weight: bold;
     color: var(--p-font-h1);
+    cursor: auto;
+}
+
+.p-c-info>label>p {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ECB21C;
 }
 
 .p-c-info>p {
-    font-size: 15px;
+    font-size: 16px;
     color: var(--p-font-h1);
     font-weight: 300;
 }
@@ -71,4 +86,21 @@
 
 .p-c-info>div>a p {
     color: var(--p-btn-font);
+}
+
+.p-c-tag-item {
+    padding: 4px 12px;
+    font-weight: 600;
+    color: white;
+}
+
+.p-c-tag-item[data-type='Javascript'] {
+    background-color: #D4BF11;
+    color: #000;
+}
+.p-c-tag-item[data-type='React'] {
+    background-color: #006EBE;
+}
+.p-c-tag-item[data-type='Sass'] {
+    background-color: #B61B5C;
 }

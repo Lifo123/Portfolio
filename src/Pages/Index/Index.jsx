@@ -6,7 +6,7 @@ import Header from "../../Components/Header/Header";
 import SocialMediaIcon from '../../Components/icons/SocialMediaIcons';
 import PButton from '../../Components/Buttons/PButton';
 import PButtonSecondary from '../../Components/Buttons/pButtonSecondary';
-import ProjectCard from './Comps/ProjectCard/ProjectCard';
+import ProjectCard from './ProjectCard/ProjectCard';
 
 
 export default function Index() {
@@ -94,8 +94,8 @@ export default function Index() {
             </div>
 
             <section className="view-anim f-col" id="About">
-                <h2 className='d-flex w-70 mx-auto l-subtitle' >About me</h2>
-                <div className='about-cont f-row w-70 g-70 f-wrap mx-auto f-center mt-50'>
+                <h2 className='d-flex w-65 mx-auto l-subtitle' >About me</h2>
+                <div className='about-cont f-row w-65 g-70 f-wrap mx-auto f-center mt-50'>
                     <div className='about-img p-btn br-10'>
                         <span className='d-flex f-center br-10'>
                             <img src="#" height={250} width={380} alt="pfp Lifo" />
@@ -127,14 +127,14 @@ export default function Index() {
             <section className="view-anim mt-100" id="Projects">
                 <h2 className='l-subtitle'>Latest Projects</h2>
                 <p>My lasts projects and destacable content</p>
-                <div className='w-70 mx-auto f-row f-justify-around'>
+                <div className='w-70 mx-auto f-row f-justify-around f-wrap g-30'>
                     {
                         ProjectsData.map((item, index) => (
                             <ProjectCard key={index} data={item} />
                         ))
                     }
+                    <span className='vi-btn-all f-row br-max w-100 f-center mt-10 pointer'>View All</span>
                 </div>
-                <span>View All</span>
             </section>
 
             <section className="view-anim mt-50" id="Skills">
