@@ -1,0 +1,19 @@
+
+#call-ac {
+    margin-top: 250px;
+    height: 40vh;
+}
+
+#call-ac h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--p-font-h1);
+    text-align: start;
+}
+
+#call-ac p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--p-font-p-low);
+    text-align: start;
+}

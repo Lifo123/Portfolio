@@ -1,0 +1,21 @@
+#Home {
+    height: calc(100vh - 70px) !important;
+    scroll-margin-top: 5000px;
+    margin-top: 110px;
+}
+
+#Home a>span.d-none {
+    opacity: 0;
+    display: none !important;
+}
+
+.arrow-land {
+    fill: var(--p-icon-high);
+    animation: arrow-land 1.6s ease infinite;
+}
+
+@keyframes arrow-land {
+    50% {
+        transform: translateY(10px);
+    }
+}

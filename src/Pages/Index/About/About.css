@@ -1,0 +1,19 @@
+.about-img>span {
+    height: 250px;
+    width: 380px;
+}
+
+.about-img>span {
+    border: solid 2px var(--p-br-low);
+    background-color: var(--p-bg-in);
+    transition: transform 0.2s;
+}
+
+.about-img:hover span {
+    border: solid 2px #0CBBF2;
+    transform: translate(2px, -2px);
+}
+
+.about-cont>label {
+    width: calc(100% - 450px);
+}
