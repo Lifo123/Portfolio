@@ -48,7 +48,7 @@ export default function Index() {
 
         },
         {
-            img: 'https://cdn.discordapp.com/attachments/1249730382148927499/1249732031399858197/ManageTournaments.webp?ex=667199a7&is=66704827&hm=da6f7085498d0ddd00f06531b1eb96ac354dbc2d8c6fb4c9e5b6e83325eee164&=&format=webp&width=340&height=140',
+            img: 'https://cdn.discordapp.com/attachments/1249730382148927499/1249732031399858197&format=webp&width=340&height=140',
             tittle: 'Manage Tournaments',
             description: 'Website for develop and manage custom Tournaments in seconds.',
             websiteURL: 'https://lifo123.github.io/ManageTournaments',

@@ -1,7 +1,7 @@
 .p-btn {
     border: none;
     outline: none;
-    background-color: var(--p-bg-in);
+    background-color: #0CBBF2;
     text-decoration: none;
 }
 .p-btn>span>p{

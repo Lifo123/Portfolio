@@ -5,7 +5,7 @@ export default function About() {
         <section className="view-anim f-col" id="About">
             <h2 className='d-flex w-65 mx-auto l-subtitle' >About me</h2>
             <div className='about-cont f-row w-65 g-70 f-wrap mx-auto f-center mt-50'>
-                <div className='about-img p-btn br-10'>
+                <div className='about-img p-btn br-12'>
                     <span className='d-flex f-center br-10'>
                         <img src="#" height={250} width={380} alt="pfp Lifo" />
                     </span>

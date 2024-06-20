@@ -8,6 +8,10 @@
     opacity: 0;
     display: none !important;
 }
+#Home> ul li{
+    height: 32px ;
+    width: 32px;
+}
 
 .arrow-land {
     fill: var(--p-icon-high);
