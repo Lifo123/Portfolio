@@ -1,5 +1,5 @@
 import './ProjectCard.css'
-import Icon from '../../../Components/icons/Icon'
+import Icon from '../../../../Components/icons/Icon'
 
 export default function ProjectCard({ data = {} }) {
     return (

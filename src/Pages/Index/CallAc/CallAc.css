@@ -1,7 +1,6 @@
 
 #call-ac {
-    margin-top: 250px;
-    height: 40vh;
+    min-height: 80vh;
 }
 
 #call-ac h2 {
@@ -16,4 +15,11 @@
     font-weight: 400;
     color: var(--p-font-p-low);
     text-align: start;
+}
+
+@media (1000px> width) {
+    #call-ac>div{
+        text-align: center !important;
+
+    }
 }

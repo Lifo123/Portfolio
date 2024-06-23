@@ -4,8 +4,8 @@ import PButtonSecondary from '../../../Components/Buttons/pButtonSecondary'
 
 export default function CallAc() {
     return (
-        <section className="view-anim f-col f-align-start" id='call-ac'>
-            <div className='f-col f-align-start w-65 mx-auto g-20 mt-90'>
+        <section className="view-anim f-col f-align-start f-justify-center" id='call-ac'>
+            <div className='f-col f-align-start w-65 mx-auto g-20'>
                 <h2 className=''>¿Do you need a Web Developer?</h2>
                 <p className='mb-15'>Let's start innovative new projects together.</p>
                 <div className='f-row g-30 f-wrap'>

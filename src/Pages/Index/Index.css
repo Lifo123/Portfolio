@@ -53,6 +53,6 @@ body.LightMode .bg-custom {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     z-index: 1000;
+    scroll-margin-top: 200px;
 }

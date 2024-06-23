@@ -4,7 +4,8 @@
     background-color: #0CBBF2;
     text-decoration: none;
 }
-.p-btn>span>p{
+
+.p-btn>span>p {
     color: var(--p-icon);
 }
 
@@ -12,10 +13,12 @@
     border: solid 2px #0CBBF2;
     color: #0CBBF2 !important;
 }
+
 .p-btn[data-state='active']>span p {
     color: #0CBBF2;
 }
-.p-btn[data-state='active']> span svg {
+
+.p-btn[data-state='active']>span svg {
     stroke: #0CBBF2;
     fill: #0CBBF2;
 }
@@ -30,18 +33,36 @@
 .p-btn:hover {
     background-color: #0CBBF2;
 }
+
 .p-btn:hover>span {
     transform: translate(2px, -3px);
     border: solid 2px #0CBBF2;
 }
-.p-btn:hover>span > p{
+
+.p-btn:hover>span>p {
     color: #0CBBF2;
 }
-.p-btn:hover>span  svg{
+
+.p-btn:hover>span svg {
     fill: #0CBBF2;
 }
 
-.vi-btn-all{
+.vi-btn-all {
     background-color: #2B2B2B;
     padding: 13px 40px;
+}
+
+.p-btn-secondary {
+    border: none;
+    background-color: var(--p-br-low);
+}
+
+.p-btn-secondary>p {
+    border: solid 2px var(--p-br-low);
+    background-color: var(--p-bg-in);
+    transition: transform 0.2s;
+}
+
+.p-btn-secondary:hover>p {
+    transform: translate(2px, -3px);
 }

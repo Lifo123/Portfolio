@@ -70,7 +70,7 @@
     color: #FFF;
 }
 
-@media (1000px> width) {
+@media (1050px> width) {
     .h-navigation {
         display: none;
     }

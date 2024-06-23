@@ -17,3 +17,20 @@
 .about-cont>label {
     width: calc(100% - 450px);
 }
+
+@media (450px> width) {
+    .about-cont{
+        width: 80% !important;
+        gap: 30px !important;
+    }
+    .about-img{
+        width: 100% !important;
+    }
+    .about-img>span{
+        width: 100% !important;
+    }
+    .about-img>span>img{
+        height: 100% !important;
+        width: 100% !important;
+    }
+}

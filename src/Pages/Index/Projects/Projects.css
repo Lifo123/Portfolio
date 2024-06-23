@@ -1,0 +1,7 @@
+#Projects{
+    min-height: 100vh;
+}
+
+#Projects > div{
+    margin-top: 48px;
+}
