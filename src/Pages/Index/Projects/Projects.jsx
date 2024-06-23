@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import './Projects.css'
 
@@ -39,7 +40,7 @@ export default function Projects() {
                         <ProjectCard key={index} data={item} />
                     ))
                 }
-                <span className='vi-btn-all f-row br-max w-100 f-center mt-10 pointer'>View All</span>
+                <Link className='vi-btn-all f-row br-max w-100 f-center mt-10 pointer' to={'/Projects'}>View All</Link>
             </div>
         </section>
     )

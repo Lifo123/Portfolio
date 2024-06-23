@@ -15,6 +15,7 @@
 .vi-btn-all {
     background-color: #262627;
     padding: 13px 40px;
+    text-decoration: none;
 }
 
 @media(1050px > width){
