@@ -1,15 +1,18 @@
 .err-main {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 170px);
+}
+.err-main button span{
+    border: solid 2px var(--p-br-low);
 }
 
 .err-main>h2 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
 }
 
 .err-main>h3 {
     color: var(--p-font-h2);
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
 }
 

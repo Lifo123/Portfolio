@@ -35,7 +35,7 @@ export default function Header({ type = 'normal' }) {
                             </ul>
                             <div className='h-cta f-row f-align-center'>
                                 <Icon id='toggleDarkMode' color={`var(--p-icon-high)`} funct={() => GContext.ToggleLM()} />
-                                <a className='h-talk br-10' href='https://github.com/Lifo123' target='_blank'>Let's Talk</a>
+                                <a className='h-talk br-10' href='#Contact'>Let's Talk</a>
                             </div>
                         </>
                     ) : null

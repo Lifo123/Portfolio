@@ -1,10 +1,10 @@
 .bg-custom {
-    background-image: url('https://cdn.discordapp.com/attachments/1249730382148927499/1249734403693740042/PortfolioBG.webp?ex=6675905c&is=66743edc&hm=4d99a917919c5221c190523b7b81503c1b193b080dbc5dba9c2300331ebc2f2a&');
-    opacity: 0.7;
+    background-image: url('https://pbs.twimg.com/media/GQyQ7orWgAAas-c?format=webp&name=large');
+    opacity: 0.4;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
-    background-position-y: 0px;
+    background-position-y: -40px;
     height: 100%;
     width: 100%;
     position: fixed;

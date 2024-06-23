@@ -6,28 +6,24 @@ export default function Projects() {
 
     const ProjectsData = [
         {
-            img: 'https://cdn.discordapp.com/attachments/1249730382148927499/1249731063836839997/MetaTagEditor.webp?ex=667198c0&is=66704740&hm=b58b92ac540393487a8339ce678583dbbc77d08c019812d86ba3eaf440b02de0&=&format=webp&width=340&height=140',
+            img: 'https://pbs.twimg.com/media/GQyQ7opWoAIIrPI?format=webp&name=small',
             tittle: 'Meta Tag Editor',
             description: 'Simple editor of metatag for testing the result in engines Searchs',
             websiteURL: 'https://lifo123.github.io/MetaTag-Editor/',
-            repoURL: 'https://github.com/Lifo123/MetaTag-Editer'
 
         },
         {
-            img: 'https://cdn.discordapp.com/attachments/1249730382148927499/1249732031399858197&format=webp&width=340&height=140',
+            img: 'https://pbs.twimg.com/media/GQyQ7oqWAAAQrox?format=webp&name=medium',
             tittle: 'Manage Tournaments',
             description: 'Website for develop and manage custom Tournaments in seconds.',
             websiteURL: 'https://lifo123.github.io/ManageTournaments',
-            repoURL: 'https://github.com/Lifo123/ManageTournaments'
 
         },
         {
-            img: 'https://cdn.discordapp.com/attachments/1249730382148927499/1249731063836839997/MetaTagEditor.webp?ex=667198c0&is=66704740&hm=b58b92ac540393487a8339ce678583dbbc77d08c019812d86ba3eaf440b02de0&=&format=webp&width=340&height=140',
+            img: 'https://pbs.twimg.com/media/GQyQ7opWoAIIrPI?format=webp&name=small',
             tittle: 'Meta Tag Editor',
             description: 'Simple editor of metatag for testing the result in engines Searchs',
             websiteURL: 'https://lifo123.github.io/MetaTag-Editor/',
-            repoURL: 'https://github.com/Lifo123/MetaTag-Editer'
-
         }
     ]
 

@@ -1,5 +1,6 @@
 #About{
-    height: max(40vh, 300px);
+    height: max-content;
+    min-height: max(40vh, 300px);
 }
 .about-img>span {
     border: solid 2px var(--p-br-low);
@@ -20,6 +21,9 @@
 }
 
 @media (450px> width) {
+    #About h2{
+        justify-content: center;
+    }
     .about-cont{
         width: 80% !important;
         gap: 30px !important;

@@ -9,7 +9,7 @@ export default function CallAc() {
                 <h2 className=''>¿Do you need a Web Developer?</h2>
                 <p className='mb-15'>Let's start innovative new projects together.</p>
                 <div className='call-btns f-row g-30 f-wrap'>
-                    <a className='' href="https://wa.me/51900081894/">
+                    <a className='' href="#Contact">
                         <PButton text='Contact me' borderRadius={8} padding={[16, 46]} fontSize={17} boolean={1} />
                     </a>
                     <a className='' href="#Projects">

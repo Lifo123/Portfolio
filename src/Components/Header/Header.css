@@ -80,7 +80,18 @@
     .header {
         padding-inline: 26px;
     }
+
     .h-log>span {
         display: none;
+    }
+}
+
+@media (430px> width) {
+    .h-log a {
+        font-size: 1.5rem !important;
+    }
+    .h-talk {
+        font-size: 1rem;
+        padding: 10px 30px;
     }
 }

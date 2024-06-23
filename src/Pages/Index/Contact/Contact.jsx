@@ -12,21 +12,21 @@ export default function Contact() {
             <ul className='ctc-ul d-grid g-40'>
                 <li className='txt-stl-none'>
                     <a className='ctc-item f-col f-center br-6' href="https://github.com/Lifo123" target='_blank'>
-                        <h5>Github</h5>
+                        <h2>Github</h2>
                         <SocialMediaIcons id={'github'} box={40} />
                         <p>@Lifo123</p>
                     </a>
                 </li>
                 <li className='txt-stl-none'>
                     <a className='ctc-item f-col f-center br-6' href="mailto:alberto_p-@hotmail.com?subject=Contact%20me" target='_blank'>
-                        <h5>Email</h5>
+                        <h2>Email</h2>
                         <SocialMediaIcons id={'outlook'} box={48} />
                         <p>alberto_p-@hotmail.com</p>
                     </a>
                 </li>
                 <li className='txt-stl-none'>
                     <a className='ctc-item f-col f-center br-6' href="https://www.linkedin.com/in/lifo3/" target='_blank'>
-                        <h5>Linkedin</h5>
+                        <h2>Linkedin</h2>
                         <SocialMediaIcons id={'linkedin'} box={40} />
                         <p>@lifo3</p>
                     </a>

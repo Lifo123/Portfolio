@@ -9,6 +9,7 @@
     color: #aba9a9;
     font-weight: 400;
     font-size: 17px;
+    text-align: start;
 }
 .ctc-ul{
     margin-top: 48px;
@@ -19,12 +20,12 @@
 .ctc-item{
     gap: 18px;
     background-color: #212223;
-    height: 190px;
+    height: 180px;
     width: 320px;
     text-decoration: none;
 }
-.ctc-item h5{
-    font-size: 20px;
+.ctc-item h2{
+    font-size: 18px;
     font-weight: 600;
 }
 .ctc-item p{
