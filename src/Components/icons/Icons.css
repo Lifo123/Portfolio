@@ -10,7 +10,7 @@
 .icon[data-hover=true]:hover {
     stroke: var(--p-icon-a);
     fill: var(--p-icon-a);
-    transform: scale(1.2);
+    transform: scale(1.08);
 }
 
 .icon svg {

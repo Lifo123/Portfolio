@@ -1,0 +1,26 @@
+#Skills{
+    margin-top: 50px;
+    height: max-content;
+    min-height: max(90vh, 460px);
+    justify-content: center;
+    scroll-margin-top: -0px;
+}
+#Skills > span > p{
+    color: #aba9a9;
+    font-weight: 400;
+    font-size: 17px;
+}
+.skill-items{
+    gap: 25px;
+    margin-top: 48px;
+    grid-template-columns: repeat(auto-fit, 210px);
+    place-items: center;
+    justify-content: center;
+}
+.s-item{
+    border-radius: 6px;
+    background-color: var(--p-bg-in);
+    height: 120px;
+    width: 210px;
+    list-style: none;
+}

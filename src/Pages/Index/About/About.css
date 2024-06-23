@@ -1,11 +1,12 @@
-.about-img>span {
-    height: 250px;
-    width: 380px;
+#About{
+    height: max(40vh, 300px);
 }
-
 .about-img>span {
     border: solid 2px var(--p-br-low);
     background-color: var(--p-bg-in);
+    height: 200px;
+    width: 320px;
+    padding: 0px !important;
     transition: transform 0.2s;
 }
 

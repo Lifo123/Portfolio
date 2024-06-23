@@ -1,0 +1,34 @@
+#Contact {
+    margin-top: 90px;
+    height: max-content;
+    min-height: max(70vh, 300px);
+    scroll-margin-top: -1000px;
+}
+
+#Contact>span>p {
+    color: #aba9a9;
+    font-weight: 400;
+    font-size: 17px;
+}
+.ctc-ul{
+    margin-top: 48px;
+    grid-template-columns: repeat(auto-fit, 320px);
+    justify-content: center;
+    place-content: center;
+}
+.ctc-item{
+    gap: 18px;
+    background-color: #212223;
+    height: 190px;
+    width: 320px;
+    text-decoration: none;
+}
+.ctc-item h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+.ctc-item p{
+    font-size: 17px;
+    font-weight: 400;
+    color: #a1a1a1;
+}

@@ -4,7 +4,9 @@
     background-color: #0CBBF2;
     text-decoration: none;
 }
-
+.p-btn>span{
+    min-width: max-content !important;
+}
 .p-btn>span>p {
     color: var(--p-icon);
 }
@@ -47,11 +49,6 @@
     fill: #0CBBF2;
 }
 
-.vi-btn-all {
-    background-color: #2B2B2B;
-    padding: 13px 40px;
-}
-
 .p-btn-secondary {
     border: none;
     background-color: var(--p-br-low);
@@ -61,6 +58,7 @@
     border: solid 2px var(--p-br-low);
     background-color: var(--p-bg-in);
     transition: transform 0.2s;
+    min-width: max-content !important;
 }
 
 .p-btn-secondary:hover>p {

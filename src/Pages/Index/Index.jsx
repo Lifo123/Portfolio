@@ -7,6 +7,8 @@ import Home from './Home/Home';
 import About from './About/About';
 import CallAc from './CallAc/CallAc';
 import Projects from './Projects/Projects';
+import Skills from './Skills/Skills';
+import Contact from './Contact/Contact';
 
 
 export default function Index() {
@@ -46,13 +48,8 @@ export default function Index() {
             <About />
             <CallAc />
             <Projects />
-
-            <section className="view-anim mt-50" id="Skills">
-
-            </section>
-            <section className="view-anim" id="Contact">
-
-            </section>
+            <Skills />
+            <Contact />
             <Footer />
             <div className='bg-custom d-flex'></div>
         </main>

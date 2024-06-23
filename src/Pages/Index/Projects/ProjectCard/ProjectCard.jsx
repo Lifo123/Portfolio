@@ -21,7 +21,7 @@ export default function ProjectCard({ data = {} }) {
                     <Tags content={'React'} />
                     <Tags content={'Sass'} />
                 </div>
-                <a className='p-btn br-max w-100 mt-10' href='https://github.com/Lifo123' target='_blank'>
+                <a className='p-btn br-max w-100 mt-15' href='https://github.com/Lifo123' target='_blank'>
                     <span className='br-max h-100 w-100 f-row g-15 f-center'>
                         <Icon id={'redirect'} box={18}/>
                         <p>Website</p>

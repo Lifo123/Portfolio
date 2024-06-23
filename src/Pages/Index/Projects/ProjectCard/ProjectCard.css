@@ -4,7 +4,8 @@
     height: 350px;
     width: 340px;
 }
-.project-card:hover{
+
+.project-card:hover {
     border: solid 1px #53555735;
 }
 
@@ -43,6 +44,14 @@
     width: 100%;
     padding: 10px 15px;
     text-align: start;
+}
+
+.p-c-info a {
+    background-color: var(--p-bg-in);
+}
+
+.p-c-info a span {
+    border: solid 2px #3b3d3f;
 }
 
 .project-card div>a>label {
@@ -98,9 +107,22 @@
     background-color: #D4BF11;
     color: #000;
 }
+
 .p-c-tag-item[data-type='React'] {
     background-color: #006EBE;
 }
+
 .p-c-tag-item[data-type='Sass'] {
     background-color: #B61B5C;
+}
+
+@media(450px > width) {
+    #Projects>div {
+        width: 86%;
+    }
+
+    .project-card {
+        width: 100%;
+        height: max-content;
+    }
 }

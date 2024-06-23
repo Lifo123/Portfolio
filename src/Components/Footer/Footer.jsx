@@ -2,7 +2,7 @@ import './Footer.css'
 
 export default function Footer() {
     return (
-        <footer className="footer f-row f-justify-between absolute w-100">
+        <footer className="footer f-row f-justify-between w-100">
             <p>Made by <a href="https://github.com/Lifo123">Lifo123</a> - 2024</p>
             <ul className="f-row g-30">
                 <li>

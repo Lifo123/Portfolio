@@ -1,6 +1,6 @@
 
 #call-ac {
-    min-height: 80vh;
+    min-height: max(100vh, 700px);
 }
 
 #call-ac h2 {
@@ -16,10 +16,50 @@
     color: var(--p-font-p-low);
     text-align: start;
 }
+.call-btns{
+    width: 100%;
+    text-align: start;
+}
 
 @media (1000px> width) {
-    #call-ac>div{
+    #call-ac h2{
         text-align: center !important;
-
+    }
+    #call-ac p{
+        margin-inline: auto;
+        text-align: center;
+    }
+    #call-ac div{
+        margin-inline: auto;
+    }
+    .call-btns{
+        text-align: center;
+        justify-content: center;
+    }
+    .call-btns a{
+        width: 80%;
+    }
+    .call-btns a button{
+        width: 100%;
+    }
+    .call-btns a button span{
+        justify-content: center;
+    }
+    .call-btns a button p{
+        justify-content: center;
+    }
+}
+@media (500px> width) {
+    #call-ac h2{
+        font-size: 2.4rem;
+    }
+    #call-ac p{
+        font-size: 1.4rem;
+    }
+    .call-btns a button >span{
+        padding-inline: 12px !important;
+    }
+    .call-btns a button >p{
+        padding-inline: 12px !important;
     }
 }

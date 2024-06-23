@@ -1,8 +1,6 @@
 .footer {
     width: 100%;
-    padding-inline: 40px;
-    bottom: 20px;
-    position: relative;
+    padding: 20px 40px;
     z-index: 1000;
 }
 
@@ -26,4 +24,15 @@
 
 .footer li {
     list-style: none;
+}
+@media(550px> width){
+    .footer{
+        margin-top: 10px;
+    }
+    .footer>ul{
+        display: none;
+    }
+    .footer p {
+        margin-inline: auto;
+    }
 }

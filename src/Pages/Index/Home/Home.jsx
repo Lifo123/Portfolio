@@ -16,8 +16,8 @@ export default function Home() {
                 </a>
             </div>
             <ul className='f-row g-35 mx-auto mt-35 f-center txt-stl-none'>
-                <li className='d-flex f-center'><a href="https://github.com/Lifo123" aria-label="Boton link Instagram"><SocialMediaIcon id={'github'} box={32} title='Instagram' hover={true} /></a></li>
-                <li className='d-flex f-center'><a href="https://www.linkedin.com/in/lifo3/" aria-label="Boton link youtube"><SocialMediaIcon id={'linkedin'} box={30} title='youtube' hover={true} /></a></li>
+                <li className='d-flex f-center'><a href="https://github.com/Lifo123" aria-label="Boton link Instagram" target='_blank'><SocialMediaIcon id={'github'} box={32} title='Instagram' hover={true} /></a></li>
+                <li className='d-flex f-center'><a href="https://www.linkedin.com/in/lifo3/" aria-label="Boton link youtube" target='_blank'><SocialMediaIcon id={'linkedin'} box={30} title='youtube' hover={true} /></a></li>
                 <li className='d-flex f-center'><a href="mailto:alberto_p-@hotmail.com?subject=Contact%20me" aria-label="Boton link Whatsapp" title='alberto_p-@hotmail.com'><SocialMediaIcon id={'outlook'} box={36} hover={true} /></a></li>
             </ul>
             <a className='arrow-land d-flex mt-120' href='#About' aria-label='Boton navigate bottom'>

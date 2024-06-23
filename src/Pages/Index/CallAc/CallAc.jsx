@@ -8,7 +8,7 @@ export default function CallAc() {
             <div className='f-col f-align-start w-65 mx-auto g-20'>
                 <h2 className=''>¿Do you need a Web Developer?</h2>
                 <p className='mb-15'>Let's start innovative new projects together.</p>
-                <div className='f-row g-30 f-wrap'>
+                <div className='call-btns f-row g-30 f-wrap'>
                     <a className='' href="https://wa.me/51900081894/">
                         <PButton text='Contact me' borderRadius={8} padding={[16, 46]} fontSize={17} boolean={1} />
                     </a>

@@ -1,7 +1,24 @@
 #Projects{
-    min-height: 100vh;
+    height: max-content;
+    scroll-margin-top: 140px !important;
+}
+
+#Projects > span > p{
+    color: #aba9a9;
+    font-weight: 400;
+    font-size: 17px;
 }
 
 #Projects > div{
     margin-top: 48px;
+}
+.vi-btn-all {
+    background-color: #262627;
+    padding: 13px 40px;
+}
+
+@media(1050px > width){
+    #Projects>span{
+        align-items: center  !important;
+    }
 }

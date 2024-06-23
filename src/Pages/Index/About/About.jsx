@@ -7,7 +7,7 @@ export default function About() {
             <div className='about-cont f-row w-65 g-70 f-wrap mx-auto f-center mt-50'>
                 <div className='about-img p-btn br-12'>
                     <span className='d-flex f-center br-10'>
-                        <img src="#" height={250} width={380} alt="pfp Lifo" />
+                        <img src="#" alt="pfp Lifo" />
                     </span>
                 </div>
                 <label className='f-col g-15 f-justify-center'>
