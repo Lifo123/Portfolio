@@ -3,7 +3,7 @@
 export default function AllProjects(){
    return (
        <main>
-           AllProjects
+           Testeando
        </main>
    )
 }
