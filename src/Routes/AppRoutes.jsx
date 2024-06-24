@@ -1,8 +1,8 @@
 import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import SuspenseWrapper from "../Components/SuspenseWrapper/SuspenseWrapper";
-import MessageDev from "../Components/MessageDev/MessageDev";
 import Skeleton from "../Components/Skeleton/Skeleton";
+import MessageDev from "../Components/MessageDev/MessageDev";
 
 const Index = lazy(() => import('../Pages/Index/Index'))
 const ErrorRoute = lazy(() => import('../Pages/ErrorRoute/ErrorRoute'))
@@ -13,7 +13,7 @@ export default function AppRoutes() {
 
     return (
         <>
-            <MessageDev />
+            <MessageDev state={1}/>
             <Routes>
                 <Route path='/' element={<SuspenseWrapper element={<Index />} />} />
                 <Route path='*' element={<SuspenseWrapper element={<ErrorRoute />} />} />

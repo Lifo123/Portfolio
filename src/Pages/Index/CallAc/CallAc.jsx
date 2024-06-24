@@ -1,4 +1,6 @@
 import './CallAc.css'
+import { HashLink } from 'react-router-hash-link'
+
 import PButton from '../../../Components/Buttons/PButton'
 import PButtonSecondary from '../../../Components/Buttons/pButtonSecondary'
 
@@ -9,12 +11,12 @@ export default function CallAc() {
                 <h2 className=''>¿Do you need a Web Developer?</h2>
                 <p className='mb-15'>Let's start innovative new projects together.</p>
                 <div className='call-btns f-row g-30 f-wrap'>
-                    <a className='' href="#Contact">
+                    <HashLink className='' href="#Contact">
                         <PButton text='Contact me' borderRadius={8} padding={[16, 46]} fontSize={17} boolean={1} />
-                    </a>
-                    <a className='' href="#Projects">
+                    </HashLink>
+                    <HashLink className='' href="#Projects">
                         <PButtonSecondary text='View Projects' borderRadius={8} padding={[16, 46]} />
-                    </a>
+                    </HashLink>
                 </div>
             </div>
         </section>

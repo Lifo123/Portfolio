@@ -40,7 +40,7 @@ export default function Projects() {
                         <ProjectCard key={index} data={item} />
                     ))
                 }
-                <Link className='vi-btn-all f-row br-max w-100 f-center mt-10 pointer' to={'/Projects'}>View All</Link>
+                <Link className='vi-btn-all f-row br-max w-100 f-center mt-10 pointer' to='/Projects'>View All</Link>
             </div>
         </section>
     )

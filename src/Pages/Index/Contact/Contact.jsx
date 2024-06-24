@@ -1,4 +1,5 @@
 import './Contact.css'
+import { Link } from 'react-router-dom'
 
 import SocialMediaIcons from '../../../Components/icons/SocialMediaIcons'
 
@@ -11,25 +12,25 @@ export default function Contact() {
             </span>
             <ul className='ctc-ul d-grid g-40'>
                 <li className='txt-stl-none'>
-                    <a className='ctc-item f-col f-center br-6' href="https://github.com/Lifo123" target='_blank'>
+                    <Link className='ctc-item f-col f-center br-6' to="https://github.com/Lifo123" target='_blank'>
                         <h2>Github</h2>
                         <SocialMediaIcons id={'github'} box={40} />
                         <p>@Lifo123</p>
-                    </a>
+                    </Link>
                 </li>
                 <li className='txt-stl-none'>
-                    <a className='ctc-item f-col f-center br-6' href="mailto:alberto_p-@hotmail.com?subject=Contact%20me" target='_blank'>
+                    <Link className='ctc-item f-col f-center br-6' to="mailto:alberto_p-@hotmail.com?subject=Contact%20me" target='_blank'>
                         <h2>Email</h2>
                         <SocialMediaIcons id={'outlook'} box={48} />
                         <p>alberto_p-@hotmail.com</p>
-                    </a>
+                    </Link>
                 </li>
                 <li className='txt-stl-none'>
-                    <a className='ctc-item f-col f-center br-6' href="https://www.linkedin.com/in/lifo3/" target='_blank'>
+                    <Link className='ctc-item f-col f-center br-6' to="https://www.linkedin.com/in/lifo3/" target='_blank'>
                         <h2>Linkedin</h2>
                         <SocialMediaIcons id={'linkedin'} box={40} />
                         <p>@lifo3</p>
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </section>
