@@ -7,7 +7,7 @@ export default function AllProjects() {
 
     return (
         <main>
-            Testing
+            Testing a Google Index
         </main>
     )
 }
