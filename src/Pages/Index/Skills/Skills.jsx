@@ -16,7 +16,7 @@ export default function Skills() {
         <section className="view-anim" id="Skills">
             <span className='f-col w-70 f-align-start mx-auto'>
                 <h2 className='l-subtitle'>Skills</h2>
-                <p className='mt-10'>Technologies i domined and i know for develop application and websites</p>
+                <p className='mt-10 l-subpgrafh'>Technologies i domined and i know for develop application and websites</p>
             </span>
             <ul className='skill-items w-70 mx-auto d-grid'>
                 <li className='s-item f-col f-center'>

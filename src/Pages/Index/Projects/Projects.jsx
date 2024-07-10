@@ -32,7 +32,7 @@ export default function Projects() {
         <section className="view-anim" id="Projects">
             <span className="f-col w-70 f-align-start mx-auto">
                 <h2 className='l-subtitle'>Latest Projects</h2>
-                <p className="mt-10">My lasts projects and destacable content</p>
+                <p className="mt-10 l-subpgrafh">My lasts projects and destacable content</p>
             </span>
             <div className='w-70 mx-auto f-row f-justify-around f-wrap g-30'>
                 {

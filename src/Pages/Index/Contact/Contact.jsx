@@ -8,7 +8,7 @@ export default function Contact() {
         <section className="view-anim" id="Contact">
             <span className='w-70 mx-auto f-col f-align-start'>
                 <h2 className='l-subtitle'>Contact</h2>
-                <p className='mt-10'>Send me a message belllow links </p>
+                <p className='mt-10 l-subpgrafh'>Send me a message belllow links </p>
             </span>
             <ul className='ctc-ul d-grid g-40'>
                 <li className='txt-stl-none'>

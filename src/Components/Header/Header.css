@@ -88,10 +88,10 @@
 
 @media (430px> width) {
     .h-log a {
-        font-size: 1.5rem !important;
+        font-size: 1.4rem !important;
     }
     .h-talk {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 10px 30px;
     }
 }

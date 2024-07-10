@@ -23,3 +23,13 @@
         transform: translateY(10px);
     }
 }
+
+
+@media(450px > width){
+    #Home{
+        margin-top: 100px !important;
+    }
+    .arrow-land{
+        margin-top: 100px !important;
+    }
+}

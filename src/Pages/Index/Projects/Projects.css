@@ -23,3 +23,11 @@
         align-items: center  !important;
     }
 }
+
+@media(480px > width){
+    #Projects > span{
+        width: 80% !important;
+        text-align: start;
+        align-items: start !important;
+    }
+}

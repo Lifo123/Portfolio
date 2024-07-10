@@ -56,3 +56,18 @@ body.LightMode .bg-custom {
     z-index: 1000;
     scroll-margin-top: 200px;
 }
+
+@media(450px > width){
+    .l-title{
+        font-size: 3.3rem !important;
+    }
+    .land-subtitle{
+        font-size: 1.8rem;
+    }
+    .l-subtitle{
+        font-size: 1.8rem;
+    }
+    .l-subpgrafh{
+        font-size: 1rem !important;
+    }
+}

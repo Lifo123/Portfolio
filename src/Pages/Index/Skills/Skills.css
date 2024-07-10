@@ -43,8 +43,11 @@
 }
 
 @media(650px > width){
+    #Skills > span{
+        width: 80% !important;
+    }
     .skill-items{
-        width: 90%;
+        width: 80%;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
