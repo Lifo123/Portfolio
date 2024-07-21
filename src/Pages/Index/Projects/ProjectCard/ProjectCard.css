@@ -51,7 +51,7 @@
 }
 
 .p-c-info a span {
-    border: solid 2px #3b3d3f;
+   fill: var(--p-font-p-low);
 }
 
 .project-card div>a>label {

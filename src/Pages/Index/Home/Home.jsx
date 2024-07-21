@@ -18,9 +18,9 @@ export default function Home() {
                 </Link>
             </div>
             <ul className='f-row g-35 mx-auto mt-35 f-center txt-stl-none'>
-                <li className='d-flex f-center'><Link to="https://github.com/Lifo123" aria-label="Boton link Instagram" target='_blank'><SocialMediaIcon id={'github'} box={32} title='Instagram' hover={true} /></Link></li>
                 <li className='d-flex f-center'><Link to="https://www.linkedin.com/in/lifo3/" aria-label="Boton link youtube" target='_blank'><SocialMediaIcon id={'linkedin'} box={30} title='youtube' hover={true} /></Link></li>
                 <li className='d-flex f-center'><Link to="mailto:alberto_p-@hotmail.com?subject=Contact%20me" aria-label="Boton link Whatsapp" title='alberto_p-@hotmail.com'><SocialMediaIcon id={'outlook'} box={36} hover={true} /></Link></li>
+                <li className='d-flex f-center'><Link to="https://github.com/Lifo123" aria-label="Boton link Instagram" target='_blank'><SocialMediaIcon id={'github'} box={32} title='Instagram' hover={true} /></Link></li>
             </ul>
             <HashLink className='arrow-land d-flex mt-120' to='#About' aria-label='Boton navigate bottom'>
                 <svg height={40} viewBox="0 0 24 24" >

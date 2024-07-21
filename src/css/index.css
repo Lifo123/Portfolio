@@ -26,6 +26,8 @@
     --p-btn-font: #dfdfdf;
     --p-btn-active: #313334;
 
+    --p-br-hov: #303134;
+
 
     --p-color-yellow: #DEC800;
     --p-color-gren: #07EC39;
@@ -49,12 +51,14 @@
     --p-font-h2: #171717;
     --p-font-subtitle: #171717;
     --p-font-link: #27a3ff;
-    --p-font-p-low: #4e4e4e;
+    --p-font-p-low: #c8c8c8;
 
     --p-icon: #1a1a1a;
     --p-icon-high: #2a2b2f;
     --p-icon-a: #5b5b5b;
     --p-btn-font: #FFF;
+
+    --p-br-hov: #303134;
 
 
     --p-color-yellow: #DEC800;

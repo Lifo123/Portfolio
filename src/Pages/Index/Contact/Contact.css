@@ -6,7 +6,6 @@
 }
 
 #Contact>span>p {
-    color: #aba9a9;
     font-weight: 400;
     font-size: 17px;
     text-align: start;
@@ -32,6 +31,7 @@
 }
 
 .ctc-item h2 {
+    color: var(--p-font-p-low);
     font-size: 18px;
     font-weight: 600;
 }

@@ -4,7 +4,6 @@
 }
 
 #Projects > span > p{
-    color: #aba9a9;
     font-weight: 400;
     font-size: 17px;
 }
@@ -13,9 +12,13 @@
     margin-top: 48px;
 }
 .vi-btn-all {
-    background-color: #262627;
+    background-color: var(--p-bg-in);
     padding: 13px 40px;
     text-decoration: none;
+    color: var(--p-font-p-low);
+}
+.vi-btn-all:hover{
+    outline: solid 1px var(--p-br-hov);
 }
 
 @media(1050px > width){
@@ -25,6 +28,9 @@
 }
 
 @media(480px > width){
+    #Projects{
+        scroll-margin-top: 90px !important;
+    }
     #Projects > span{
         width: 80% !important;
         text-align: start;

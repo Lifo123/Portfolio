@@ -54,7 +54,7 @@
 
 .h-navigation a:hover {
     color: var(--p-font-link);
-    border-bottom: solid 2px var(--p-font-link);
+    border-bottom: solid 1px var(--p-font-link);
 }
 
 .h-cta {

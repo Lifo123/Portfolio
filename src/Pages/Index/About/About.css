@@ -21,6 +21,9 @@
 }
 
 @media (450px> width) {
+    #About{
+        scroll-margin-top: 100px;
+    }
     #About h2{
         justify-content: center;
     }

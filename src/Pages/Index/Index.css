@@ -25,7 +25,7 @@ body.LightMode .bg-custom {
 }
 
 .land-subtitle{
-    color: #C1C1C1;
+    color: var(--p-font-subtitle);
     font-weight: 400;
     font-size: 1.65rem ;
 }
@@ -55,6 +55,9 @@ body.LightMode .bg-custom {
     flex-direction: column;
     z-index: 1000;
     scroll-margin-top: 200px;
+}
+.l-subpgrafh{
+    font-size: 1.1rem !important;
 }
 
 @media(450px > width){
