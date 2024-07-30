@@ -57,6 +57,7 @@ body.LightMode .bg-custom {
     scroll-margin-top: 200px;
 }
 .l-subpgrafh{
+    color: var(--p-font-subtitle);
     font-size: 1.1rem !important;
 }
 

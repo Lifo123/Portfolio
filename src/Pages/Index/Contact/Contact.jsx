@@ -12,10 +12,10 @@ export default function Contact() {
             </span>
             <ul className='ctc-ul d-grid g-40'>
                 <li className='txt-stl-none'>
-                    <Link className='ctc-item f-col f-center br-6' to="https://github.com/Lifo123" target='_blank'>
-                        <h2>Github</h2>
-                        <SocialMediaIcons id={'github'} box={40} />
-                        <p>@Lifo123</p>
+                    <Link className='ctc-item f-col f-center br-6' to="https://www.linkedin.com/in/lifo3/" target='_blank'>
+                        <h2>Linkedin</h2>
+                        <SocialMediaIcons id={'linkedin'} box={40} />
+                        <p>@lifo3</p>
                     </Link>
                 </li>
                 <li className='txt-stl-none'>
@@ -26,12 +26,13 @@ export default function Contact() {
                     </Link>
                 </li>
                 <li className='txt-stl-none'>
-                    <Link className='ctc-item f-col f-center br-6' to="https://www.linkedin.com/in/lifo3/" target='_blank'>
-                        <h2>Linkedin</h2>
-                        <SocialMediaIcons id={'linkedin'} box={40} />
-                        <p>@lifo3</p>
+                    <Link className='ctc-item f-col f-center br-6' to="https://github.com/Lifo123" target='_blank'>
+                        <h2>Github</h2>
+                        <SocialMediaIcons id={'github'} box={40} />
+                        <p>@Lifo123</p>
                     </Link>
                 </li>
+
             </ul>
         </section>
     )

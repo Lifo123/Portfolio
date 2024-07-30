@@ -7,10 +7,12 @@ export default function Projects() {
 
     const ProjectsData = [
         {
-            img: 'https://pbs.twimg.com/media/GQyQ7opWoAIIrPI?format=webp&name=small',
+            img: 'https://pbs.twimg.com/media/GTrzwwbXkAAgBHj?format=png&name=large',
             tittle: 'Meta Tag Editor',
             description: 'Simple editor of metatag for testing the result in engines Searchs',
             websiteURL: 'https://lifo123.github.io/MetaTag-Editor/',
+            techs: `Javascript,React,Sass`,
+            state: true
 
         },
         {
@@ -18,13 +20,16 @@ export default function Projects() {
             tittle: 'Manage Tournaments',
             description: 'Website for develop and manage custom Tournaments in seconds.',
             websiteURL: 'https://lifo123.github.io/ManageTournaments',
-
+            techs: `Javascript,React,Sass`,
+            state: false
         },
         {
-            img: 'https://pbs.twimg.com/media/GQyQ7opWoAIIrPI?format=webp&name=small',
+            img: 'https://pbs.twimg.com/media/GTrzwwbXkAAgBHj?format=png&name=large',
             tittle: 'Meta Tag Editor',
             description: 'Simple editor of metatag for testing the result in engines Searchs',
             websiteURL: 'https://lifo123.github.io/MetaTag-Editor/',
+            techs: `Javascript,React,Sass`,
+            state: false
         }
     ]
 

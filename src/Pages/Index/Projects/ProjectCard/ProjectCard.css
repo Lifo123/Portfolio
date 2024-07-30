@@ -1,7 +1,7 @@
 .project-card {
     background-color: var(--p-bg);
     border: solid 1px #36373918;
-    height: 350px;
+    height: 360px;
     width: 340px;
 }
 
@@ -29,29 +29,38 @@
 }
 
 .project-card>a:hover .p-c-ic-e {
-    background: linear-gradient(0deg, var(--p-bg-in-i) -20%, rgba(234, 255, 0, 0) 90%);
     display: flex;
 }
 
 .project-card>a:hover .p-c-ic-e svg {
-    stroke: #FFF;
+    stroke: #ffffff;
     fill: #FFF;
+}
+
+.pc-img-parent:hover .p-c-hover{
+    top: 0px;
+}
+.p-c-hover {
+    background: linear-gradient(0deg, var(--p-bg-in-i) -20%, rgba(234, 255, 0, 0) 100%);
+    top: 160px;
+    transition: top 0.11s;
 }
 
 
 .p-c-info {
-    height: calc(100% - 190px);
+    height: calc(100% - 160px);
     width: 100%;
-    padding: 10px 15px;
+    padding: 14px 15px;
     text-align: start;
 }
 
 .p-c-info a {
     background-color: var(--p-bg-in);
+    z-index: 100;
 }
 
 .p-c-info a span {
-   fill: var(--p-font-p-low);
+    fill: var(--p-font-p-low);
 }
 
 .project-card div>a>label {
@@ -79,12 +88,10 @@
 .p-c-info>label>p {
     font-size: 13px;
     font-weight: bold;
-    color: #ECB21C;
 }
 
 .p-c-info>p {
     font-size: 16px;
-    color: var(--p-font-h1);
     font-weight: 300;
 }
 
