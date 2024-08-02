@@ -91,7 +91,7 @@
 }
 
 .p-c-info>p {
-    font-size: 16px;
+    font-size: 15.5px !important;
     font-weight: 300;
 }
 
@@ -108,6 +108,7 @@
     padding: 4px 12px;
     font-weight: 600;
     color: white;
+    pointer-events: none;
 }
 
 .p-c-tag-item[data-type='Javascript'] {
@@ -121,6 +122,13 @@
 
 .p-c-tag-item[data-type='Sass'] {
     background-color: #B61B5C;
+}
+.p-c-tag-item[data-type='Astro'] {
+    background-color: #181818f2;
+}
+
+.p-c-tag-item[data-type='Css'] {
+    background-color: #10afff9d;
 }
 
 @media(450px > width) {

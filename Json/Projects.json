@@ -1,0 +1,26 @@
+[
+    {
+        "state": true,
+        "websiteURL": "https://lifo123.github.io/PromedyCalculator/",
+        "tittle": "PromedyCalculator",
+        "description": "Quickly get accurate results with our simple tool.",
+        "techs": "Astro,React,Css",
+        "img": "https://pbs.twimg.com/media/GT8DksiWsAEknhk?format=jpg&name=large"
+    },
+    {
+        "state": false,
+        "websiteURL": "https://lifo123.github.io/MetaTag-Editor/",
+        "tittle": "Meta Tag Editor",
+        "description": "Simple editor of metatag for testing the result in search engines",
+        "techs": "Javascript,React,Sass",
+        "img": "https://pbs.twimg.com/media/GTrzwwbXkAAgBHj?format=png&name=large"
+    },
+    {
+        "state": false,
+        "websiteURL": "https://lifo123.github.io/ManageTournaments",
+        "tittle": "Manage Tournaments",
+        "description": "Website for developing and managing custom tournaments in seconds.",
+        "techs": "Javascript,React,Sass",
+        "img": "https://pbs.twimg.com/media/GQyQ7oqWAAAQrox?format=webp&name=medium"
+    }
+]
