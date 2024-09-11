@@ -2,3 +2,74 @@
 
 ---
 
+<section class="view-anim f-col" id="About">
+    <h2 class="d-flex w-65 mx-auto l-subtitle">About me</h2>
+    <div class="about-cont f-row w-65 g-70 f-wrap mx-auto f-center mt-50">
+        <div class="about-img p-btn br-12">
+            <span class="d-flex f-center br-10">
+                <img src="#" alt="pfp Lifo" />
+            </span>
+        </div>
+        <label class="f-col g-15 f-justify-center">
+            <p class="l-text-p">
+                Hello! I'm a 20 year old developer from Peru.
+            </p>
+            <p class="l-text-p">
+                Specialized in building modern websites using <span
+                    class="p-blue">ReactJS</span
+                > and <span class="p-pink">Sass</span>, with knowledge of Git.
+            </p>
+            <p class="l-text-p">
+                Always improving my skills and staying updated with the latest
+                industry trends.
+            </p>
+        </label>
+    </div>
+</section>
+
+<style is:inline>
+    #About {
+        height: max-content;
+        min-height: max(40vh, 300px);
+    }
+    .about-img > span {
+        border: solid 2px var(--p-br-low);
+        background-color: var(--p-bg-in);
+        height: 200px;
+        width: 320px;
+        padding: 0px !important;
+        transition: transform 0.2s;
+    }
+
+    .about-img:hover span {
+        border: solid 2px #0cbbf2;
+        transform: translate(2px, -2px);
+    }
+
+    .about-cont > label {
+        width: calc(100% - 450px);
+    }
+
+    @media (450px> width) {
+        #About {
+            scroll-margin-top: 100px;
+        }
+        #About h2 {
+            justify-content: center;
+        }
+        .about-cont {
+            width: 80% !important;
+            gap: 30px !important;
+        }
+        .about-img {
+            width: 100% !important;
+        }
+        .about-img > span {
+            width: 100% !important;
+        }
+        .about-img > span > img {
+            height: 100% !important;
+            width: 100% !important;
+        }
+    }
+</style>

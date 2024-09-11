@@ -1,0 +1,52 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+
+const ProjectsData = fetch(
+    "https://raw.githubusercontent.com/Lifo123/JSONDB/main/Projects.json",
+)
+    .then((res) => res.json())
+    .then((data) => {
+        return data;
+    });
+---
+
+<section class="view-anim" id="Projects">
+    <span class="f-col w-70 f-align-start mx-auto">
+        <h2 class="l-subtitle">Latest Projects</h2>
+        <p class="mt-10 l-subpgrafh">
+            My lasts projects and destacable content
+        </p>
+    </span>
+    <div class="w-70 mx-auto f-row f-justify-around f-wrap g-30">
+        <a
+            class="vi-btn-all f-row br-max w-100 f-center mt-10 pointer"
+            href="/Projects"
+            >View All
+        </a>
+    </div>
+</section>
+
+<style is:inline>
+    #Projects {
+        height: max-content;
+        scroll-margin-top: 140px !important;
+    }
+
+    #Projects > span > p {
+        font-weight: 400;
+        font-size: 17px;
+    }
+
+    #Projects > div {
+        margin-top: 48px;
+    }
+    .vi-btn-all {
+        background-color: var(--p-bg-in);
+        padding: 13px 40px;
+        text-decoration: none;
+        color: var(--p-font-p-low);
+    }
+    .vi-btn-all:hover {
+        outline: solid 1px var(--p-br-hov);
+    }
+</style>

@@ -1,19 +1,20 @@
 ---
+import Layout from "@Layouts/Layout.astro";
 import Header from "@Components/Header.astro";
 import Hero from "@Components/Hero.astro";
-import Layout from "@Layouts/Layout.astro";
-
-
+import About from "@Components/About.astro";
+import CallAction from "@Components/CallAction.astro";
+import Projects from "@Components/Projects/Projects.astro";
 ---
 
 <Layout description="Portfolio of Lifo123">
-	<Header/>
+	<Header />
 	<main class="f-col w-100">
-		<Hero/>
+		<Hero />
+		<About />
+		<CallAction />
+		<Projects />
 	</main>
-	
 </Layout>
 
-<style is:inline>
-	
-</style>
+<style is:inline></style>
