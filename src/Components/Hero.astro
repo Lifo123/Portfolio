@@ -1,20 +1,16 @@
 ---
-import Icons, { FIcons } from "./Icons";
+import PrimaryBTN from "./Buttons/PrimaryBTN.jsx";
+import Icons from "./Icons";
+
 ---
 
-<section class="f-col f-center" id="Hero">
+<section class="f-col f-center" id="Home">
     <h1 class="fs-5 f-row f-center g-2">
         Edgar Sanchez <span class="peru-flag"></span>
     </h1>
-    <h2 class="ph-title fs-10">Frontend Developer</h2>
-    <a
-        href="https://github.com/Lifo123"
-        class="p-btn f-row g-3 f-center br-max"
-    >
-        <FIcons id={"redirect"} />
-        <p class="m-0">Download CV</p>
-    </a>
-    <ul class="f-row g-35 mx-auhref mt-35 f-center txt-stl-none">
+    <h2 class="ph-title fs-10 mb-1">Frontend Developer</h2>
+    <PrimaryBTN text="Download CV" url="https://github.com/Lifo123" logo="redirect" />
+    <ul class="f-row g-35 mx-auhref mt-2 mb-4 f-center txt-stl-none">
         <li class="d-flex f-center">
             <a
                 href="https://www.linkedin.com/in/lifo3/"
@@ -40,7 +36,7 @@ import Icons, { FIcons } from "./Icons";
             </li>
         </li>
     </ul>
-    <a class="arrow-land d-flex mt-120" href="#About" aria-label="go bot">
+    <a class="arrow-land d-flex" href="#About" aria-label="go bot">
         <svg height={40} viewBox="0 0 24 24">
             <path
                 d="M7.33199 16.3154C6.94146 15.9248 6.3083 15.9248 5.91777 16.3154C5.52725 16.7059 5.52725 17.339 5.91777 17.7296L10.5834 22.3952C11.3644 23.1762 12.6308 23.1762 13.4118 22.3952L18.0802 17.7267C18.4707 17.3362 18.4707 16.703 18.0802 16.3125C17.6897 15.922 17.0565 15.922 16.666 16.3125L13 19.9786V2.0001C13 1.44781 12.5523 1.0001 12 1.0001C11.4477 1.0001 11 1.44781 11 2.0001V19.9833L7.33199 16.3154Z"
@@ -51,8 +47,8 @@ import Icons, { FIcons } from "./Icons";
 </section>
 
 <style is:inline>
-    #Hero {
-        height: max(calc(90vh - 70px), 700px) !important;
+    #Home {
+        height: max(calc(90vh - 70px), 730px) !important;
         scroll-margin-top: 5000px;
     }
     .peru-flag {
@@ -80,16 +76,11 @@ import Icons, { FIcons } from "./Icons";
         color: var(--f-tittle);
     }
 
-    .p-btn {
-        outline: solid 2px var(--f-text-green);
-        padding: 13px 24px;
-        cursor: pointer;
-        user-select: none;
-    }
-
     .arrow-land {
-        fill: var(--p-icon-high);
+        fill: #7c7c7ccc;
         animation: arrow-land 1.6s ease infinite;
+        margin-top: 90px;
+        margin-bottom: 40px;
     }
 
     @keyframes arrow-land {

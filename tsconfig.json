@@ -12,7 +12,8 @@
       "@Utilities/*": ["src/Utilities/*"],
       "@Layouts/*": ["src/Layouts/*"],
       "@Assets/*": ["src/Assets/*"],
-      "@Context/*": ["src/Context/*"]
+      "@Context/*": ["src/Context/*"],
+      "@Pages/*": ["src/Pages/*"]
     }
   }
 }

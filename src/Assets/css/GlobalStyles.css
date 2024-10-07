@@ -1,0 +1,54 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --port-bg: #f2f2f2;
+    --port-bg-secondary: #f6f6f6;
+    --port-border: #aaaaaa;
+    --icon: #262626;
+
+    --active-color: #0CBBF2;
+}
+
+body {
+    background-color: var(--port-bg) !important;
+}
+
+.icon{
+    fill: var(--icon);
+    stroke: var(--icon);
+    transition: scale 0.2s;
+}
+.icon:hover{
+    scale: 1.1;
+}
+
+.p-btn {
+    background-color: var(--active-color);
+}
+.p-btn-in{
+    background-color: var(--port-bg);
+    outline: solid 2px var(--f-tittle);
+    color: var(--f-tittle);
+    padding: 13px 26px;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+.p-btn-in svg{
+    fill: var(--f-tittle);
+}
+
+.p-btn:hover {
+    background-color: var(--active-color);
+}
+
+.p-btn:hover .p-btn-in {
+    transform: translate(2px, -4px);
+    outline: solid 2px var(--active-color);
+    color: var(--active-color);
+}
+
+.p-btn:hover .p-btn-in svg {
+    fill: var(--active-color);
+}

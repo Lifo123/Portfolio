@@ -1,10 +1,5 @@
 ---
-import "@Assets/css/GlobalStyles.css";
-
 import ViewTransitions from "astro/components/ViewTransitions.astro";
-import { DarkModeStore } from "@Context/GlobalStore";
-
-const isDark = DarkModeStore.get();
 
 const { title = "Portfolio", description = "" } = Astro.props;
 const site = new URL(Astro.site);
@@ -64,9 +59,19 @@ const url = new URL(path, site).href;
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/Lifo123/FlifoCSS@main/src/output/Flifo.css"
 		/>
+		<link rel="stylesheet" href="/src/Assets/css/GlobalStyles.css" />
 	</head>
 
-	<body class={isDark ? "DarkMode" : null}>
+	<body>
 		<slot />
 	</body>
+	<script is:inline>
+		const isDark = localStorage.getItem('DMstate') === "true"
+		if(!isDark){
+            document.body.classList.add("DarkMode");
+        }else{
+            document.body.classList.remove("DarkMode");
+        }
+		
+	</script>
 </html>
