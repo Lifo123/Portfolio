@@ -1,0 +1,18 @@
+---
+import '@lifo123/library/dist/css/library.css'
+import Layout from "@Layouts/Layout.astro";
+import ViewTransitions from "astro/components/ViewTransitions.astro";
+interface Props {
+    title: string;
+    description: string;
+}
+---
+
+
+<Layout title="Blog seccion" description="Template">
+    <ViewTransitions transition:name="none" />
+    <main class="f-col lb-md text-left g-2">
+        <span onclick="history.back()" class="f-btn-primary f-row f-align-center f-justify-center">Go back</span>
+        <slot />
+    </main>
+</Layout>

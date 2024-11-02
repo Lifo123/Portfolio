@@ -1,0 +1,32 @@
+---
+import DarkModeIcon from "@Apps/DarkModeIcon";
+---
+
+<header class="f-row f-justify-between f-align-center px-4 w-100">
+    <h1 class="fw-700 d-flex f-center"><a href="/Template">LIFO</a></h1>
+    <ul class="f-row g-4 f-center">
+        <li><a href="/Portfolio/">About</a></li>
+        <li><a href="/Portfolio/Projects/">Projects</a></li>
+        <li><a href="/Portfolio/Contact">Contact</a></li>
+        <li><DarkModeIcon storage="F-Theme" client:only="react" /></li>
+    </ul>
+</header>
+
+<style>
+    header {
+        height: 90px;
+        position: sticky;
+        top: 0px;
+        background-color: var(--f-p-bg);
+        z-index: 1000;
+    }
+    header a {
+        color: var(--f-p-title);
+        font-size: 22px;
+    }
+    header ul a {
+        font-weight: 500;
+        font-size: 15.5px;
+        padding: 0.3rem;
+    }
+</style>

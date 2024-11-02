@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Satooshi;
+    src: url(../fonts//Satoshi-Variable.ttf);
+}
+
+@font-face {
+    font-family: Satooshi-Italic;
+    src: url(../fonts//Satoshi-VariableItalic.ttf);
+}
+
+* {
+    font-family: Satooshi, Inter Tight, sans-serif;
+}
+
+:root {
+    --f-p-bg: #fcfcfd;
+    --f-p-bg-2: #fafafa;
+    --f-p-bg-2-hover: #f5f5f5;
+    --f-p-br-low: #232325;
+    --f-p-br: #747477;
+    --f-p-br-2: #ffffff33;
+
+    --f-p-icon: #09090B;
+
+    --f-p-title: #09090B;
+    --f-p-text: #56565C;
+
+    --f-p-hue: 210;
+    --f-p-sat: 100%;
+    --f-p-light: 50%;
+    --f-p-opacity: 1;
+
+    --f-p-hsl-primary: hsl(var(--f-p-hue), var(--f-p-sat), var(--f-p-light), var(--f-p-opacity));
+
+}
+
+.dark {
+    --f-p-bg: #09090b;
+    --f-p-bg-2: #111214;
+    --f-p-bg-2-hover: #222227;
+    --f-p-br-low: #232325;
+    --f-p-br: #3d3d3f;
+    --f-p-br-2: #ffffff33;
+
+    --f-p-icon: #fafafabf;
+
+    --f-p-title: #FAFAFA;
+    --f-p-text:#c4c8c9;
+}
+
+
+.text-blue {
+    color: var(--f-text-blue);
+}
+
+.text-common {
+    color: var(--f-p-text);
+    font-size: 15.5px;
+    line-height: 1.5rem;
+}
+
+body {
+    background-color: var(--f-p-bg);
+}
+
+.section {
+    min-height: 80vh;
+    width: 90%;
+    margin-inline: auto;
+    color: var(--f-p-title);
+}
+
+.project-card {
+    width: 46%;
+    flex-grow: 1;
+    min-width: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 1px var(--f-p-br);
+    background-color: var(--f-p-bg-2);
+    color: var(--f-p-title);
+}
+
+.project-card p {
+    margin: 0;
+}
+
+.project-card .tag {
+    font-weight: 500;
+    font-size: 13px;
+    background-color: #64646432;
+    padding: .125rem .625rem;
+}
+
+.btn {
+    font-size: 14.5px;
+    padding: .5rem 1rem;
+    line-height: 1.25rem;
+}
+
+.btn-primary {
+    background-color: var(--f-p-title);
+    padding: 0.6rem 1.1rem;
+    color: var(--f-p-bg);
+    transition: opacity .3s ease;
+}
+.btn-primary:hover{
+    opacity: .83;
+}
+
+.btn-secondary{
+    background-color: var(--f-p-bg-2);
+    border: solid 1px var(--f-p-br-2);
+    color: var(--f-p-title);
+    transition: background-color .2s ease;
+}
+
+.btn-secondary:hover{
+    background-color: var(--f-p-bg-2-hover);
+}
