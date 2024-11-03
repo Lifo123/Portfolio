@@ -50,7 +50,7 @@ const url = new URL(path, site).href;
 	mediaQuery.addEventListener("change", () => setDarkMode(document));
 </script>
 
-<html lang="en">
+<html lang="en" translate="no">
 	<head>
 		<title>{title}</title>
 		<meta name="Author" content="Lifo123" />
@@ -96,29 +96,31 @@ const url = new URL(path, site).href;
 		/>
 		<ViewTransitions />
 	</head>
-	<body class="f-col mx-auto f-align-center">
+	<body class="f-col mx-auto f-align-center relative">
 		<button aria-label="Back to Top" class="f-top-btn d-flex f-center fixed br-50 pointer" id="top-btn" onclick="window.scrollTo(0,'smooth');">
 			<svg height="16" fill="none" focusable="false" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"> <path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
 		</button>
 		<Header />
 		<slot />
 		<Footer />
+		<span class="fixed bg-blur br-50 no-select"></span>
 	</body>
 </html>
 
-<script>
-	window.addEventListener("scroll", () => {
-    const topBtn = document.getElementById("top-btn");
-
-    if (window.scrollY > 400) {
-        topBtn.classList.add("visible");
-    } else {
-        topBtn.classList.remove("visible");
-    }
-});
-</script>
-
-<style is:inline>
+<style is:global>
+	.bg-blur {
+		height: 1200px;
+		width: 2200px;
+		top: 110%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: radial-gradient(
+			circle,
+			rgba(148, 157, 166, 0.22) -70%,
+			rgba(255, 255, 255, 0) 46%
+		);
+		filter: brightness(1);
+	}
 	html{
 		view-transition-name: none;
 		scroll-behavior: smooth;
@@ -133,17 +135,21 @@ const url = new URL(path, site).href;
 		background-color: var(--f-p-bg-2);
 		height: 48px;
 		aspect-ratio: 1 / 1;
-		bottom: -10px;
+		bottom: -48px;
 		right: 32px;
 		opacity: 0;
-		z-index: 800;
 		pointer-events: none;
-		transition: opacity .3s ease, bottom .3s ease;
+		animation: ScrollVisible linear both;
+		animation-timeline: scroll();
+		animation-range: 100px 400px;
 	}
-	.f-top-btn.visible{
-		opacity: 1;
-		bottom: 34px;
-		pointer-events: visible;
+
+	@keyframes ScrollVisible {
+		100%{
+			opacity: 1;
+			pointer-events: visible;
+			bottom: 30px;
+		}
 	}
 
 	@media(1130px > width){

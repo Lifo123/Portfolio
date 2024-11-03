@@ -14,7 +14,7 @@
 
 :root {
     --f-p-bg: #fcfcfd;
-    --f-p-bg-2: #f1f1f1;
+    --f-p-bg-2: #fbfbfb;
     --f-p-bg-2-hover: #f5f5f5;
     --f-p-br-low: #969696;
     --f-p-br: #747477;
@@ -32,6 +32,8 @@
 
     --f-p-hsl-primary: hsl(var(--f-p-hue), var(--f-p-sat), var(--f-p-light), var(--f-p-opacity));
 
+    --lb-link: #0050b5;
+
 }
 
 .dark {
@@ -46,6 +48,7 @@
 
     --f-p-title: #FAFAFA;
     --f-p-text:#c4c8c9;
+    --lb-link: #07aaff;
 }
 
 
@@ -58,9 +61,23 @@ body {
     width: 90%;
     margin-inline: auto;
     color: var(--f-p-title);
+    animation: Show linear both;
+    animation-timeline: view();
+    animation-range: 0% 30%;
 }
 
-@media (650px > width) {
+@keyframes Show {
+    0%{
+        scale: 0.97;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@media (630px > width) {
     .section {
         width: 100%;
         padding-inline: 16px ;
@@ -70,7 +87,7 @@ body {
 .project-card {
     width: 46%;
     flex-grow: 1;
-    min-width: 260px;
+    min-width: 290px;
     border-radius: 10px;
     overflow: hidden;
     border: solid 1px var(--f-p-br);
@@ -95,7 +112,7 @@ body {
 .project-card .tag {
     font-weight: 500;
     font-size: 12.5px;
-    background-color: #64646432;
+    background-color: #87878724;
     padding: .125rem .625rem;
 }
 

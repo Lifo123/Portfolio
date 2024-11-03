@@ -1,15 +1,11 @@
 ---
 import ProjectCards from "@Apps/ProjectCards";
-import BackBTN from "@Components/BackBTN.astro";
 import NavigationLayout from "@Layouts/NavigationLayout.astro";
 ---
 
 <NavigationLayout title="Projects" description="List of projects">
     <p class="mb-4">
-        A showcase of diverse projects, exploring various challenges and
-        solutions across design, development, and technology. Each project
-        reflects a commitment to innovation, problem-solving, and continuous
-        learning. Dive in to see the work and ideas in action.
+        Explore projects that bring creative solutions to real challenges in design, development, and tech. See ideas in action and the journey of continuous learning.
     </p>
-    <ProjectCards client:only="react" />
+    <ProjectCards max={null} client:only="react" />
 </NavigationLayout>

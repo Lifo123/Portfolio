@@ -1,4 +1,5 @@
 ---
+import '@Assets/css/Markdown.css'
 import { getEntry, render } from "astro:content";
 
 const data = await getEntry("Curriculum", "index");
@@ -6,7 +7,7 @@ const { Content } = await render(data);
 
 ---
 
-<div class="lb-resume my-3">
+<div class="lb-resume my-5 br-8">
     <header>
         <h4 class="mx-auto text-center mb-2">{data.data.author}</h4> 
         <p class="m-0 fs-2 text-center">{data.data.contact} | {data.data.phone}</p>
@@ -15,6 +16,18 @@ const { Content } = await render(data);
 </div>
 
 <style is:inline>
+    .lb-resume{
+        border: solid 1px #61616133;
+        background-color: var(--lb-bg-2);
+        color: var(--lb-title);
+        padding: 2.5rem 2.25rem;
+        box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.1);
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .lb-resume h4{
+        font-size: 15px;
+    }
     .lb-resume h3 {
         padding: 0.5rem 0 1rem 0;
         margin-top: 1.6rem;

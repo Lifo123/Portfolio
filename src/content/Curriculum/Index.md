@@ -8,21 +8,19 @@
 
 ### Education
 <div class="d-flex f-justify-between f-align-center">
-    <h4 class="fs-3">Universidad de San Marcos</h4>
-    <span class="fs-2">2022 - Present</span>
+    <h4 class="fs-3">Techology University of Peru (UTP), Lima</h4>
+    <span class="fs-2">Jan, 2024 - Present</span>
 </div>
 
-GPA: 3.8
+GPA: 14.5
 
 - Computer Science
 - Mathematics   
 
 <div class="d-flex f-justify-between f-align-center mt-4">
-    <h4 class="fs-3">Universidad de San Marcos</h4>
-    <span class="fs-2">2022 - Present</span>
+    <h4 class="fs-3">Bootcamp de Desarrollo Web, Lima</h4>
+    <span class="fs-2">Aug, 2021 - Dec, 2022</span>
 </div>
-
-GPA: 3.8
 
 - Computer Science
 - Mathematics 
@@ -36,10 +34,29 @@ GPA: 3.8
 - NodeJS
 - Git
 - Github
-- Docker
-- MongoDB
+- Astro
+- Sass
+- Firebase
 
 ### Professional Experience
 
-#### Certifications
+<div class="d-flex f-justify-between f-align-center">
+    <h4 class="fs-3">Data Service Ltd.</h4>
+    <span class="fs-2">Lima - Peru</span>
+</div>
+<div class="d-flex f-justify-between f-align-center mb-2">
+    <p class="fs-2 m-0">Software Developer</p>
+    <span class="fs-2">Aug, 2021 - Dec, 2022</span>
+</div>
 
+- Developed a web application for a client.
+- Worked with a team of developers to deliver a high-quality product.
+- Collaborated with designers to create visually appealing interfaces.
+- Implemented responsive design principles to ensure optimal user experience.
+- Utilized modern web technologies such as React and Sass.
+
+### Certifications
+|  |  |
+| --- | --- |
+| Certified Scrum Master | 2021 |
+| Certified Scrum Professional | 2021 |

@@ -1,6 +1,4 @@
 ---
-import BackBTN from "@Components/BackBTN.astro";
-import Layout from "@Layouts/Layout.astro";
 import NavigationLayout from "@Layouts/NavigationLayout.astro";
 ---
 
@@ -9,9 +7,25 @@ import NavigationLayout from "@Layouts/NavigationLayout.astro";
     description="You can contact me by email or Linkedin"
 >
     <p class="text-common fs-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci
-        nostrum, dicta excepturi cum quibusdam ullam quod, necessitatibus
-        maiores deserunt facilis praesentium unde! Cumque libero totam aliquid
-        sint, quas maxime.
+        Have any questions or want to discuss a project? Don't hesitate to reach
+        out! I'm here to help and share ideas. Your message is always welcome!
     </p>
+    <div class="contact-form f-col br-8 mx-auto mt-3">
+        <p class="m-0 fs-2 f-row g-2 f-align-center mb-3 pt-3 px-4  ">
+            <strong class="d-flex btn-br br-4" style="padding: .4rem 1rem;">To</strong> alberto_p-@hotmail.com
+        </p>
+        <input type="text">
+        <textarea class="fs-3 p-3" placeholder="Mensaje" style="resize: none; height: 300px;"></textarea>
+        <div class="f-row g-2 f-justify-between mt-3 px-4 pb-3">
+            <span class="btn-secondary br-6 fw-600 fs-2 pointer" style="padding: .6rem 2.25rem">Clear</span>
+            <span class="btn-primary br-6 fw-600 fs-2 pointer" style="padding: .6rem 2.25rem">Send</span>
+        </div>
+    </div>
 </NavigationLayout>
+
+<style>
+    .contact-form {
+        border: solid 1px var(--lb-br-low);
+        width: 80%;
+    }
+</style>

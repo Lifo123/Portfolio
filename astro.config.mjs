@@ -10,5 +10,9 @@ export default defineConfig({
   outDir: 'Build',
   build: {
     assets: 'assets',
+  },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
   }
 });

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-export default function ProjectCards() {
+export default function ProjectCards({ max }) {
     const [Projects, setProjects] = useState({})
 
     useEffect(() => {
@@ -20,9 +20,9 @@ export default function ProjectCards() {
     return (
         <div className="f-row g-2 f-wrap f-center">
             {
-                Projects && Object.keys(Projects).length > 0 ? Object.keys(Projects).map((key, i) => (
+                Projects && Object.keys(Projects).length > 0 ? Object.keys(Projects).slice(0, (max || Object.keys(Projects).length)).map((key, i) => (
                     <div className="project-card px-4 py-3" key={i}>
-                        <span className="fs-1 fw-500"> {new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric" }).format(new Date(Projects[key].date))}</span>
+                        <span className="fs-1 fw-500 text-common"> {new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric" }).format(new Date(Projects[key].date))}</span>
                         <h3 className="fs-5 mt-2">{Projects[key].tittle}</h3>
                         <div className="f-row g-2 py-1 mb-2">
                             {Projects[key].techs.map((item) => <span key={item} className="fs-6 fw-400 br-max tag" data-tag={item}>{item}</span>)}
