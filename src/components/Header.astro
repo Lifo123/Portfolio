@@ -17,9 +17,20 @@ import {DarkModeIcon} from "@lifo123/library";
         height: 90px;
         position: sticky;
         top: 0px;
-        background-color: var(--f-p-bg);
         z-index: 1000;
+
+        animation: Scroll linear both;
+		animation-timeline: scroll();
+		animation-range: 70px 600px;
     }
+    
+    @keyframes Scroll {
+        100%{
+            background-color: transparent;
+            backdrop-filter: blur(5px);
+        }
+    }
+
     header a {
         color: var(--f-p-title);
         font-size: 22px;

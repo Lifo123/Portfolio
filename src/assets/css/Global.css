@@ -3,11 +3,6 @@
     src: url(../fonts//Satoshi-Variable.ttf);
 }
 
-@font-face {
-    font-family: Satooshi-Italic;
-    src: url(../fonts//Satoshi-VariableItalic.ttf);
-}
-
 * {
     font-family: Satooshi, Inter Tight, sans-serif;
 }
