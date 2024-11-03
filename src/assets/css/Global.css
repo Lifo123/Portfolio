@@ -49,16 +49,6 @@
 }
 
 
-.text-blue {
-    color: var(--f-text-blue);
-}
-
-.text-common {
-    color: var(--f-p-text);
-    font-size: 15.5px;
-    line-height: 1.5rem;
-}
-
 body {
     background-color: var(--f-p-bg);
 }
@@ -96,35 +86,9 @@ body {
 
 .project-card .tag {
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12.5px;
     background-color: #64646432;
     padding: .125rem .625rem;
-}
-
-.btn {
-    font-size: 14.5px;
-    padding: .5rem 1rem;
-    line-height: 1.25rem;
-}
-
-.btn-primary {
-    background-color: var(--f-p-title);
-    padding: 0.6rem 1.1rem;
-    color: var(--f-p-bg);
-    transition: opacity .3s ease;
-}
-.btn-primary:hover{
-    opacity: .83;
-}
-
-.btn-secondary{
-    background-color: var(--f-p-bg-2);
-    border: solid 1px var(--f-p-br-2);
-    color: var(--f-p-title);
-}
-
-.btn-secondary:hover{
-    background-color: var(--f-p-bg-2-hover);
 }
 
 .dm-icon-toggle{
@@ -139,4 +103,24 @@ body {
 .dm-icon-toggle svg{
     height: 100%;
     width: 100%;
+}
+
+.circle{
+    height: 8px;
+    top: 10px;
+    left: -3px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--f-p-title);
+    margin-right: 1rem;
+}
+
+.exp-list{
+    min-height: max-content;
+    height: max-content;
+}
+.exp-list::before{
+    content: "";
+    display: block;
+    width: 2px;
+    background-color: var(--f-p-hsl-primary);
 }

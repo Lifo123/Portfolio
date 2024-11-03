@@ -1,15 +1,12 @@
 ---
-
+import ExperienceList from "./ExperienceList.astro";
 ---
 
-<section id="experience" class="section f-col" style="min-height: 40vh;">
-    <div>
-        <h3 class="fs-4 fw-700">Experience</h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            adipisci nostrum, dicta excepturi cum quibusdam ullam quod,
-            necessitatibus maiores deserunt facilis praesentium unde! Cumque
-            libero totam aliquid sint, quas maxime.
-        </p>
-    </div>
+<section id="experience" class="section f-col mb-8" style="min-height: max-content;">
+    <article>
+        <h3 class="fs-4 fw-700 mb-5">Experience</h3>
+        <ExperienceList position="Frelance" place="Remote" description="I develop " date="2022 - Present" />
+        <ExperienceList position="Junior Developer" place="National University of San Marcos" description="I develop " date="2022 - Present" />
+        <ExperienceList position="Frelance" place="Remote" description="I develop " date="2022 - Present" />
+    </article>
 </section>
