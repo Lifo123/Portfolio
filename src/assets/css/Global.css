@@ -14,11 +14,11 @@
 
 :root {
     --f-p-bg: #fcfcfd;
-    --f-p-bg-2: #fafafa;
+    --f-p-bg-2: #f1f1f1;
     --f-p-bg-2-hover: #f5f5f5;
-    --f-p-br-low: #232325;
+    --f-p-br-low: #969696;
     --f-p-br: #747477;
-    --f-p-br-2: #ffffff33;
+    --f-p-br-2: #494949ad;
 
     --f-p-icon: #09090B;
 
@@ -38,7 +38,7 @@
     --f-p-bg: #09090b;
     --f-p-bg-2: #111214;
     --f-p-bg-2-hover: #222227;
-    --f-p-br-low: #232325;
+    --f-p-br-low: #262628;
     --f-p-br: #3d3d3f;
     --f-p-br-2: #ffffff33;
 
@@ -80,6 +80,15 @@ body {
     background-color: var(--f-p-bg-2);
     color: var(--f-p-title);
 }
+.project-card-skeleton{
+    width: 46%;
+    height: 180px;
+    flex-grow: 1;
+    min-width: 260px;
+    border-radius: 10px;
+    border: solid 1px var(--f-p-br);
+    background-color: var(--f-p-bg-2);
+}
 
 .project-card p {
     margin: 0;
@@ -112,9 +121,22 @@ body {
     background-color: var(--f-p-bg-2);
     border: solid 1px var(--f-p-br-2);
     color: var(--f-p-title);
-    transition: background-color .2s ease;
 }
 
 .btn-secondary:hover{
     background-color: var(--f-p-bg-2-hover);
+}
+
+.dm-icon-toggle{
+    border: solid 1px var(--f-p-br-low);
+    padding: .25rem;
+    height: 36px;
+    aspect-ratio: 1 / 1;
+}
+.dm-icon-toggle:hover{
+    background-color: var(--f-p-bg-2-hover);
+}
+.dm-icon-toggle svg{
+    height: 100%;
+    width: 100%;
 }

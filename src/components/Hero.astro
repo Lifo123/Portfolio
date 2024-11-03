@@ -45,10 +45,14 @@
 
 <style>
     .hero-btn {
-        border: solid 1px var(--f-p-br);
+        border: solid 1px var(--f-p-br-low);
         font-size: 15px;
         padding: 0.6rem 1.25rem;
         line-height: 1.25rem;
+        transition: border .2s ease;
+    }
+    .hero-btn:hover{
+        border: solid 1px var(--f-p-br);
     }
     .contact-hero a{
         color: var(--f-p-title);
