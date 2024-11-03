@@ -1,12 +1,11 @@
 ---
-import DarkModeIcon from "@Apps/DarkModeIcon";
-import {DarkmodeDrop, DarkmodeToggle} from "@lifo123/library";
+import {DarkModeIcon} from "@lifo123/library";
 ---
 
 <header class="f-row f-justify-between f-align-center px-4 w-100">
     <h1 class="fw-700 d-flex f-center"><a href="/Portfolio/">LIFO</a></h1>
     <ul class="f-row g-4 f-center">
-        <li><a href="/Portfolio/">About</a></li>
+        <li><a href="/Portfolio/#about">About</a></li>
         <li><a href="/Portfolio/Projects/">Projects</a></li>
         <li><a href="/Portfolio/Contact">Contact</a></li>
         <li><DarkModeIcon storage="F-Theme" client:only="react" /></li>
@@ -29,5 +28,14 @@ import {DarkmodeDrop, DarkmodeToggle} from "@lifo123/library";
         font-weight: 500;
         font-size: 15.5px;
         padding: 0.3rem;
+    }
+
+    @media (650px > width) {
+        header{
+            padding-inline: 14px !important;
+        }
+        header ul{
+            gap: .5rem !important;
+        }
     }
 </style>

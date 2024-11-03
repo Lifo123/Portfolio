@@ -50,7 +50,7 @@
 
 
 body {
-    background-color: var(--f-p-bg);
+    background-color: var(--lb-bg);
 }
 
 .section {
@@ -58,6 +58,13 @@ body {
     width: 90%;
     margin-inline: auto;
     color: var(--f-p-title);
+}
+
+@media (650px > width) {
+    .section {
+        width: 100%;
+        padding-inline: 16px ;
+    }
 }
 
 .project-card {
@@ -82,6 +89,7 @@ body {
 
 .project-card p {
     margin: 0;
+    font-size: 14.5px;
 }
 
 .project-card .tag {
@@ -91,27 +99,14 @@ body {
     padding: .125rem .625rem;
 }
 
-.dm-icon-toggle{
-    border: solid 1px var(--f-p-br-low);
-    padding: .25rem;
-    height: 36px;
-    aspect-ratio: 1 / 1;
-}
-.dm-icon-toggle:hover{
-    background-color: var(--f-p-bg-2-hover);
-}
-.dm-icon-toggle svg{
-    height: 100%;
-    width: 100%;
-}
-
 .circle{
     height: 8px;
     top: 10px;
     left: -3px;
     aspect-ratio: 1 / 1;
-    background-color: var(--f-p-title);
+    background-color: var(--lb-br);
     margin-right: 1rem;
+    transition: background-color .5s ease;
 }
 
 .exp-list{
@@ -121,6 +116,18 @@ body {
 .exp-list::before{
     content: "";
     display: block;
+    position: absolute;
+    top: 6px;
+    height: 100%;
     width: 2px;
-    background-color: var(--f-p-hsl-primary);
+    background-color: var(--lb-br-low);
+}
+
+.exp-list:hover .circle{
+    background-color: var(--lb-hsl-primary);
+}
+
+.icon{
+    stroke: var(--lb-icon);
+    fill: var(--lb-icon);
 }

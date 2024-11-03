@@ -1,0 +1,25 @@
+---
+import { getEntry, render } from "astro:content";
+
+const data = await getEntry("Curriculum", "index");
+const { Content } = await render(data);
+
+---
+
+<div class="lb-resume my-3">
+    <header>
+        <h4 class="mx-auto text-center mb-2">{data.data.author}</h4> 
+        <p class="m-0 fs-2 text-center">{data.data.contact} | {data.data.phone}</p>
+    </header>
+    <Content />
+</div>
+
+<style is:inline>
+    .lb-resume h3 {
+        padding: 0.5rem 0 1rem 0;
+        margin-top: 1.6rem;
+        margin-bottom: 0.8rem;
+        border-bottom: solid 1px var(--lb-br-low);
+        text-align: center;
+    }
+</style>

@@ -1,0 +1,14 @@
+---
+import NavigationLayout from "@Layouts/NavigationLayout.astro";
+import CVcontent from "src/content/Curriculum/CVcontent.astro";
+---
+
+<NavigationLayout
+    title="Resume"
+    description="Little description for resume of lifo123"
+>
+    <span class="btn btn-secondary br-max fw-600" style="font-size: 13px;" slot="btn"
+        >Download CV</span
+    >
+    <CVcontent />
+</NavigationLayout>

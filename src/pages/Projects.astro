@@ -1,17 +1,15 @@
 ---
 import ProjectCards from "@Apps/ProjectCards";
-import Layout from "@Layouts/Layout.astro";
+import BackBTN from "@Components/BackBTN.astro";
+import NavigationLayout from "@Layouts/NavigationLayout.astro";
 ---
 
-<Layout title="Projects" description="Template">
-    <main class="section f-col px-4" style="min-height: 88vh;">
-        <h1 class="fs-4 fw-700 mb-3">Projects</h1>
-        <p class="mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            adipisci nostrum, dicta excepturi cum quibusdam ullam quod,
-            necessitatibus maiores deserunt facilis praesentium unde! Cumque
-            libero totam aliquid sint, quas maxime.
-        </p>
-        <ProjectCards client:only="react" />
-    </main>
-</Layout>
+<NavigationLayout title="Projects" description="List of projects">
+    <p class="mb-4">
+        A showcase of diverse projects, exploring various challenges and
+        solutions across design, development, and technology. Each project
+        reflects a commitment to innovation, problem-solving, and continuous
+        learning. Dive in to see the work and ideas in action.
+    </p>
+    <ProjectCards client:only="react" />
+</NavigationLayout>

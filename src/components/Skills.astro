@@ -1,0 +1,70 @@
+---
+import { Github } from "@Assets/icons/Social";
+import { AstroIcon, CSS, Git, HTML, JS, React, Sass,NodeJS, Firebase} from "@Assets/icons/Technologies/Index.ts";
+---
+
+<section
+    id="skills"
+    class="section f-col mb-10"
+    style="min-height: max-content;"
+>
+    <h3 class="fs-5 fw-700 mb-5">Skills</h3>
+    <ul class="skills-cont f-row g-4 f-wrap f-center mx-auto">
+        <li class="icon f-col f-center">
+            <HTML size="38" strokeWidth="2" />
+        </li>
+        <li class="icon f-col f-center">
+            <CSS size="38" strokeWidth="2" />
+        </li>
+        <li class="icon f-col f-center">
+            <JS size="38"/>
+        </li>
+        <li class="icon f-col f-center">
+            <AstroIcon size="38"/>
+        </li>
+        <li class="icon f-col f-center">
+           <React size="38"/>
+        </li>
+        <li class="icon f-col f-center">
+            <Sass size="38"/>
+        </li>
+        <li class="icon f-col f-center">
+            <Git />
+        </li><li class="icon f-col f-center">
+            <Github size="38" strokeWidth="2" />
+        </li>
+        <li class="icon f-col f-center">
+            <NodeJS size="38"/>
+        </li>
+        <li class="icon d-flex f-center">
+            <Firebase size="38"/>
+        </li>
+    </ul>
+</section>
+
+<style is:inline>
+    .skills-cont {
+        width: 75%;
+    }
+    .skills-cont li {
+        border-radius: 4px;
+        width: max-content;
+        padding: 1rem 2rem;
+        opacity: 0.8;
+        border: solid 1px var(--lb-br-low);
+        transition: border 0.2s ease;
+    }
+    .skills-cont li:hover {
+        opacity: 1;
+        border: solid 1px var(--lb-br-2);
+    }
+
+    @media (650px > width) {
+        .skills-cont {
+            width: 100%;
+        }
+        .skills-cont li {
+            width: 46%;
+        }
+    }
+</style>

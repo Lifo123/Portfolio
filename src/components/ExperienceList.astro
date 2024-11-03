@@ -1,20 +1,22 @@
 ---
-
 interface Props {
     place: string;
     position: string;
     description: string;
     date: string;
-
 }
 
 const props = Astro.props;
 ---
 
-<div class="exp-list f-row g-3 relative ml-4">
+<div class="exp-list f-row g-3 relative ml-4 pb-2">
     <span class="circle br-50 absolute"></span>
-    <div class="f-col ml-1">
-        <h3 class="fs-4 fw-700">{props.position}</h3>
-        <p>{props.date}</p>
+    <div class="f-col ml-4">
+        <span class="f-row g-2 f-center">
+            <h3 class="fs-4 fw-700 d-flex f-center">{props.position}</h3>
+            <p class="m-0 d-flex f-center">{props.place}</p>
+        </span>
+        <span class="fs-2 text-common">{props.date}</span>
+        <p class="mt-2">{props.description}</p>
     </div>
 </div>
