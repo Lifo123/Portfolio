@@ -1,0 +1,91 @@
+---
+import BackBTN from "@Components/BackBTN.astro";
+import Layout from "@Layouts/Layout.astro";
+---
+
+<script>
+    const COOKIE = document.cookie
+        .split(";")
+        .find((v) => v.startsWith("F-User="));
+    const USER = JSON.parse(COOKIE?.split("=")[1] || "{}");
+
+    if (!COOKIE) {
+        window.location.href = "/Portfolio/Admin";
+        document.cookie =
+            "F-User=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+    }
+
+    const btnLogout = document.getElementById("btn-logout");
+
+    btnLogout.addEventListener("click", () => {
+        document.cookie =
+            "F-User=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+        window.location.href = "/Portfolio/Admin";
+    });
+</script>
+
+<Layout title="Admin" description="Admin Page">
+    <main class="p-dashboard f-col section mt-6 px-4" style="min-height: 80vh;">
+        <div class="f-row f-justify-between f-align-center">
+            <BackBTN />
+            <span
+                class="btn-third br-max fs-2 fw-600 pointer"
+                style="padding: .3rem .8rem;"
+                id="btn-logout">Log out</span
+            >
+        </div>
+        <section class="w-100 px-6">
+            <div class="f-row g-4 mt-4">
+                <div class="f-col g-2 f-grow">
+                    <h5 class="fs-2 mb-1">Project</h5>
+                    <input type="text" placeholder="Project Name" class="f-input f-grow" />
+                </div>
+                <div class="f-col g-2 ">
+                    <h5 class="fs-2 mb-1">Date</h5>
+                    <input type="date" placeholder="Date" class="f-input" />
+                </div>
+                <div class="f-col g-2">
+                    <h5 class="fs-2 mb-1">State</h5>
+                    <span class="f-row f-justify-between">
+                        <input type="checkbox" class="f-input" />
+                    </span>
+                </div>
+            </div>
+            <div class="f-col g-2 mt-3">
+                <h5 class="fs-2 mb-1">Description</h5>
+                <input type="text" placeholder="Description" class="f-input" />
+            </div>
+            <div class="f-row g-4 mt-3">
+                <div class="f-col g-2 w-50">
+                    <h5 class="fs-2 mb-1">Image</h5>
+                    <input type="text" placeholder="Image" class="f-input" />
+                </div>
+                <div class="f-col g-2 w-50">
+                    <h5 class="fs-2 mb-1">Repository</h5>
+                    <input type="text" placeholder="Repository" class="f-input" />
+                </div>
+            </div>
+            <div class="f-row g-4 mt-3">
+                <div class="f-col g-2 w-40">
+                    <h5 class="fs-2 mb-1">Technologies</h5>
+                    <input type="text" placeholder="Technologies" class="f-input" />
+                </div>
+                <div class="f-col g-2 f-grow">
+                    <h5 class="fs-2 mb-1">Website URL</h5>
+                    <input type="text" placeholder="Website URL" class="f-input" />
+                </div>
+            </div>
+            <div class="f-row f-justify-between mt-4">
+                <span class="btn btn-third br-6 d-flex">Clear</span>
+                <span class="btn btn-primary br-6 d-flex">Send Project</span>
+            </div>
+        </section>
+    </main>
+</Layout>
+
+<style>
+    .p-dashboard p {
+        font-size: calc(var(--lb-multiplier) * 13px);
+        color: var(--lb-text);
+    }
+</style>

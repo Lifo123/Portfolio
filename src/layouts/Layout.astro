@@ -1,6 +1,5 @@
 ---
 import "@Assets/css/Global.css";
-import "@lifo123/library/dist/css/library.css";
 import Header from "@Components/Header.astro";
 import Footer from "@Components/Footer.astro";
 import ViewTransitions from "astro/components/ViewTransitions.astro";
@@ -120,6 +119,7 @@ const url = new URL(path, site).href;
 			rgba(255, 255, 255, 0) 46%
 		);
 		filter: brightness(1);
+		z-index: 0;
 	}
 	html{
 		view-transition-name: none;
@@ -132,7 +132,7 @@ const url = new URL(path, site).href;
 	.f-top-btn{
 		border: none;
 		outline: none;
-		background-color: var(--f-p-bg-2);
+		background-color: rgba(var(--lb-bg-2), 1);
 		height: 48px;
 		aspect-ratio: 1 / 1;
 		bottom: -48px;

@@ -9,14 +9,12 @@ interface Props {
 const props = Astro.props;
 ---
 
-<div class="exp-list f-row g-3 relative ml-4 pb-2">
+<div class="exp-list f-row g-3 relative ml-4">
     <span class="circle br-50 absolute"></span>
     <div class="f-col ml-4">
-        <span class="f-row g-2 f-center">
-            <h3 class="fs-4 fw-700 d-flex f-center">{props.position}</h3>
-            <p class="m-0 d-flex f-center">{props.place}</p>
-        </span>
-        <span class="fs-2 text-common">{props.date}</span>
-        <p class="mt-2">{props.description}</p>
+        <span class="fs-2 text-common my-2">{props.date}</span>
+        <h3 class="fs-4 fw-700">{props.position}</h3>
+        <p class="m-0 fs-2" style="font-size: calc(var(--lbmultiplier) * 14.5);">{props.place}</p>
+        <p class="m-0 my-2" style="font-size: calc(var(--lbmultiplier) * 14.5);">{props.description}</p>
     </div>
 </div>
