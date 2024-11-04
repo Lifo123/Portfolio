@@ -15,8 +15,8 @@ importers:
         specifier: ^3.6.2
         version: 3.6.2(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.4.8)
       '@lifo123/library':
-        specifier: ^1.2.3
-        version: 1.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^1.2.5
+        version: 1.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@nanostores/react':
         specifier: ^0.8.0
         version: 0.8.0(nanostores@0.11.3)(react@18.3.1)
@@ -487,8 +487,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lifo123/library@1.2.3':
-    resolution: {integrity: sha512-9ocT4TB33Bqog+c/iYkhvynxiqmafQfBARTO7iVtSr8jSZRrOY9/aXZ+ZR7HdpGeyCjH5a5FsK6qFaLSe4bGKA==}
+  '@lifo123/library@1.2.5':
+    resolution: {integrity: sha512-0S0XDJ0haCgv43uCZSOqRkfi7lVJISodEXII0G20YXlGZWd8M0MS1/lVCFdmXFZ1tz4YbAhXtIs+mRvYKwL1Uw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: ^18.3.1
@@ -2496,7 +2496,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lifo123/library@1.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@lifo123/library@1.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)

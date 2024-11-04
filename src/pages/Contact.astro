@@ -11,21 +11,41 @@ import NavigationLayout from "@Layouts/NavigationLayout.astro";
         out! I'm here to help and share ideas. Your message is always welcome!
     </p>
     <div class="contact-form f-col br-8 mx-auto mt-3">
-        <p class="m-0 fs-2 f-row g-2 f-align-center mb-3 pt-3 px-4  ">
-            <strong class="d-flex btn-br br-4" style="padding: .4rem 1rem;">To</strong> alberto_p-@hotmail.com
+        <p class="m-0 f-row g-2 f-align-center mb-3 pt-3">
+            <strong class="d-flex btn-br br-4 fs-2" style="padding: .4rem 1rem;">To</strong> alberto_p-@hotmail.com
         </p>
-        <input type="text">
-        <textarea class="fs-3 p-3" placeholder="Mensaje" style="resize: none; height: 300px;"></textarea>
-        <div class="f-row g-2 f-justify-between mt-3 px-4 pb-3">
-            <span class="btn-secondary br-6 fw-600 fs-2 pointer" style="padding: .6rem 2.25rem">Clear</span>
-            <span class="btn-primary br-6 fw-600 fs-2 pointer" style="padding: .6rem 2.25rem">Send</span>
+        <input type="text" placeholder="Topic">
+        <textarea class="py-3" placeholder="Mensaje" style="resize: none; height: 300px;"></textarea>
+        <div class="f-row g-2 f-justify-between px-4 py-3" style="border-top: solid 1px rgba(var(--lb-br), .4);">
+            <span class="btn-secondary br-6 fw-600 pointer" style="padding: .6rem 2.25rem">Clear</span>
+            <span class="btn-primary br-6 fw-700 pointer" style="padding: .6rem 2.25rem">Send</span>
         </div>
     </div>
 </NavigationLayout>
 
 <style>
     .contact-form {
-        border: solid 1px var(--lb-br-low);
+        border: solid 1px rgba(var(--lb-br), .4);
         width: 80%;
+        font-size: calc(var(--lb-multiplier) * 14.5px);
+    }
+    .contact-form p{
+        padding-inline: 1.35rem;
+    }
+    .contact-form input{
+        outline: none;
+        border: none;
+        padding: .9rem 1.35rem;
+        border-top: solid 1px rgba(var(--lb-br), .4);
+        font-size: calc(var(--lb-multiplier) * 14.8px);
+        color: rgba(var(--lb-text));
+    }
+    .contact-form textarea{
+        outline: none;
+        border: none;
+        border-top: solid 1px rgba(var(--lb-br), .4);
+        font-size: calc(var(--lb-multiplier) * 14.8px);
+        padding-inline: 1.35rem;
+        color: rgba(var(--lb-text));
     }
 </style>

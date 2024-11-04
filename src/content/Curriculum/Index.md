@@ -9,7 +9,7 @@
 ### Education
 <div class="d-flex f-justify-between f-align-center">
     <h4 class="fs-3">Techology University of Peru (UTP), Lima</h4>
-    <span class="fs-2">Jan, 2024 - Present</span>
+    <span class="fs-1 fw-400">Jan, 2024 - Present</span>
 </div>
 
 GPA: 14.5
@@ -19,7 +19,7 @@ GPA: 14.5
 
 <div class="d-flex f-justify-between f-align-center mt-4">
     <h4 class="fs-3">Bootcamp de Desarrollo Web, Lima</h4>
-    <span class="fs-2">Aug, 2021 - Dec, 2022</span>
+    <span class="fs-1 fw-400">Aug, 2021 - Dec, 2022</span>
 </div>
 
 - Computer Science
@@ -42,11 +42,11 @@ GPA: 14.5
 
 <div class="d-flex f-justify-between f-align-center">
     <h4 class="fs-3">Data Service Ltd.</h4>
-    <span class="fs-2">Lima - Peru</span>
+    <span class="fs-1 fw-400">Lima - Peru</span>
 </div>
 <div class="d-flex f-justify-between f-align-center mb-2">
     <p class="fs-2 m-0">Software Developer</p>
-    <span class="fs-2">Aug, 2021 - Dec, 2022</span>
+    <span class="fs-1 fw-400">Aug, 2021 - Dec, 2022</span>
 </div>
 
 - Developed a web application for a client.
