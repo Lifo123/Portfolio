@@ -7,5 +7,5 @@ import NavigationLayout from "@Layouts/NavigationLayout.astro";
     <p class="mb-4">
         Explore projects that bring creative solutions to real challenges in design, development, and tech. See ideas in action and the journey of continuous learning.
     </p>
-    <ProjectCards max={null} client:only="react" />
+    <ProjectCards max={null} transition:name="projects" client:only="react" transition:persist/>
 </NavigationLayout>

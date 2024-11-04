@@ -8,12 +8,13 @@
 }
 
 body {
-    background-color: var(--lb-bg);
+    background-color: rgba(var(--lb-bg));
 }
 
 .section {
     min-height: 80vh;
     width: 90%;
+    max-width: 780px;
     margin-inline: auto;
     color: var(--lb-title);
     animation: Show linear both;
@@ -34,8 +35,8 @@ body {
 
 @media (630px > width) {
     .section {
-        width: 100%;
-        padding-inline: 16px ;
+        width: 95%;
+        padding-inline: 10px;
     }
 }
 
@@ -46,7 +47,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     border: solid 1px rgba(var(--lb-br), .5);
-    background-color: rgba(var(--lb-bg-2));
+    background-color: rgba(var(--lb-bg-2), .5);
     color: var(--f-p-title);
 }
 .project-card-skeleton{
@@ -56,7 +57,7 @@ body {
     min-width: 260px;
     border-radius: 10px;
     border: solid 1px rgba(var(--lb-br), .5);
-    background-color: rgb(var(--lb-bg-2));
+    background-color: rgb(var(--lb-bg-2), .5);
 }
 
 .project-card p {
@@ -100,6 +101,5 @@ body {
 }
 
 .icon{
-    stroke: var(--lb-icon);
-    fill: var(--lb-icon);
+    transition: stroke .2s ease, fill .2s ease;
 }

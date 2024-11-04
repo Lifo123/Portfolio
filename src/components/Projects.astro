@@ -4,9 +4,9 @@ import ProjectCards from "@Apps/ProjectCards";
 
 ---
 
-<section id="projects" class="section f-col mb-8" style="min-height: 40vh;">
+<section id="projects" class="section f-col mb-8" style="min-height: 40vh;"  >
     <div>
         <h3 class="fs-5 fw-700 mb-4">Projects</h3>
-        <ProjectCards max={4} client:only="react" />
+        <ProjectCards max={4} transition:name="projects" client:only="react" transition:persist/>
     </div>
 </section>

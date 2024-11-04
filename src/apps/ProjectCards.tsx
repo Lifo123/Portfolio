@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Count from "./Count";
 
 export default function ProjectCards({ max }) {
     const [Projects, setProjects] = useState({})
@@ -18,7 +19,7 @@ export default function ProjectCards({ max }) {
 
 
     return (
-        <div className="f-row g-2 f-wrap f-center">
+        <div className="f-row g-2 f-wrap f-center" >
             {
                 Projects && Object.keys(Projects).length > 0 ? Object.keys(Projects).slice(0, (max || Object.keys(Projects).length)).map((key, i) => (
                     <div className="project-card px-4 py-3" key={i}>
@@ -33,9 +34,9 @@ export default function ProjectCards({ max }) {
                             .slice(0, 12)
                             .join(" ")}...
                         </p>
-                        <div className="f-row g-2 f-justify-between mt-3">
-                            <a className="btn btn-third  fs-2 fw-500 br-6 d-flex f-center" href={Projects[key].repository}>Source Code</a>
-                            <a className="icon btn btn-third  fs-2 fw-600 br-6 d-flex f-center g-2" href={Projects[key].websiteURL}>
+                        <div className="f-row g-2 f-justify-between mt-3 f-wrap">
+                            <a className="btn btn-third  fs-2 fw-500 br-6 d-flex f-center f-grow" href={Projects[key].repository}>Source Code</a>
+                            <a className="icon btn btn-third  fs-2 fw-600 br-6 d-flex f-center g-2 f-grow" href={Projects[key].websiteURL}>
                                 <svg width="20" viewBox="0 1.75 24 24" fill="none" stroke="var(--f-p-icon)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M15 3h6v6"></path><path d="M10 14 21 3"></path>
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>

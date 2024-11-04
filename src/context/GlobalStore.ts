@@ -1,4 +1,4 @@
-import { atom, deepMap, map } from 'nanostores'
+import { atom, deepMap } from 'nanostores'
 
 export const $example = atom('Template Store')
 export const $userInfo = deepMap({

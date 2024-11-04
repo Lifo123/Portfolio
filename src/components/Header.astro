@@ -2,10 +2,10 @@
 import {DarkModeIcon} from "@lifo123/library";
 ---
 
-<header class="f-row f-justify-between f-align-center px-4 w-100">
+<header class="header f-row f-justify-between f-align-center px-4 sticky">
     <h1 class="fw-700 d-flex f-center"><a href="/Portfolio/">LIFO</a></h1>
     <ul class="f-row g-4 f-center">
-        <li><a href="/Portfolio/#about">About</a></li>
+        <li><a href="/Portfolio/#about" id="h-about">About</a></li>
         <li><a href="/Portfolio/Projects/">Projects</a></li>
         <li><a href="/Portfolio/Contact">Contact</a></li>
         <li><DarkModeIcon storage="F-Theme" client:only="react" /></li>
@@ -13,23 +13,31 @@ import {DarkModeIcon} from "@lifo123/library";
 </header>
 
 <style>
-    header {
-        height: 90px;
-        position: sticky;
-        top: 0px;
-        z-index: 1000;
+    .header {
+		background-color:  rgba(var(--lb-bg), 1);
+        padding: .8rem 2.4rem;
+        width: 100%;
+		top: 0px;
+		z-index: 1000;
+		border: solid 1px rgba(var(--lb-br), 0.0);
 
-        animation: Scroll linear both;
+		animation: Scroll linear both;
 		animation-timeline: scroll();
 		animation-range: 70px 600px;
-    }
-    
-    @keyframes Scroll {
-        100%{
-            background-color: transparent;
-            backdrop-filter: blur(5px);
-        }
-    }
+	}
+
+	@keyframes Scroll {
+		100% {
+			top: 24px;
+			border-radius: 150px;
+            width: 96%;
+			background: rgba(var(--lb-bg), .7);
+			backdrop-filter: blur(4px);
+            padding: .6rem 3rem .76rem 3rem;
+			border: solid 1px rgba(var(--lb-br), 0.5);
+			min-width: max-content;
+		}
+	}
 
     header a {
         color: var(--f-p-title);
@@ -42,11 +50,18 @@ import {DarkModeIcon} from "@lifo123/library";
     }
 
     @media (650px > width) {
-        header{
-            padding-inline: 14px !important;
+        body{
+            overflow-x: hidden;
+        }
+        .header{
+            width: 100%;
+            padding: .6rem 1.7rem .76rem 1.7rem !important;
         }
         header ul{
             gap: .5rem !important;
+        }
+        #h-about{
+            display: none;
         }
     }
 </style>

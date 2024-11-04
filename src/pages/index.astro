@@ -5,10 +5,14 @@ import About from "@Components/About.astro";
 import Experience from "@Components/Experience.astro";
 import Projects from "@Components/Projects.astro";
 import Skills from "@Components/Skills.astro";
+import Count from "@Apps/Count";
 ---
 
-<Layout title="Lifo | Portfolio" description="Portfolio of Edgar Sanchez - Frontend Developer">
-	<main class="f-col f-justify-center">
+<Layout
+	title="Lifo | Portfolio"
+	description="Portfolio of Edgar Sanchez - Frontend Developer"
+>
+	<main class="port-index f-col f-justify-center">
 		<Hero />
 		<About />
 		<Experience />
@@ -16,3 +20,9 @@ import Skills from "@Components/Skills.astro";
 		<Skills />
 	</main>
 </Layout>
+
+<style>
+	.port-index {
+		z-index: 100;
+	}
+</style>

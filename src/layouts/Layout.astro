@@ -93,9 +93,9 @@ const url = new URL(path, site).href;
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/Lifo123/FlifoCSS@main/src/output/Flifo.css" 
 		/>
-		<ViewTransitions />
+		<ViewTransitions transition:persist/>
 	</head>
-	<body class="f-col mx-auto f-align-center relative">
+	<body class="f-col mx-auto f-align-center relative" transition:animate="initial">
 		<button aria-label="Back to Top" class="f-top-btn d-flex f-center fixed br-50 pointer" id="top-btn" onclick="window.scrollTo(0,'smooth');">
 			<svg height="16" fill="none" focusable="false" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"> <path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
 		</button>
@@ -122,7 +122,6 @@ const url = new URL(path, site).href;
 		z-index: 0;
 	}
 	html{
-		view-transition-name: none;
 		scroll-behavior: smooth;
 	}
 	body {
@@ -132,13 +131,13 @@ const url = new URL(path, site).href;
 	.f-top-btn{
 		border: none;
 		outline: none;
-		background-color: rgba(var(--lb-bg-2), 1);
+		background-color: rgba(var(--lb-bg), .7);
 		height: 48px;
 		aspect-ratio: 1 / 1;
 		bottom: -48px;
 		right: 32px;
 		opacity: 0;
-		pointer-events: none;
+		z-index: 800;
 		animation: ScrollVisible linear both;
 		animation-timeline: scroll();
 		animation-range: 100px 400px;
@@ -156,6 +155,18 @@ const url = new URL(path, site).href;
 		body{
 			max-width: 100%;
 		}
+	}
+	@media(630px > width){
+		.f-top-btn{
+			right: 16px;
+		}
+		@keyframes ScrollVisible {
+		100%{
+			opacity: 1;
+			pointer-events: visible;
+			bottom: 16px;
+		}
+	}
 	}
 </style>
 

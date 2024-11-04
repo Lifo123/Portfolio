@@ -1,6 +1,5 @@
-import { local } from '@lifo123/library';
 import { initializeApp } from 'firebase/app'
-import { get, set, ref, getDatabase } from 'firebase/database'
+import { get, ref, getDatabase } from 'firebase/database'
 import { toast } from 'sonner';
 
 const firebaseConfig = {
