@@ -6,6 +6,17 @@ import Login from "@Apps/Login";
 
 ---
 
+<script>
+    const COOKIE = document.cookie
+        .split(";")
+        .find((v) => v.startsWith("F-User="));
+
+    if (COOKIE) {
+        window.location.href = "/Portfolio/Admin/Dashboard";
+    }
+
+</script>
+
 <Layout title="Admin" description="Admin Page">
     <Toaster client:only="react" position="top-center" visibleToasts={1}/>
     <main class="f-col f-justify-center o-hidden mt-13 mb-14">

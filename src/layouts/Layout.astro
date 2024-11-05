@@ -91,13 +91,42 @@ const url = new URL(path, site).href;
 		<!-- Styles -->
 		<link
 			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/gh/Lifo123/FlifoCSS@main/src/output/Flifo.css" 
+			href="https://cdn.jsdelivr.net/gh/Lifo123/FlifoCSS@main/src/output/Flifo.css"
 		/>
-		<ViewTransitions transition:persist/>
+		<link rel="icon" href="/src/assets/Logo.svg" type="image/svg+xml" class="logo-icon" />
+		<ViewTransitions transition:persist />
+		<style>
+			.logo-icon {
+				width: 24px;
+				height: 24px;
+				stroke: var(--lb-icon);
+				fill: var(--lb-icon);
+			}
+		</style>
 	</head>
-	<body class="f-col mx-auto f-align-center relative" transition:animate="initial">
-		<button aria-label="Back to Top" class="f-top-btn d-flex f-center fixed br-50 pointer" id="top-btn" onclick="window.scrollTo(0,'smooth');">
-			<svg height="16" fill="none" focusable="false" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"> <path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+	<body
+		class="f-col mx-auto f-align-center relative"
+		transition:animate="initial"
+	>
+		<button
+			aria-label="Back to Top"
+			class="f-top-btn d-flex f-center fixed br-50 pointer"
+			id="top-btn"
+			onclick="window.scrollTo(0,'smooth');"
+		>
+			<svg
+				height="16"
+				fill="none"
+				focusable="false"
+				stroke="currentColor"
+				stroke-width="2"
+				viewBox="0 0 24 24"
+			>
+				<path
+					d="M4.5 15.75l7.5-7.5 7.5 7.5"
+					stroke-linecap="round"
+					stroke-linejoin="round"></path>
+			</svg>
 		</button>
 		<Header />
 		<slot />
@@ -121,17 +150,17 @@ const url = new URL(path, site).href;
 		filter: brightness(1);
 		z-index: 0;
 	}
-	html{
+	html {
 		scroll-behavior: smooth;
 	}
 	body {
 		width: 100% !important;
 		max-width: 60%;
 	}
-	.f-top-btn{
+	.f-top-btn {
 		border: none;
 		outline: none;
-		background-color: rgba(var(--lb-bg), .7);
+		background-color: rgba(var(--lb-bg), 0.7);
 		height: 48px;
 		aspect-ratio: 1 / 1;
 		bottom: -48px;
@@ -144,29 +173,35 @@ const url = new URL(path, site).href;
 	}
 
 	@keyframes ScrollVisible {
-		100%{
+		100% {
 			opacity: 1;
 			pointer-events: visible;
 			bottom: 30px;
 		}
 	}
 
-	@media(1130px > width){
-		body{
+	@media (1130px > width) {
+		body {
 			max-width: 100%;
 		}
+		@keyframes ScrollVisible {
+			100% {
+				opacity: 1;
+				pointer-events: visible;
+				bottom: 100px;
+			}
+		}
 	}
-	@media(630px > width){
-		.f-top-btn{
+	@media (630px > width) {
+		.f-top-btn {
 			right: 16px;
 		}
 		@keyframes ScrollVisible {
-		100%{
-			opacity: 1;
-			pointer-events: visible;
-			bottom: 16px;
+			100% {
+				opacity: 1;
+				pointer-events: visible;
+				bottom: 100px;
+			}
 		}
 	}
-	}
 </style>
-
