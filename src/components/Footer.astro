@@ -3,10 +3,12 @@ import { Github, Linkedin } from "@Assets/icons/Social";
 ---
 
 <script>
-    const currentDate = new Date();
-    const items = document.querySelectorAll(".current-date");
-    items.forEach((item) => {
-        item.innerHTML = `${currentDate.getFullYear()}`;
+    document.addEventListener("astro:page-load", () => {
+        const currentDate = new Date();
+        const items = document.querySelectorAll(".current-date");
+        items.forEach((item) => {
+            item.innerHTML = `${currentDate.getFullYear()}`;
+        });
     });
 </script>
 
@@ -44,13 +46,21 @@ import { Github, Linkedin } from "@Assets/icons/Social";
     </div>
     <ul class="f-row g-1">
         <li>
-            <a class="icon p-2" href="https://github.com/Lifo123" aria-label="Link to my github">
-                <Github size="26"/>
+            <a
+                class="icon p-2"
+                href="https://github.com/Lifo123"
+                aria-label="Link to my github"
+            >
+                <Github size="26" />
             </a>
         </li>
         <li>
-            <a class="icon p-2" href="https://www.linkedin.com/in/lifo3/" aria-label="Link to my linkedin">
-                <Linkedin size="26"/>
+            <a
+                class="icon p-2"
+                href="https://www.linkedin.com/in/lifo3/"
+                aria-label="Link to my linkedin"
+            >
+                <Linkedin size="26" />
             </a>
         </li>
     </ul>
@@ -68,7 +78,7 @@ import { Github, Linkedin } from "@Assets/icons/Social";
         padding: 1.7rem 0;
         border-top: solid 1px rgba(var(--lb-br), 0.2);
     }
-    footer .icon:hover > svg{
+    footer .icon:hover > svg {
         stroke: rgb(var(--lb-title)) !important;
         fill: rgb(var(--lb-title)) !important;
         scale: 1.2;

@@ -24,7 +24,7 @@ export default function ProjectCards({ max }) {
                 Projects && Object.keys(Projects).length > 0 ? Object.keys(Projects).slice(0, (max || Object.keys(Projects).length)).map((key, i) => (
                     <div className="project-card px-4 py-3" key={i}>
                         <span className="fs-2 fw-500 text-common"> {new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric" }).format(new Date(Projects[key].date))}</span>
-                        <h3 className="fs-5 mt-2">{Projects[key].tittle}</h3>
+                        <h2 className="fs-5 mt-2">{Projects[key].tittle}</h2>
                         <div className="f-row g-2 py-1 mb-2">
                             {Projects[key].techs.map((item) => <span key={item} className="fs-6 fw-400 br-max tag" data-tag={item}>{item}</span>)}
                         </div>
