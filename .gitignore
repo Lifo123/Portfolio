@@ -4,6 +4,7 @@ Build/
 
 # generated types
 .astro/
+Admin/
 
 # dependencies
 node_modules/
@@ -23,4 +24,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
 src/apps/Login.tsx
+src/pages/Admin/
