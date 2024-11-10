@@ -100,7 +100,7 @@ const url = new URL(path, site).href;
 		/>
 		<link
 			rel="icon"
-			href="/src/assets/Logo.svg"
+			href="/Logo.svg"
 			type="image/svg+xml"
 			class="logo-icon"
 		/>
@@ -115,7 +115,12 @@ const url = new URL(path, site).href;
 		</style>
 	</head>
 	<body class="f-col mx-auto f-align-center relative">
-		
+		<Toaster
+			position="top-center"
+			client:only="react"
+			duration={1250}
+			visibleToasts={1}
+		/>
 		<button
 			aria-label="Back to Top"
 			class="f-top-btn d-flex f-center fixed br-50 pointer"
@@ -137,12 +142,6 @@ const url = new URL(path, site).href;
 			</svg>
 		</button>
 		<Header />
-		<Toaster
-			position="top-center"
-			client:only="react"
-			visibleToasts={1}
-			duration={1500}
-		/>
 		<slot />
 		<Footer />
 		<span class="fixed bg-blur br-50 no-select"></span>

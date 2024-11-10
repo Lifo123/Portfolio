@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import Count from "./Curriculum";
+import Skeleton from "@Apps/Skeleton";
 
 export default function ProjectCards({ max }) {
     const [Projects, setProjects] = useState({})
@@ -47,9 +47,46 @@ export default function ProjectCards({ max }) {
                     </div>
                 )) : (
                     <>
-                        <div className="project-card-skeleton"></div>
-                        <div className="project-card-skeleton"></div>
-                        <div className="project-card-skeleton"></div>
+                        <div className="project-card-skeleton f-col g-2 p-3">
+                            <Skeleton className="w-20" />
+                            <Skeleton className="w-70" />
+                            <Skeleton className="w-100" />
+                            <Skeleton className="w-80" />
+                            <div className="f-row g-2 f-wrap w-100 f-justify-between">
+                                <Skeleton className="w-40" />
+                                <Skeleton className="w-40" />
+                            </div>
+                        </div>
+                        <div className="project-card-skeleton f-col g-2 p-3">
+                            <Skeleton className="w-20" />
+                            <Skeleton className="w-70" />
+                            <Skeleton className="w-100" />
+                            <Skeleton className="w-80" />
+                            <div className="f-row g-2 f-wrap w-100 f-justify-between">
+                                <Skeleton className="w-40" />
+                                <Skeleton className="w-40" />
+                            </div>
+                        </div>
+                        <div className="project-card-skeleton f-col g-2 p-3">
+                            <Skeleton className="w-20" />
+                            <Skeleton className="w-70" />
+                            <Skeleton className="w-100" />
+                            <Skeleton className="w-80" />
+                            <div className="f-row g-2 f-wrap w-100 f-justify-between">
+                                <Skeleton className="w-40" />
+                                <Skeleton className="w-40" />
+                            </div>
+                        </div>
+                        <div className="project-card-skeleton f-col g-2 p-3">
+                            <Skeleton className="w-20" />
+                            <Skeleton className="w-70" />
+                            <Skeleton className="w-100" />
+                            <Skeleton className="w-80" />
+                            <div className="f-row g-2 f-wrap w-100 f-justify-between">
+                                <Skeleton className="w-40" />
+                                <Skeleton className="w-40" />
+                            </div>
+                        </div>
                     </>
                 )
             }
