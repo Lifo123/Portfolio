@@ -15,7 +15,7 @@ const path = Astro.url.pathname;
 const url = new URL(path, site).href;
 ---
 
-<script is:inline>
+<script>
 	const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 	function setDarkMode(document) {
 		const isDark = window.matchMedia(
@@ -49,7 +49,7 @@ const url = new URL(path, site).href;
 	mediaQuery.addEventListener("change", () => setDarkMode(document));
 </script>
 
-<html lang="en" translate="no">
+<html lang="en" translate="yes">
 	<head>
 		<title>{title}</title>
 		<meta name="Author" content="Lifo123" />
@@ -88,13 +88,14 @@ const url = new URL(path, site).href;
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content="" />
 		<meta name="twitter:image:alt" content="Template Image" />
+		<meta name="google-site-verification" content="QAGlLlv_gtS49AYu1kBdgNivwvrHyZ8bMfWGo5DgfhY" />
 		<!-- Styles -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/Lifo123/FlifoCSS@main/src/output/Flifo.css"
 		/>
 		<link rel="icon" href="/src/assets/Logo.svg" type="image/svg+xml" class="logo-icon" />
-		<ViewTransitions transition:persist />
+		<ViewTransitions/>
 		<style>
 			.logo-icon {
 				width: 24px;
@@ -106,7 +107,6 @@ const url = new URL(path, site).href;
 	</head>
 	<body
 		class="f-col mx-auto f-align-center relative"
-		transition:animate="initial"
 	>
 		<button
 			aria-label="Back to Top"
@@ -152,6 +152,7 @@ const url = new URL(path, site).href;
 	}
 	html {
 		scroll-behavior: smooth;
+		view-transition-name: none;
 	}
 	body {
 		width: 100% !important;

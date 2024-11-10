@@ -1,5 +1,5 @@
 ---
-import { Github, Linkedin } from "@Assets/icons/Social";
+import Icons from "@lifo123/library/Icons";
 ---
 
 <script>
@@ -44,14 +44,14 @@ import { Github, Linkedin } from "@Assets/icons/Social";
             </p>
         </div>
     </div>
-    <ul class="f-row g-1">
+    <ul class="f-row g-3 mr-4">
         <li>
             <a
                 class="icon p-2"
                 href="https://github.com/Lifo123"
                 aria-label="Link to my github"
             >
-                <Github size="26" />
+                <Icons icon="github" size={26} />
             </a>
         </li>
         <li>
@@ -60,7 +60,7 @@ import { Github, Linkedin } from "@Assets/icons/Social";
                 href="https://www.linkedin.com/in/lifo3/"
                 aria-label="Link to my linkedin"
             >
-                <Linkedin size="26" />
+                <Icons icon="linkedin" size={26} />
             </a>
         </li>
     </ul>
@@ -78,9 +78,8 @@ import { Github, Linkedin } from "@Assets/icons/Social";
         padding: 1.7rem 0;
         border-top: solid 1px rgba(var(--lb-br), 0.2);
     }
-    footer .icon:hover > svg {
-        stroke: rgb(var(--lb-title)) !important;
-        fill: rgb(var(--lb-title)) !important;
-        scale: 1.2;
+    footer li{
+        height: 26px;
+        width: 26px;
     }
 </style>

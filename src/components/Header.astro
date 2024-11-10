@@ -1,5 +1,5 @@
 ---
-import {DarkModeIcon} from "@lifo123/library";
+import { DarkmodeIcon } from "@lifo123/library/Darkmode";
 ---
 
 <header class="header f-row f-justify-between f-align-center px-4 sticky">
@@ -8,36 +8,35 @@ import {DarkModeIcon} from "@lifo123/library";
         <li><a href="/Portfolio/#about" id="h-about">About</a></li>
         <li><a href="/Portfolio/Projects/">Projects</a></li>
         <li><a href="/Portfolio/Contact">Contact</a></li>
-        <li><DarkModeIcon storage="F-Theme" client:only="react" /></li>
+        <DarkmodeIcon storage="F-Theme" client:only="react" />
     </ul>
 </header>
 
 <style>
     .header {
-		background-color:  rgba(var(--lb-bg), 1);
-        padding: .8rem 2.4rem;
+        background-color: rgba(var(--lb-bg), .78);
+        padding: 0.8rem 2.4rem;
         width: 100%;
-		top: 0px;
-		z-index: 1000;
-		border: solid 1px rgba(var(--lb-br), 0.0);
+        top: 0px;
+        z-index: 1000;
+        border: solid 1px rgba(var(--lb-br), 0);
 
-		animation: Scroll linear both;
-		animation-timeline: scroll();
-		animation-range: 70px 600px;
-	}
+        animation: Scroll linear both;
+        animation-timeline: scroll();
+        animation-range: 70px 600px;
+    }
 
-	@keyframes Scroll {
-		100% {
-			top: 24px;
-			border-radius: 150px;
+    @keyframes Scroll {
+        100% {
+            top: 24px;
+            border-radius: 150px;
             width: 85%;
-			background: rgba(var(--lb-bg), .7);
-			backdrop-filter: blur(4px);
-            padding: .4rem 2.4rem .46rem 2.4rem;
-			border: solid 1px rgba(var(--lb-br), 0.45);
-			min-width: max-content;
-		}
-	}
+            backdrop-filter: blur(4px);
+            padding: 0.4rem 2.4rem 0.46rem 2.4rem;
+            border: solid 1px rgba(var(--lb-br), 0.45);
+            min-width: max-content;
+        }
+    }
 
     header a {
         color: var(--f-p-title);
@@ -50,17 +49,28 @@ import {DarkModeIcon} from "@lifo123/library";
     }
 
     @media (650px > width) {
-        body{
+        body {
             overflow-x: hidden;
         }
-        .header{
+        .header {
             width: 100%;
-            padding: .6rem 1.7rem .76rem 1.7rem !important;
+            padding: 0.6rem 1.7rem 0.76rem 1.7rem !important;
         }
-        header ul{
-            gap: .5rem !important;
+        @keyframes Scroll {
+            100% {
+                top: 16px;
+                border-radius: 150px;
+                width: 95%;
+                backdrop-filter: blur(4px);
+                padding: 0.4rem 2.4rem 0.46rem 2.4rem;
+                border: solid 1px rgba(var(--lb-br), 0.45);
+                min-width: max-content;
+            }
         }
-        #h-about{
+        header ul {
+            gap: 0.5rem !important;
+        }
+        #h-about {
             display: none;
         }
     }

@@ -12,9 +12,9 @@ const props = Astro.props;
 <div class="exp-list f-row g-3 relative ml-4">
     <span class="circle br-50 absolute"></span>
     <div class="f-col ml-4">
-        <span class="fs-2 text-common my-2">{props.date}</span>
+        <span class="text-common my-2" style="font-size: calc(var(--lb-multiplier) * 13.5px);">{props.date}</span>
         <h3 class="fs-4 fw-700">{props.position}</h3>
-        <p class="m-0 fs-2" style="font-size: calc(var(--lbmultiplier) * 14.5);">{props.place}</p>
+        <p class="m-0 fs-2" style="font-size: calc(var(--lbmultiplier) * 14);">{props.place}</p>
         <p class="m-0 my-2" style="font-size: calc(var(--lbmultiplier) * 14.5);">{props.description}</p>
     </div>
 </div>

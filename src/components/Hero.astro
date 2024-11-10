@@ -1,5 +1,5 @@
 ---
-import { Email, Github, Linkedin } from "@Assets/icons/Social/index.ts";
+import Icons from "@lifo123/library/Icons";
 ---
 
 <section class="section f-col mt-12" id="#Hero" style="min-height: 48vh;">
@@ -20,7 +20,7 @@ import { Email, Github, Linkedin } from "@Assets/icons/Social/index.ts";
                     href="https://github.com/Lifo123"
                     class="icon f-row f-center g-2"
                 >
-                    <Github size="22" strokeWidth="2" />
+                    <Icons icon="github" size={22} />
                     Github
                 </a>
             </li>
@@ -31,7 +31,7 @@ import { Email, Github, Linkedin } from "@Assets/icons/Social/index.ts";
                     class="icon f-row f-center g-2"
                     target="_blank"
                 >
-                    <Email size="22" strokeWidth="2" />
+                    <Icons icon="email" size={22} />
                     Email
                 </a>
             </li>
@@ -40,7 +40,7 @@ import { Email, Github, Linkedin } from "@Assets/icons/Social/index.ts";
                     href="https://www.linkedin.com/in/lifo3/"
                     class="icon f-row f-center g-2"
                 >
-                    <Linkedin size="22" strokeWidth="2" />
+                    <Icons icon="linkedin" size={22}/>
                     Linkedin
                 </a>
             </li>
@@ -58,7 +58,7 @@ import { Email, Github, Linkedin } from "@Assets/icons/Social/index.ts";
         color: var(--lb-title);
     }
     .hero-btn:hover {
-        background-color: rgba(var(--lb-br), .075);
+        background-color: rgba(var(--lb-br), .1);
         border: solid 1px rgba(var(--lb-br), .6);
     }
     .contact-hero a {
@@ -70,7 +70,7 @@ import { Email, Github, Linkedin } from "@Assets/icons/Social/index.ts";
         transition: border 0.2s ease, background-color 0.13s ease;
     }
     .contact-hero a:hover {
-        background-color: rgba(var(--lb-br), .15);
+        background-color: rgba(var(--lb-br), .135);
     }
     .state {
         display: flex;
