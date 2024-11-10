@@ -11,6 +11,13 @@ body {
     background-color: rgba(var(--lb-bg));
 }
 
+.toaster-container{
+    background-color: rgba(var(--lb-bg-2), 1);
+    color: rgba(var(--lb-title));
+    border: 1px solid rgba(var(--lb-bg-4));
+    z-index: 1010;
+    margin-top: 40px;
+}
 .section {
     min-height: 80vh;
     width: 90%;

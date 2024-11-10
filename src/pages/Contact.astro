@@ -1,6 +1,6 @@
 ---
-import Count from "@Apps/Curriculum";
 import NavigationLayout from "@Layouts/NavigationLayout.astro";
+import Contacts from "@Apps/Contact";
 ---
 
 <NavigationLayout
@@ -8,49 +8,55 @@ import NavigationLayout from "@Layouts/NavigationLayout.astro";
     description="You can contact me by email or Linkedin"
 >
     <p class="text-common fs-3">
-        Have any questions or want to discuss a project? Don't hesitate to reach
-        out! I'm here to help and share ideas. Your message is always welcome!
+        Have any questions, i'm here to help and share your ideas.
     </p>
-    <div class="contact-form f-col br-8 mx-auto mt-3">
+    <div class="contact-form f-col br-8 mx-auto mt-2">
         <p class="m-0 f-row g-2 f-align-center mb-3 pt-3">
-            <strong class="d-flex btn-br br-4 fs-2" style="padding: .4rem 1rem;">To</strong> alberto_p-@hotmail.com
+            <strong class="d-flex br-4 fs-2" style="padding: .4rem 1rem;"
+                >To</strong
+            > alberto_p-@hotmail.com
         </p>
-        <input type="text" placeholder="Topic">
-        <textarea class="py-3" placeholder="Mensaje" style="resize: none; height: 300px;"></textarea>
-        <div class="f-row g-2 f-justify-between px-4 py-3 f-wrap" style="border-top: solid 1px rgba(var(--lb-br), .4);">
-            <span class="btn btn-third br-6 fw-600 pointer text-center" style="padding: .6rem 2.25rem; max-width: 216px">Clear</span>
-            <span class="btn btn-primary br-6 fw-700 pointer text-center" style="padding: .6rem 2.25rem; max-width: 216px">Send</span>
-        </div>
-        
+        <input type="email" name="email" placeholder="Email" />
+        <input type="text" placeholder="Topic" />
+        <textarea
+            class="py-3"
+            placeholder="Message"
+            style="resize: none; height: 260px;"></textarea>
+        <Contacts client:only="react" />
     </div>
 </NavigationLayout>
 
 <style>
     .contact-form {
-        border: solid 1px rgba(var(--lb-br), .4);
+        background-color: rgba(var(--lb-bg-2));
+        border: solid 1px rgba(var(--lb-br), 0.5);
         width: 100%;
         max-width: clamp(540px, 100%, 100%);
         font-size: calc(var(--lb-multiplier) * 14.5px);
     }
-    .contact-form p{
+    .contact-form p {
         padding-inline: 1.35rem;
     }
-    .contact-form input{
-        outline: none;
-        border: none;
-        padding: .9rem 1.35rem;
-        border-top: solid 1px rgba(var(--lb-br), .4);
-        font-size: calc(var(--lb-multiplier) * 14.8px);
-        color: rgba(var(--lb-text));
-        background-color: rgba(var(--lb-br), .05);
+    .contact-form strong{
+        background-color: rgba(var(--lb-bg-3), 0.8);
+        border: solid 1px rgba(var(--lb-br), 0.5);
     }
-    .contact-form textarea{
+    .contact-form input {
         outline: none;
         border: none;
-        border-top: solid 1px rgba(var(--lb-br), .4);
+        padding: 0.9rem 1.35rem;
+        border-top: solid 1px rgba(var(--lb-br), 0.5);
         font-size: calc(var(--lb-multiplier) * 14.8px);
-        background-color: rgba(var(--lb-br), .05);
+        background-color: transparent;
+        color: rgba(var(--lb-title))
+    }
+    .contact-form textarea {
+        outline: none;
+        border: none;
+        border-top: solid 1px rgba(var(--lb-br), 0.5);
+        font-size: calc(var(--lb-multiplier) * 14.8px);
+        background-color: transparent;
         padding-inline: 1.35rem;
-        color: rgba(var(--lb-text));
+        color: rgba(var(--lb-title))
     }
 </style>

@@ -3,6 +3,7 @@ import "@Assets/css/Global.css";
 import Header from "@Components/Header.astro";
 import Footer from "@Components/Footer.astro";
 import ViewTransitions from "astro/components/ViewTransitions.astro";
+import { Toaster } from "sonner";
 
 interface Props {
 	title: string;
@@ -88,14 +89,22 @@ const url = new URL(path, site).href;
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content="" />
 		<meta name="twitter:image:alt" content="Template Image" />
-		<meta name="google-site-verification" content="QAGlLlv_gtS49AYu1kBdgNivwvrHyZ8bMfWGo5DgfhY" />
+		<meta
+			name="google-site-verification"
+			content="QAGlLlv_gtS49AYu1kBdgNivwvrHyZ8bMfWGo5DgfhY"
+		/>
 		<!-- Styles -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/Lifo123/FlifoCSS@main/src/output/Flifo.css"
 		/>
-		<link rel="icon" href="/src/assets/Logo.svg" type="image/svg+xml" class="logo-icon" />
-		<ViewTransitions/>
+		<link
+			rel="icon"
+			href="/src/assets/Logo.svg"
+			type="image/svg+xml"
+			class="logo-icon"
+		/>
+		<ViewTransitions />
 		<style>
 			.logo-icon {
 				width: 24px;
@@ -105,9 +114,8 @@ const url = new URL(path, site).href;
 			}
 		</style>
 	</head>
-	<body
-		class="f-col mx-auto f-align-center relative"
-	>
+	<body class="f-col mx-auto f-align-center relative">
+		
 		<button
 			aria-label="Back to Top"
 			class="f-top-btn d-flex f-center fixed br-50 pointer"
@@ -129,6 +137,12 @@ const url = new URL(path, site).href;
 			</svg>
 		</button>
 		<Header />
+		<Toaster
+			position="top-center"
+			client:only="react"
+			visibleToasts={1}
+			duration={1500}
+		/>
 		<slot />
 		<Footer />
 		<span class="fixed bg-blur br-50 no-select"></span>
