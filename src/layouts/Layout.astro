@@ -3,7 +3,6 @@ import "@Assets/css/Global.css";
 import Header from "@Components/Header.astro";
 import Footer from "@Components/Footer.astro";
 import ViewTransitions from "astro/components/ViewTransitions.astro";
-import { Toaster } from "sonner";
 
 interface Props {
 	title: string;
@@ -89,7 +88,7 @@ const url = new URL(path, site).href;
 		/>
 		<link
 			rel="icon"
-			href="/Portfolio/Logo.png"
+			href="/Logo.svg"
 			type="image/svg+xml"
 			class="logo-icon"
 		/>
@@ -104,12 +103,6 @@ const url = new URL(path, site).href;
 		</style>
 	</head>
 	<body class="f-col mx-auto f-align-center relative">
-		<Toaster
-			position="top-center"
-			client:only="react"
-			duration={1250}
-			visibleToasts={1}
-		/>
 		<button
 			aria-label="Back to Top"
 			class="f-top-btn d-flex f-center fixed br-50 pointer"

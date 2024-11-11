@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lifo123.site/',
+  site: 'https://www.lifo123.site/',
   integrations: [react(), mdx(), sitemap()],
   outDir: 'Build',
   build: {
