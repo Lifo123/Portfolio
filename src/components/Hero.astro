@@ -12,7 +12,7 @@ import Icons from "@lifo123/library/Icons";
         <a
             aria-label="Get Curriculum Vitae"
             class="hero-btn br-max w-max fw-500 pointer mt-3 mx-auto"
-            href="/Portfolio/CV">Get Curriculum</a
+            href="/CV">Get Curriculum</a
         >
         <ul class="contact-hero f-row g-5 mt-5 f-center">
             <li>
@@ -50,16 +50,18 @@ import Icons from "@lifo123/library/Icons";
 
 <style>
     .hero-btn {
-        border: solid 1px rgba(var(--lb-br), .4);
         font-size: 15px;
         padding: 0.6rem 1.25rem;
         line-height: 1.25rem;
-        transition: border 0.2s ease, background-color 0.15s ease;
+        transition: border 0.2s ease, background-color 0.15s ease, padding .23s ease;
         color: var(--lb-title);
+        background: linear-gradient(rgb(var(--lb-bg-2)), rgb(var(--lb-bg-2))) padding-box, linear-gradient(82.77deg, #2066ff 11.87%, #4395ff 38.42%, #4ac470 64.19%, #d36de5 89.96%) border-box;
+        border: 2px solid transparent;
     }
     .hero-btn:hover {
         background-color: rgba(var(--lb-br), .1);
-        border: solid 1px rgba(var(--lb-br), .6);
+        background: linear-gradient(rgb(var(--lb-bg-2)), rgb(var(--lb-bg-2))) padding-box, linear-gradient(82.77deg, #2066ff 8%, #4395ff 45%, #4ac470 55%, #d36de5 90%) border-box;
+        padding: 0.6rem 1.8rem;
     }
     .contact-hero a {
         color: var(--lb-title);

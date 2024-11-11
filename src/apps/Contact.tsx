@@ -17,9 +17,7 @@ export default function Contact() {
         const parent = target.closest('.contact-form');
         const DATA = parent.querySelectorAll('[placeholder]') as NodeListOf<HTMLInputElement>;
         if (DATA[0].value.length === 0 || DATA[1].value.length === 0 || DATA[2].value.length === 0) {
-            toast.error('Please fill all fields', {
-                className: 'toaster-container'
-            });
+            toast.error('Please fill all fields');
             return;
         }
 

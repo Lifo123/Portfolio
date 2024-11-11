@@ -8,6 +8,7 @@ export const $userInfo = deepMap({
     address: {
         city: 'Beijing',
         country: 'China'
-    }
+    },
+    nose: 'wasa'
 })
 
