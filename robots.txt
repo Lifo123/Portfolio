@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.lifo123.site/Portfolio/sitemap-index.xml
+Sitemap: https://www.lifo123.site/sitemap-index.xml
+
+User-agent: *
+Disallow: /admin/
+Sitemap: https://www.lifo123.site/sitemap-0.xml
