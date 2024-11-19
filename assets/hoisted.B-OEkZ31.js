@@ -1,0 +1,1 @@
+import"./ViewTransitions.astro_astro_type_script_index_0_lang.CKl57WYT.js";document.addEventListener("astro:page-load",()=>{const e=new Date;document.querySelectorAll(".current-date").forEach(t=>{t.innerHTML=`${e.getFullYear()}`})});

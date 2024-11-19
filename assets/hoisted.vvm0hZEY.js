@@ -1,0 +1,1 @@
+import"./ViewTransitions.astro_astro_type_script_index_0_lang.CKl57WYT.js";const o=document.cookie.split(";").find(i=>i.startsWith("F-User="));o||(window.location.href="/Admin",document.cookie="F-User=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/");

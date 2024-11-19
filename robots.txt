@@ -3,5 +3,5 @@ Allow: /
 Sitemap: https://www.lifo123.site/sitemap-index.xml
 
 User-agent: *
-Disallow: /admin/
+Disallow: /Admin/
 Sitemap: https://www.lifo123.site/sitemap-0.xml
